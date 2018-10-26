@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.row{
+    margin: 0px;
+}
+.cardColumn {
+    float: left;
+    width: 33%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .cardColumn {
+        width: 100%;
+        display: block;
+    }
+}
+
+.cardData {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardMember {
+    padding: 0 16px;
+    width:100%;
+}
+
+    .cardMember::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+.cardName {
+    width: 100%;
+}
+.cardTitle {
+    color: grey;
+    width: 100%;
+}
+.cardDescription {
+    width: 100%;
+}
+.cardEmail {
+    width: 100%;
+}
+.cardButton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .cardButton:hover {
+        background-color: #555;
+    }
+
+
+.card-img  {
+    width: 100%;
+    height: 100%;
+}
+
+.publication p{
+
+}

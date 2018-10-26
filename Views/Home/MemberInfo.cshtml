@@ -1,0 +1,39 @@
+﻿@model Person
+@{
+    ViewData["Title"] = "MemberInfo";
+}
+
+<h2>
+    @ViewData["Message"]
+</h2>
+
+
+<h3>Details</h3>
+<address>
+    @Model.Name<br />
+    @Model.Job<br />
+    <a href="mailto:@Model.Email">@Model.Email</a><br />
+</address>
+
+<h3>Research Interests</h3>
+<p>@Model.ResearchInterest</p>
+
+
+<h3>Biography</h3>
+<p>@Model.Biography</p>
+
+
+<h3>Publications</h3>
+
+<h4>Accepted</h4>
+@foreach (var publication in Model.PublicationsList)
+{
+<div class="well">
+    <h4>@publication.Title</h4>
+    <p class="publication">Journal: @publication.JournalName</p>
+    <p class="publication">Pages: @publication.Pages</p>
+    <p class="publication">Volume: @publication.Volume</p>
+    <p class="publication">@publication.Date.Day/@publication.Date.Month/@publication.Date.Year</p>
+    <a class="btn btn-primary" href="@publication.Link" role="button">View »</a>
+</div>
+}
