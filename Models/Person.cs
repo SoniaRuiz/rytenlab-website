@@ -16,6 +16,7 @@ namespace RytenLab_Web.Models
         public string Biography { get; set; }
         public string PublicationsID { get; set; }
         public List<Publication> PublicationsList { get; set; }
-       
+        public string ImagePath { get; set; }
+
     }
 }
