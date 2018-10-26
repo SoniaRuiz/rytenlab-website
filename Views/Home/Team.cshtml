@@ -1,0 +1,50 @@
+﻿@model Team
+@{
+    ViewData["Title"] = "Team";
+}
+<h2>@ViewData["Title"]</h2>
+
+<br />
+<h4>Meet the team</h4>
+<br />
+<div class="row">
+
+    @foreach (var person in Model.TeamMembers)
+    {
+        @using (Html.BeginForm("MemberInfo", "Home", FormMethod.Post, new { @id = @person.ID }))
+        {
+            <div class="cardColumn">
+                <div class="cardData">
+                    <img src="#" alt="@person.Name" class="card-img">
+                    <div class="cardMember">
+                        <h2 class="cardName">@person.Name</h2>
+                        <p class="cardTitle">@person.Job</p>
+                        <p class="cardDescription">@person.Description</p>
+                        <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
+                        <p>
+                            <input type="submit" value="View" class="cardButton" onclick='"javascript:sendForm("@person.ID")"' />
+                        </p>
+                        @Html.Hidden("ID", person.ID)
+                        @Html.Hidden("Name", person.Name)
+                        @Html.Hidden("Job", person.Job)
+                        @Html.Hidden("Description", person.Description)
+                        @Html.Hidden("Email", person.Email)
+                        @Html.Hidden("PublicationsID", person.PublicationsID)
+                        @Html.Hidden("ResearchInterest", person.ResearchInterest)
+                        @Html.Hidden("PublicationsList", person.PublicationsList)
+                        @Html.Hidden("Biography", person.Biography)
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+<script type="text/javascript">
+    function sendForm(memberID) {
+        $("#" + memberID).submit();
+        return false;
+    }
+</script>
+@section Scripts{
+    <link rel="stylesheet" href="~/css/album.css" />
+}
