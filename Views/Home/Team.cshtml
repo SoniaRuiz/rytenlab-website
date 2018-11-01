@@ -3,8 +3,6 @@
     ViewData["Title"] = "Team";
 }
 <h2>@ViewData["Title"]</h2>
-
-<br />
 <h4>Meet the team</h4>
 <br />
 
@@ -28,15 +26,29 @@
                         <p>
                             <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
                         </p>
-                        @Html.Hidden("ID", person.ID)
-                        @Html.Hidden("Name", person.Name)
-                        @Html.Hidden("Job", person.Job)
-                        @Html.Hidden("Description", person.Description)
-                        @Html.Hidden("Email", person.Email)
-                        @Html.Hidden("PublicationsID", person.PublicationsID)
-                        @Html.Hidden("ResearchInterest", person.ResearchInterest)
-                        @Html.Hidden("PublicationsList", person.PublicationsList)
-                        @Html.Hidden("Biography", person.Biography)
+                        @Html.HiddenFor(m => person.Name)
+                        @Html.HiddenFor(m => person.ImagePath)
+                        @Html.HiddenFor(m => person.Job)
+                        @Html.HiddenFor(m => person.Description)
+                        @Html.HiddenFor(m => person.Email)
+                        @Html.HiddenFor(m => person.NCBIPublicationsID)
+                        @Html.HiddenFor(m => person.ResearchInterest)
+                        @for (int i = 0; i < person.CrossRefPublicationsTitles.Count; i++)
+                        {
+                            @Html.HiddenFor(m => person.CrossRefPublicationsTitles[i])
+                        }
+                        @for (int i = 0; i < person.CrossRefPublicationsList.Count; i++)
+                        {
+                            @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Title)
+                            @Html.HiddenFor(m => person.CrossRefPublicationsList[i].JournalName)
+                            @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Link)
+                            @for (int x = 0; x < person.CrossRefPublicationsList[i].Authors.Count; x++)
+                            {
+                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Authors[x])
+                            }
+                            @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Date)
+                        }
+                        @Html.HiddenFor(m => person.Biography)
                     </div>
                 </div>
             </div>
