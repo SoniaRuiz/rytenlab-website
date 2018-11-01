@@ -11,18 +11,26 @@ namespace RytenLab_Web.Adapters
     {
         public string HttpRequestJSON(string url)
         {
-            var request = WebRequest.Create(url);
-            string data = null;
-            var response = (HttpWebResponse)request.GetResponse();
-
-            request.ContentType = "application/json; charset=utf-8";
-
-            using (var sr = new StreamReader(response.GetResponseStream()))
+            try
             {
-                data = sr.ReadToEnd();
-            }
+                var request = WebRequest.Create(url);
+                string data = null;
+                request.Timeout = 15000;
+                var response = (HttpWebResponse)request.GetResponse();
 
-            return data;
+                request.ContentType = "application/json; charset=utf-8";
+
+                using (var sr = new StreamReader(response.GetResponseStream()))
+                {
+                    data = sr.ReadToEnd();
+                }
+
+                return data;
+            }
+            catch(Exception e)
+            {
+                return e.Message;
+            }
         }
     }
 }

@@ -10,9 +10,9 @@ html {
 }
 .cardColumn {
     float: left;
-    width: 33.3%;
+    width: 33%;
     margin-bottom: 16px;
-    padding: 0 8px;
+    padding: 0 15px 25px;
 }
 
 @media screen and (max-width: 650px) {

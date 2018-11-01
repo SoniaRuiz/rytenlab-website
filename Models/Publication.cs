@@ -7,12 +7,20 @@ namespace RytenLab_Web.Models
 {
     public class Publication
     {
-        public String Title { get; set; }
-        public String ShortTitle { get; set; }
-        public String JournalName { get; set; }
-        public String Volume { get; set; }
-        public DateTime Date { get; set; }
-        public String Pages { get; set; }
-        public String Link { get; set; }
+        public string Title { get; set; }
+        public string ShortTitle { get; set; }
+        public string Abstract { get; set; }
+        public string Doi { get; set; }
+        public string JournalName { get; set; }
+        public string Volume { get; set; }
+        public string Date { get; set; }
+        public string Pages { get; set; }
+        public string Link { get; set; }
+        public List<string> Authors { get; set; }
+
+        public Publication()
+        {
+            this.Authors = new List<string>();
+        }
     }
 }

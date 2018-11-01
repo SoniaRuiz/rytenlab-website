@@ -18,50 +18,13 @@ namespace RytenLab_Web.Repositories
             adapter = new HttpAdapter();
         }
 
-        /*public String GetPublicationsIDNCBI(String authorName)
-        {
-            try
-            {
-                if (String.IsNullOrEmpty(authorName))
-                {
-                    throw new Exception("Empty author name");
-                }
-                else
-                {
-
-                    string url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=1000&term=" + authorName + "[Author]";
-                    var response = adapter.HttpRequestJSON(url);
-
-                    dynamic jsonObj = JsonConvert.DeserializeObject(response);
-                    List<string> idList = new List<string>();
-
-                    foreach (var obj in jsonObj.esearchresult.idlist)
-                    {
-                        idList.Add((string)obj);
-                    }
-
-                    return string.Join(",", idList);
-                }
-            }
-            catch (Exception e)
-            {
-                return e.Message;
-            }
-        }*/
-
         public Person GetPublicationsDataNCBI(Person person)
         {
-
-            if (String.IsNullOrEmpty(person.PublicationsID))
-            {
-                throw new Exception("Empty id publications list");
-            }
-            else
+            if (!String.IsNullOrEmpty(person.NCBIPublicationsID))
             {
                 int index = 0;
-                
 
-                String url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=" + person.PublicationsID + "&retmode=json";
+                String url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=" + person.NCBIPublicationsID + "&retmode=json";
                 String response = adapter.HttpRequestJSON(url);
 
                 var jsonResponse = JObject.Parse(response);
@@ -79,16 +42,58 @@ namespace RytenLab_Web.Repositories
                         Publication singlePublication = new Publication();
                         singlePublication.Title = (string)item.Value["title"];
                         singlePublication.JournalName = (string)item.Value["fulljournalname"];
+                        foreach(var author in item.Value["authors"])
+                        {
+                            singlePublication.Authors.Add((string)author["name"]);
+                        }
                         singlePublication.Volume = (string)item.Value["volume"];
-                        singlePublication.Date = DateTime.Parse((string)item.Value["sortpubdate"]);
+                        singlePublication.Date = (string)item.Value["pubdate"];
                         singlePublication.Pages = (string)item.Value["pages"];
-                        person.PublicationsList.Add(singlePublication);
-
+                        var title = singlePublication.Title;
+                        title = title.Replace(" ", "+");
+                        singlePublication.Link = "https://www.ncbi.nlm.nih.gov/pubmed/?term=" + title;
+                        person.NCBIPublicationsList.Add(singlePublication);
                     }
                 }
 
-                return person;
             }
+            return person;
+        }
+
+        public Person GetPublicationsDataCrossRef(Person person)
+        {
+            if (person.CrossRefPublicationsTitles.Count > 0 && !String.IsNullOrEmpty(person.Name))
+            {
+                foreach(var title in person.CrossRefPublicationsTitles)
+                {
+                    String url = "https://api.crossref.org/works?rows=1&query.title=" + title + "&query.author=" + person.Name;
+                    String response = adapter.HttpRequestJSON(url);
+
+                    var jsonResponse = JObject.Parse(response);
+                    var data = (JObject)jsonResponse["message"];
+
+                    foreach (var item in data)
+                    {
+                        if (item.Key == "items")
+                        {
+                            foreach (var x in item.Value)
+                            {
+                                Publication singlePublication = new Publication();
+                                singlePublication.Title = (x["title"] != null) ? (string)x["title"][0] : string.Empty;
+                                //singlePublication.Abstract = (string)x["abstract"];
+                                singlePublication.Doi = (string)x["DOI"];
+                                singlePublication.Link = (x["link"] != null) ? (string)x["link"][0]["URL"] : string.Empty;
+                                singlePublication.JournalName = (x["institution"] != null) ? (string)x["institution"]["name"] : string.Empty;
+                                //singlePublication.Volume = (string)item.Value["volume"];
+                                //singlePublication.Date = DateTime.Parse((string)item.Value["sortpubdate"]);
+                                //singlePublication.Pages = (string)item.Value["pages"];
+                                person.CrossRefPublicationsList.Add(singlePublication);
+                            }
+                        }
+                    }
+                }
+            }
+            return person;
         }
     }
 }

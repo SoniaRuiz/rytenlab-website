@@ -1,6 +1,6 @@
 ﻿@model Person
 @{
-    ViewData["Title"] = "MemberInfo";
+    ViewData["Title"] = "Member Info";
 }
 
 <h2>
@@ -8,12 +8,20 @@
 </h2>
 
 
-<h3>Details</h3>
-<address>
-    @Model.Name<br />
-    @Model.Job<br />
-    <a href="mailto:@Model.Email">@Model.Email</a><br />
-</address>
+<h3>@Model.Name</h3>
+<div class="media-left media-top">
+    <img width="168" height="175" src="/images/modified/filter/@Model.ImagePath" alt="@Model.Name" class="media-object">
+</div>
+<div class="media-body">
+    <address style="padding-top:5px;">
+        <strong>@Model.Name</strong><br />
+        @Model.Job<br />
+        <a href="mailto:@Model.Email">@Model.Email</a><br />
+    </address>
+</div>
+
+
+
 
 <h3>Research Interests</h3>
 <p>@Model.ResearchInterest</p>
@@ -22,18 +30,57 @@
 <h3>Biography</h3>
 <p>@Model.Biography</p>
 
-
-<h3>Publications</h3>
-
-<h4>Accepted</h4>
-@foreach (var publication in Model.PublicationsList)
+@if (Model.CrossRefPublicationsList.Count > 0)
 {
-<div class="well">
-    <h4>@publication.Title</h4>
-    <p class="publication">Journal: @publication.JournalName</p>
-    <p class="publication">Pages: @publication.Pages</p>
-    <p class="publication">Volume: @publication.Volume</p>
-    <p class="publication">@publication.Date.Day/@publication.Date.Month/@publication.Date.Year</p>
-    <a class="btn btn-primary" href="@publication.Link" role="button">View »</a>
-</div>
+    <h3>Publications</h3>
+    <h4>Pre-print</h4>
+    @foreach (var publication in Model.CrossRefPublicationsList)
+    {
+        <div class="well">
+            <h4>@publication.Title</h4>
+            <small>
+
+                @for (var i = 0; i < publication.Authors.Count; i++)
+                {
+                    if (i < publication.Authors.Count - 1)
+                    {
+                        <span>@publication.Authors[i], </span>
+                    }
+                    else
+                    {
+                        <span>@publication.Authors[i]</span>
+                    }
+                }
+            </small><br /><br />
+            <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+            <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+        </div>
+    }
 }
+@if (Model.NCBIPublicationsList.Count > 0)
+{
+    <h4>Accepted</h4>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        <div class="well">
+            <h4>@publication.Title</h4>
+            <small>
+
+                @for (var i = 0; i < publication.Authors.Count; i++)
+                {
+                    if (i < publication.Authors.Count - 1)
+                    {
+                        <span>@publication.Authors[i], </span>
+                    }
+                    else
+                    {
+                        <span>@publication.Authors[i]</span>
+                    }
+                }
+            </small><br /><br />
+            <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+            <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+        </div>
+    }
+}
+

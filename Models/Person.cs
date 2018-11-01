@@ -14,9 +14,17 @@ namespace RytenLab_Web.Models
         public string Email { get; set; }
         public string ResearchInterest { get; set; }
         public string Biography { get; set; }
-        public string PublicationsID { get; set; }
-        public List<Publication> PublicationsList { get; set; }
+        public string NCBIPublicationsID { get; set; }
+        public List<Publication> NCBIPublicationsList { get; set; }
+        public List<string> CrossRefPublicationsTitles { get; set; }
+        public List<Publication> CrossRefPublicationsList { get; set; }
         public string ImagePath { get; set; }
 
+        public Person()
+        {
+            this.NCBIPublicationsList = new List<Publication>();
+            this.CrossRefPublicationsList = new List<Publication>();
+            this.CrossRefPublicationsTitles = new List<string>();
+        }
     }
 }
