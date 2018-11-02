@@ -3,84 +3,91 @@
     ViewData["Title"] = "Member Info";
 }
 
-<h2>
-    @ViewData["Message"]
-</h2>
+
+<header class="header">
+    <h1>@Model.Name</h1>
+    <hr />
+</header>
+<article>
+    <div class="media-left media-top">
+        <img src="/images/modified/filter/@Model.ImagePath" alt="@Model.Name" class="media-object little-image">
+    </div>
+    <div class="media-body">
+        <address style="padding-top:5px;">
+            <strong>@Model.Name</strong><br />
+            @Model.Job<br />
+            <a href="mailto:@Model.Email">@Model.Email</a><br />
+        </address>
+    </div>
+    <br />
 
 
-<h3>@Model.Name</h3>
-<div class="media-left media-top">
-    <img width="168" height="175" src="/images/modified/filter/@Model.ImagePath" alt="@Model.Name" class="media-object">
-</div>
-<div class="media-body">
-    <address style="padding-top:5px;">
-        <strong>@Model.Name</strong><br />
-        @Model.Job<br />
-        <a href="mailto:@Model.Email">@Model.Email</a><br />
-    </address>
-</div>
+    <h3>Research Interests</h3>
+    <p>@Model.ResearchInterest</p>
 
 
+    <h3>Biography</h3>
+    <p>@Model.Biography</p>
 
 
-<h3>Research Interests</h3>
-<p>@Model.ResearchInterest</p>
-
-
-<h3>Biography</h3>
-<p>@Model.Biography</p>
-
-@if (Model.CrossRefPublicationsList.Count > 0)
-{
-    <h3>Publications</h3>
-    <h4>Pre-print</h4>
-    @foreach (var publication in Model.CrossRefPublicationsList)
+    @if (Model.CrossRefPublicationsList.Count > 0 || Model.NCBIPublicationsList.Count > 0)
     {
-        <div class="well">
-            <h4>@publication.Title</h4>
-            <small>
-
-                @for (var i = 0; i < publication.Authors.Count; i++)
-                {
-                    if (i < publication.Authors.Count - 1)
-                    {
-                        <span>@publication.Authors[i], </span>
-                    }
-                    else
-                    {
-                        <span>@publication.Authors[i]</span>
-                    }
-                }
-            </small><br /><br />
-            <p class="publication">Published in @publication.JournalName - @publication.Date</p>
-            <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
-        </div>
+        <h3>Publications</h3>
     }
-}
-@if (Model.NCBIPublicationsList.Count > 0)
-{
-    <h4>Accepted</h4>
-    @foreach (var publication in Model.NCBIPublicationsList)
+    @if (Model.CrossRefPublicationsList.Count > 0)
     {
-        <div class="well">
-            <h4>@publication.Title</h4>
-            <small>
+        <h4>Pre-print</h4>
+        @foreach (var publication in Model.CrossRefPublicationsList)
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
 
-                @for (var i = 0; i < publication.Authors.Count; i++)
-                {
-                    if (i < publication.Authors.Count - 1)
+                    @for (var i = 0; i < publication.Authors.Count; i++)
                     {
-                        <span>@publication.Authors[i], </span>
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            <span>@publication.Authors[i], </span>
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
                     }
-                    else
-                    {
-                        <span>@publication.Authors[i]</span>
-                    }
-                }
-            </small><br /><br />
-            <p class="publication">Published in @publication.JournalName - @publication.Date</p>
-            <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
-        </div>
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
     }
-}
+    @if (Model.NCBIPublicationsList.Count > 0)
+    {
+        <h4>Accepted</h4><br />
+        @foreach (var publication in Model.NCBIPublicationsList)
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
 
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            <span>@publication.Authors[i], </span>
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                @if (@publication.Title.Contains("Genetic variability in the regulation of gene expression in ten regions of the human brain"))
+                {
+                    <h4>Supporting <a href="http://braineac.org/" target="_blank">data</a></h4>
+                }
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+</article>

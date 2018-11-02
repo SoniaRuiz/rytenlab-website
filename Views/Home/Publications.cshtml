@@ -2,33 +2,66 @@
 @{
     ViewData["Title"] = "Publications";
 }
-<h2>Publications</h2>
-
-<h3>Accepted</h3>
-<h4>2018</h4>
-@foreach (var publication in Model.NCBIPublicationsList)
-{
-    @if (@publication.Date.Contains("2018"))
+<header class="header">
+    <h1>@ViewData["Title"]</h1>
+    <hr />
+</header>
+<article>
+    <h2>Accepted</h2>
+    <h3 class="year-main">2018</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
     {
-        <div class="well">
-            <h4>@publication.Title</h4>
-            <small>
+        @if (@publication.Date.Contains("2018"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
 
-                @for (var i = 0; i < publication.Authors.Count; i++)
-                {
-                    if (i < publication.Authors.Count - 1)
+                    @for (var i = 0; i < publication.Authors.Count; i++)
                     {
-                        <span>@publication.Authors[i], </span>
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            <span>@publication.Authors[i], </span>
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
                     }
-                    else
-                    {
-                        <span>@publication.Authors[i]</span>
-                    }
-                }
-            </small><br /><br />
-            <p class="publication">Published in @publication.JournalName - @publication.Date</p>
-            <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
-        </div>
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
     }
+    <h3 class="year">2014</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2014"))
+        {
+    <div class="well">
+        <h4>@publication.Title</h4>
+        <small>
 
-}
+            @for (var i = 0; i < publication.Authors.Count; i++)
+            {
+                if (i < publication.Authors.Count - 1)
+                {
+                    <span>@publication.Authors[i], </span>
+                }
+                else
+                {
+                    <span>@publication.Authors[i]</span>
+                }
+            }
+        </small><br /><br />
+        <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+        @if (@publication.Title.Contains("Genetic variability in the regulation of gene expression in ten regions of the human brain"))
+        {
+            <p>Supporting <a href="http://braineac.org/" target="_blank">data</a></p>
+        }
+        <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+    </div>
+        }
+    }
+</article>
