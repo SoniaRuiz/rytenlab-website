@@ -27,9 +27,9 @@ namespace RytenLab_Web.Adapters
 
                 return data;
             }
-            catch(Exception e)
+            catch(Exception)
             {
-                return e.Message;
+                throw new Exception("Problems with NCBI database connection. Please try again.");
             }
         }
     }

@@ -51,7 +51,7 @@ namespace RytenLab_Web.Repositories
                         singlePublication.Pages = (string)item.Value["pages"];
                         var title = singlePublication.Title;
                         title = title.Replace(" ", "+");
-                        singlePublication.Link = "https://www.ncbi.nlm.nih.gov/pubmed/?term=" + title;
+                        singlePublication.Link = "https://www.ncbi.nlm.nih.gov/pubmed/" + (string)item.Value["uid"];
                         person.NCBIPublicationsList.Add(singlePublication);
                     }
                 }

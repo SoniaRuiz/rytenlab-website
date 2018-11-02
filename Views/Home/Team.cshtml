@@ -38,6 +38,7 @@
                             @Html.HiddenFor(m => person.Email)
                             @Html.HiddenFor(m => person.NCBIPublicationsID)
                             @Html.HiddenFor(m => person.ResearchInterest)
+                            @Html.HiddenFor(m => person.GitHub)
                             @for (int i = 0; i < person.CrossRefPublicationsTitles.Count; i++)
                             {
                                 @Html.HiddenFor(m => person.CrossRefPublicationsTitles[i])

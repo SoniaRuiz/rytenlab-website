@@ -39,3 +39,12 @@ article {
     height: 250px;
     width: 241px;
 }
+
+@media (min-height: 800px) {
+    article {
+        min-height: 800px !important;
+    }
+}
+.publication {
+    font-size: 15px;
+}
