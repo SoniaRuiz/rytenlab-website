@@ -74,7 +74,7 @@ using RytenLab_Web.Models;
             WriteLiteral("</h1>\r\n    <hr />\r\n</header>\r\n<article>\r\n    <h2>Dr Mina Ryten</h2>\r\n\r\n    <div class=\"media-left media-top\">\r\n        ");
             EndContext();
             BeginContext(213, 108, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "7beb40fb20cc410e85fb7ee03d1a9713", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "73fb057c490746708cd1c736b5a0baf4", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
