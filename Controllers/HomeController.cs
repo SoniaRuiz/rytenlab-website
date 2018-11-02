@@ -30,7 +30,7 @@ namespace RytenLab_Web.Controllers
             mina.Job = "PhD";
             mina.Description = "Description";
             mina.Email = "mina.ryten@ucl.ac.uk";
-            //mina.NCBIPublicationsID = "30328509";
+            mina.NCBIPublicationsID = "25174004";
             mina.ImagePath = "mina.jpg";
             teamMembers.TeamMembers.Add(mina);
 
@@ -84,7 +84,7 @@ namespace RytenLab_Web.Controllers
             seb.Job = "PhD Student";
             seb.Description = "Description";
             seb.Email = "m.guelfi@ucl.ac.uk";
-            //seb.NCBIPublicationsID = "30328509";
+            seb.NCBIPublicationsID = "25174004";
             seb.ImagePath = "seb.jpg";
             teamMembers.TeamMembers.Add(seb);
 
@@ -94,11 +94,11 @@ namespace RytenLab_Web.Controllers
             ////////////////////////////////////////////
             Person regina = new Person();
             regina.ID = 5;
-            regina.Name = "Regina Reynolds";
+            regina.Name = "Regina H. Reynolds";
             regina.Job = "PhD Student";
             regina.Description = "Description";
             regina.Email = "regina.reynolds.16@ucl.ac.uk";
-            regina.ResearchInterest = "Ageing; Data Analysis of High-throughput Techniques; Genetics; Huntington’s disease; Metabolism; MicroRNA Profiling; Molecular Biology; Neurodegeneration; Neurophysiology; Statistical Modelling; Transcriptomics.";
+            regina.ResearchInterest = "Functional genomics; Neurodegeneration; Statistical Genetics; Transcriptomics.";
             regina.Biography = "Regina is a PhD student in the Leonard Wolfson Programme at UCL. After a year of rotations, she joined the Ryten lab in 2017 where her research will involve integrating in-house RNA-sequencing, publicly available -omics data, and novel methods of analysis to understand the effect of genetic variation and cell environment on the brain transcriptome and neurodegenerative disease. Regina completed her Bachelor’s and Master’s degree in Molecular Biomedicine at the University of Copenhagen. During this time, she accumulated 2 years of wet lab experience, interrogating the interactions between miR-34a, Sirt1 and p53 in a Huntington’s disease mouse model. As a student making the transition from molecular biology to bioinformatics, Regina is a strong supporter of interdisciplinary collaboration and research; she believes access to different approaches is crucial to unravelling the complexities of the brain in health and disease.";
             regina.NCBIPublicationsID = "29289683,30066433";
             regina.ImagePath = "regina.jpg";
@@ -172,6 +172,8 @@ namespace RytenLab_Web.Controllers
             sonia.Job = "Software Developer";
             sonia.Description = "Description";
             sonia.Email = "s.ruiz@ucl.ac.uk";
+            sonia.ResearchInterest = "Web Development; Artificial Intelligence; Machine Learning, Software Development;  Transcriptomics.";
+            sonia.Biography = "Sonia is a software developer at UCL. She completed her Bachelor’s in Computer Science at the University of Miguel Hernández (Spain) in 2014. After that, she accumulated 2 years of experience as a web developer, working with clients such as Microsoft and Deloitte. Nevertheless, in 2017 she decided to return to university and completed her Master’s degree in Artificial Intelligence at the University of Murcia in 2018. In the Ryten lab, Sonia uses her knowledge of web development to help build analysis and visualisation tools for easier data interpretation.";
             //sonia.NCBIPublicationsID = "30328509";
             sonia.ImagePath = "sonia.jpg";
             teamMembers.TeamMembers.Add(sonia);
@@ -198,7 +200,7 @@ namespace RytenLab_Web.Controllers
             Person genericPerson = new Person();
             PublicationRepository publications = new PublicationRepository();
 
-            genericPerson.NCBIPublicationsID = "30066433,29289683";
+            genericPerson.NCBIPublicationsID = "30066433,29289683,25174004";
             genericPerson = publications.GetPublicationsDataNCBI(genericPerson);
            
             return View(genericPerson);

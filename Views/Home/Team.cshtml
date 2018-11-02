@@ -2,65 +2,71 @@
 @{
     ViewData["Title"] = "Team";
 }
-<h2>@ViewData["Title"]</h2>
-<h4>Meet the team</h4>
-<br />
 
-<div class="row">
-    @foreach (var person in Model.TeamMembers)
-    {
-        @using (Html.BeginForm("MemberInfo", "Home", FormMethod.Post, new { @id = @person.ID }))
+<header class="header">
+    <h1>@ViewData["Title"]</h1>
+    <hr />
+</header>
+<article>
+    @*<h2>Meet the team</h2>*@
+    <h4>While our transcriptomes may have changed, our childlike curiosity remains the same.</h4>
+    <br />
+    <div class="row">
+        @foreach (var person in Model.TeamMembers)
         {
-            <div class="cardColumn">
-                <div class="cardData">
-                    <figure>
-                        <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
-                            <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
-                        </a>
-                    </figure>
-                    <div class="cardMember">
-                        <h2 class="cardName">@person.Name</h2>
-                        <p class="cardTitle">@person.Job</p>
-                        <p class="cardDescription">@person.Description</p>
-                        <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
-                        <p>
-                            <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
-                        </p>
-                        @Html.HiddenFor(m => person.Name)
-                        @Html.HiddenFor(m => person.ImagePath)
-                        @Html.HiddenFor(m => person.Job)
-                        @Html.HiddenFor(m => person.Description)
-                        @Html.HiddenFor(m => person.Email)
-                        @Html.HiddenFor(m => person.NCBIPublicationsID)
-                        @Html.HiddenFor(m => person.ResearchInterest)
-                        @for (int i = 0; i < person.CrossRefPublicationsTitles.Count; i++)
-                        {
-                            @Html.HiddenFor(m => person.CrossRefPublicationsTitles[i])
-                        }
-                        @for (int i = 0; i < person.CrossRefPublicationsList.Count; i++)
-                        {
-                            @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Title)
-                            @Html.HiddenFor(m => person.CrossRefPublicationsList[i].JournalName)
-                            @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Link)
-                            @for (int x = 0; x < person.CrossRefPublicationsList[i].Authors.Count; x++)
+            @using (Html.BeginForm("MemberInfo", "Home", FormMethod.Post, new { @id = @person.ID }))
+            {
+                <div class="cardColumn">
+                    <div class="cardData">
+                        <figure>
+                            <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
+                                <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
+                            </a>
+                        </figure>
+                        <div class="cardMember">
+                            <h3 class="cardName">@person.Name</h3>
+                            <p class="cardTitle">@person.Job</p>
+                            <p class="cardDescription">@person.Description</p>
+                            <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
+                            <p>
+                                <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
+                            </p>
+                            @Html.HiddenFor(m => person.Name)
+                            @Html.HiddenFor(m => person.ImagePath)
+                            @Html.HiddenFor(m => person.Job)
+                            @Html.HiddenFor(m => person.Description)
+                            @Html.HiddenFor(m => person.Email)
+                            @Html.HiddenFor(m => person.NCBIPublicationsID)
+                            @Html.HiddenFor(m => person.ResearchInterest)
+                            @for (int i = 0; i < person.CrossRefPublicationsTitles.Count; i++)
                             {
-                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Authors[x])
+                                @Html.HiddenFor(m => person.CrossRefPublicationsTitles[i])
                             }
-                            @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Date)
-                        }
-                        @Html.HiddenFor(m => person.Biography)
+                            @for (int i = 0; i < person.CrossRefPublicationsList.Count; i++)
+                            {
+                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Title)
+                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].JournalName)
+                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Link)
+                                @for (int x = 0; x < person.CrossRefPublicationsList[i].Authors.Count; x++)
+                                {
+                                    @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Authors[x])
+                                }
+                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Date)
+                            }
+                            @Html.HiddenFor(m => person.Biography)
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
         }
+    </div>
+</article>
+<script type="text/javascript">
+    function sendForm(memberID) {
+        $("#" + memberID).submit();
+        return false;
     }
-</div>
-    <script type="text/javascript">
-        function sendForm(memberID) {
-            $("#" + memberID).submit();
-            return false;
-        }
-    </script>
-    @section Scripts{
-        <link rel="stylesheet" href="~/css/album.css" />
-    }
+</script>
+@section Scripts{
+    <link rel="stylesheet" href="~/css/album.css" />
+}
