@@ -107,27 +107,10 @@ namespace RytenLab_Web.Controllers
                 karishma.Description = "Description";
                 karishma.Email = "k.d'sa@ucl.ac.uk";
                 karishma.NCBIPublicationsID = "30066433";
-                karishma.ImagePath = "botia.jpg";
+                karishma.ImagePath = "karishma.png";
                 teamMembers.TeamMembers.Add(karishma);
 
-                ///////////////////////////////////////////
-                ///////////////// ZHONGBO /////////////////
-                ///////////////////////////////////////////
-                Person zhongbo = new Person();
-                zhongbo.ID = 6;
-                zhongbo.Name = "Zhongbo Chen";
-                zhongbo.Job = "PhD Student";
-                zhongbo.Description = "Description";
-                zhongbo.Email = "zhongbo.chen@ucl.ac.uk";
-                zhongbo.ResearchInterest = "Genetics; Neurodegenerative diseases; Clinical Neurology; Bioinformatics.";
-                zhongbo.Biography = "Zhongbo is a first-year PhD student and clinical research fellow on the Leonard Wolfson Programme at UCL. She is excited to be on her first rotation in the Ryten Lab. Zhongbo qualified as a doctor in 2010.Before embarking on the PhD, she was a specialist registrar in Neurology working at the National Hospital for Neurology and Neurosurgery.Zhongbo’s clinical and academic research interests are in studying the underlying genetics and molecular mechanisms of neurodegenerative diseases, including amyotrophic lateral sclerosis and progressive supranuclear palsy. Zhongbo’s research interests started during her undergraduate degree in Physiology and Neuroscience at the University of Cambridge, where she studied the electrophysiology of skeletal muscle using microelectrodes for her final year project She completed her clinical medicine degree at the University of Oxford.After graduating from Oxford, Zhongbo was awarded an academic foundation post at Imperial College London investigating the epidemiology of stroke, which was followed by a three - year NIHR - funded academic clinical fellowship(ACF) in Neurology at King’s College London.Alongside clinical neurology training, she developed her interests in the genetics of neurodegenerative diseases during the ACF, which culminated in the award of the Leonard Wolfson PhD fellowship.";
-                zhongbo.NCBIPublicationsID = "30089514,28010125,27584932,26968196,24259043,24175058,20849322,PMC2045119";
-                zhongbo.ImagePath = "zhongbo.jpg";
-                zhongbo.GitHub = "";
-                //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
-                //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
-                teamMembers.TeamMembers.Add(zhongbo);
-
+                
                 /////////////////////////////////////////
                 ////////////////// SEB //////////////////
                 /////////////////////////////////////////
@@ -202,6 +185,25 @@ namespace RytenLab_Web.Controllers
                 teamMembers.TeamMembers.Add(sonia);
 
 
+                ///////////////////////////////////////////
+                ///////////////// ZHONGBO /////////////////
+                ///////////////////////////////////////////
+                Person zhongbo = new Person();
+                zhongbo.ID = 6;
+                zhongbo.Name = "Zhongbo Chen";
+                zhongbo.Job = "PhD Student";
+                zhongbo.Description = "Description";
+                zhongbo.Email = "zhongbo.chen@ucl.ac.uk";
+                zhongbo.ResearchInterest = "Genetics; Neurodegenerative diseases; Clinical Neurology; Bioinformatics.";
+                zhongbo.Biography = "Zhongbo is a first-year PhD student and clinical research fellow on the Leonard Wolfson Programme at UCL. She is excited to be on her first rotation in the Ryten Lab. Zhongbo qualified as a doctor in 2010.Before embarking on the PhD, she was a specialist registrar in Neurology working at the National Hospital for Neurology and Neurosurgery.Zhongbo’s clinical and academic research interests are in studying the underlying genetics and molecular mechanisms of neurodegenerative diseases, including amyotrophic lateral sclerosis and progressive supranuclear palsy. Zhongbo’s research interests started during her undergraduate degree in Physiology and Neuroscience at the University of Cambridge, where she studied the electrophysiology of skeletal muscle using microelectrodes for her final year project She completed her clinical medicine degree at the University of Oxford.After graduating from Oxford, Zhongbo was awarded an academic foundation post at Imperial College London investigating the epidemiology of stroke, which was followed by a three - year NIHR - funded academic clinical fellowship(ACF) in Neurology at King’s College London.Alongside clinical neurology training, she developed her interests in the genetics of neurodegenerative diseases during the ACF, which culminated in the award of the Leonard Wolfson PhD fellowship.";
+                zhongbo.NCBIPublicationsID = "30089514,28010125,27584932,26968196,24259043,24175058,20849322,20842366,PMC2045119";
+                zhongbo.ImagePath = "zhongbo.jpg";
+                zhongbo.GitHub = "";
+                //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
+                //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
+                teamMembers.TeamMembers.Add(zhongbo);
+
+
 
 
                 return View(teamMembers);
@@ -235,7 +237,7 @@ namespace RytenLab_Web.Controllers
                 Person genericPerson = new Person();
                 PublicationRepository publications = new PublicationRepository();
 
-                genericPerson.NCBIPublicationsID = "30066433,29289683,25174004,30089514,28010125,27584932,26968196,24259043,24175058,20849322,PMC2045119";
+                genericPerson.NCBIPublicationsID = "30066433,29289683,25174004,30089514,28010125,27584932,26968196,24259043,24175058,20849322,20842366,PMC2045119";
                 genericPerson = publications.GetPublicationsDataNCBI(genericPerson);
 
                 return View(genericPerson);
