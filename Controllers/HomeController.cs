@@ -20,6 +20,34 @@ namespace RytenLab_Web.Controllers
         {
             try
             {
+                ////////////////////////////////////////////
+                ///////////////// BIORXIV //////////////////
+                //////////////////////////////////////////// 
+                Publication publication = new Publication();
+                publication.Title = "Moving beyond neurons: the role of cell type-specific gene regulation in Parkinson's disease heritability";
+                publication.JournalName = "bioRxiv";
+                publication.Authors = publication.SetAuthors("Regina H Reynolds, Juan A Botia, Mike A Nalls, International Parkinson's Disease Genomics Consortium (IPDGC), System Genomics of Parkinson's Disease (SGPD), John Hardy, Sarah A Gagliano, Mina Ryten");
+                publication.Link = "https://www.biorxiv.org/content/early/2018/10/16/442152";
+                publication.Date = "2018 Oct";
+
+                /*Publication publication2 = new Publication();
+                publication2.Title = "Variation at the TRIM11 locus modifies Progressive Supranuclear Palsy phenotype.";
+                publication2.JournalName = "bioRxiv";
+                publication2.Authors = publication2.SetAuthors("Edwin Jabbari, Woodside John, Manuela MX Tan, Shoai Maryam, Alan Pittman, Raffaele Ferrari, Kin Y Mok, David Zhang, Regina H Reynolds, Rohan de Silva, Max-Joseph Grimm, Gesine Respondek, Ulrich Muller, Safa Al-Sarraj, Steve M Gentleman, Andrew J Lees, Tom T Warner, John Hardy, Tamas Revesz, PROSPECT-UK consortium, Guenter U Hoglinger, Janice L Holton, Mina Ryten, Huw R Morris");
+                publication2.Link = "https://www.biorxiv.org/content/early/2018/05/30/333195";
+                publication2.Date = "2018 May";*/
+
+                Publication publication3 = new Publication();
+                publication3.Title = "G2P: Using machine learning to understand and predict genes causing rare neurological disorders";
+                publication3.JournalName = "bioRxiv";
+                publication3.Authors = publication3.SetAuthors("Juan A. Botia, Sebastian Guelfi, David Zhang, Karishma D'Sa, Regina Reinolds, Daniel Onah, Ellen M. McDonagh, Antonio Rueda-Martin, Arianna Tucci, Augusto Rendon, Henry Houlden, John Hardy, Mina Ryten");
+                publication3.Link = "https://www.biorxiv.org/content/early/2018/03/27/288845";
+                publication3.Date = "2018 March";
+
+                
+
+
+
                 //ViewData["Message"] = "Your application description page.";
                 Team teamMembers = new Team();
 
@@ -29,11 +57,15 @@ namespace RytenLab_Web.Controllers
                 Person mina = new Person();
                 mina.ID = 0;
                 mina.Name = "Mina Ryten";
-                mina.Job = "PhD";
+                mina.Job = "Dr (MBBS, PhD)";
                 mina.Description = "Description";
                 mina.Email = "mina.ryten@ucl.ac.uk";
-                mina.NCBIPublicationsID = "25174004";
+                mina.ResearchInterest = "Transcriptomics; Data Analysis of High-throughput Techniques for complex neurological diseases; Data Analysis of High-throughput Techniques to improve the diagnostic yield for rare neurogenetic disorders";
+                mina.Biography = "Mina is a clinician scientist with roughly equivalent experience in clinical and research settings. In her clinical practice she cares for individuals and families with, or at risk of, a range of conditions which may have a genetic basis. As well as providing a diagnosis, the aim of her clinics is to help individuals affected by a genetic disorder live as normally as possible with their condition. Mina’s research lab focuses on the use of transcriptomics, primarily derived from human brain, to improve the molecular understanding of complex and rare neurological disorders.";
+                mina.NCBIPublicationsID = "25174004,30066433";
                 mina.ImagePath = "mina.jpg";
+                mina.CrossRefPublicationsList.Add(publication);
+                mina.CrossRefPublicationsList.Add(publication3);
                 teamMembers.TeamMembers.Add(mina);
 
                 ////////////////////////////////////////////
@@ -46,7 +78,7 @@ namespace RytenLab_Web.Controllers
                 botia.Description = "Description";
                 botia.Email = "j.botia@ucl.ac.uk";
                 botia.GitHub = "juanbot";
-                //botia.NCBIPublicationsID = "30328509";
+                botia.NCBIPublicationsID = "30066433";
                 botia.ImagePath = "botia.jpg";
                 teamMembers.TeamMembers.Add(botia);
 
@@ -74,9 +106,27 @@ namespace RytenLab_Web.Controllers
                 karishma.Job = "PhD Student";
                 karishma.Description = "Description";
                 karishma.Email = "k.d'sa@ucl.ac.uk";
-                //karishma.NCBIPublicationsID = "30328509";
+                karishma.NCBIPublicationsID = "30066433";
                 karishma.ImagePath = "botia.jpg";
                 teamMembers.TeamMembers.Add(karishma);
+
+                ///////////////////////////////////////////
+                ///////////////// ZHONGBO /////////////////
+                ///////////////////////////////////////////
+                Person zhongbo = new Person();
+                zhongbo.ID = 6;
+                zhongbo.Name = "Zhongbo Chen";
+                zhongbo.Job = "PhD Student";
+                zhongbo.Description = "Description";
+                zhongbo.Email = "zhongbo.chen@ucl.ac.uk";
+                zhongbo.ResearchInterest = "Genetics; Neurodegenerative diseases; Clinical Neurology; Bioinformatics.";
+                zhongbo.Biography = "Zhongbo is a first-year PhD student and clinical research fellow on the Leonard Wolfson Programme at UCL. She is excited to be on her first rotation in the Ryten Lab. Zhongbo qualified as a doctor in 2010.Before embarking on the PhD, she was a specialist registrar in Neurology working at the National Hospital for Neurology and Neurosurgery.Zhongbo’s clinical and academic research interests are in studying the underlying genetics and molecular mechanisms of neurodegenerative diseases, including amyotrophic lateral sclerosis and progressive supranuclear palsy. Zhongbo’s research interests started during her undergraduate degree in Physiology and Neuroscience at the University of Cambridge, where she studied the electrophysiology of skeletal muscle using microelectrodes for her final year project She completed her clinical medicine degree at the University of Oxford.After graduating from Oxford, Zhongbo was awarded an academic foundation post at Imperial College London investigating the epidemiology of stroke, which was followed by a three - year NIHR - funded academic clinical fellowship(ACF) in Neurology at King’s College London.Alongside clinical neurology training, she developed her interests in the genetics of neurodegenerative diseases during the ACF, which culminated in the award of the Leonard Wolfson PhD fellowship.";
+                zhongbo.NCBIPublicationsID = "30089514,28010125,27584932,26968196,24259043,24175058,20849322,PMC2045119";
+                zhongbo.ImagePath = "zhongbo.jpg";
+                zhongbo.GitHub = "";
+                //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
+                //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
+                teamMembers.TeamMembers.Add(zhongbo);
 
                 /////////////////////////////////////////
                 ////////////////// SEB //////////////////
@@ -87,7 +137,7 @@ namespace RytenLab_Web.Controllers
                 seb.Job = "PhD Student";
                 seb.Description = "Description";
                 seb.Email = "m.guelfi@ucl.ac.uk";
-                seb.NCBIPublicationsID = "25174004";
+                seb.NCBIPublicationsID = "25174004,30066433";
                 seb.ImagePath = "seb.jpg";
                 seb.GitHub = "SebGuelfi";
                 teamMembers.TeamMembers.Add(seb);
@@ -106,40 +156,7 @@ namespace RytenLab_Web.Controllers
                 regina.Biography = "Regina is a PhD student in the Leonard Wolfson Programme at UCL. After a year of rotations, she joined the Ryten lab in 2017 where her research will involve integrating in-house RNA-sequencing, publicly available -omics data, and novel methods of analysis to understand the effect of genetic variation and cell environment on the brain transcriptome and neurodegenerative disease. Regina completed her Bachelor’s and Master’s degree in Molecular Biomedicine at the University of Copenhagen. During this time, she accumulated 2 years of wet lab experience, interrogating the interactions between miR-34a, Sirt1 and p53 in a Huntington’s disease mouse model. As a student making the transition from molecular biology to bioinformatics, Regina is a strong supporter of interdisciplinary collaboration and research; she believes access to different approaches is crucial to unravelling the complexities of the brain in health and disease.";
                 regina.NCBIPublicationsID = "29289683,30066433";
                 regina.ImagePath = "regina.jpg";
-                Publication publication = new Publication();
-                publication.Title = "Moving beyond neurons: the role of cell type-specific gene regulation in Parkinson's disease heritability";
-                publication.JournalName = "bioRxiv";
-                publication.Authors.Add("Regina H Reynolds");
-                publication.Authors.Add("Juan Botía");
-                publication.Authors.Add("Mike A Nalls");
-                publication.Authors.Add("International Parkinson’s Disease Genomics Consortium(IPDGC)");
-                publication.Authors.Add("System Genomics of Parkinson´s Disease(SGPD)");
-                publication.Authors.Add("John Hardy");
-                publication.Authors.Add("Sarah A");
-                publication.Authors.Add("Gagliano");
-                publication.Authors.Add("Mina Ryten");
-                publication.Link = "https://www.biorxiv.org/content/early/2018/10/16/442152";
-                publication.Date = "2018 Oct";
                 regina.CrossRefPublicationsList.Add(publication);
-                Publication publication2 = new Publication();
-                publication2.Title = "G2P: Using machine learning to understand and predict genes causing rare neurological disorders";
-                publication2.JournalName = "bioRxiv";
-                publication2.Authors.Add("Botía, JA");
-                publication2.Authors.Add("Guelfi, S");
-                publication2.Authors.Add("Zhang, D");
-                publication2.Authors.Add("D'Sa, K");
-                publication2.Authors.Add("Reynolds, RH");
-                publication2.Authors.Add("Onah, D");
-                publication2.Authors.Add("McDonagh, EM");
-                publication2.Authors.Add("Rueda-Martin, A,");
-                publication2.Authors.Add("Tucci, A");
-                publication2.Authors.Add("Rendon, A");
-                publication2.Authors.Add("Houlden, H");
-                publication2.Authors.Add("Hardy, J");
-                publication2.Authors.Add("Ryten, M");
-                publication2.Link = "https://www.biorxiv.org/content/early/2018/03/27/288845";
-                publication2.Date = "2018 March";
-                regina.CrossRefPublicationsList.Add(publication2);
                 regina.GitHub = "RHReynolds";
                 //regina.CrossRefPublicationsList.Add()
                 //regina.CrossRefPublicationsTitles.Add("Moving beyond neurons: the role of cell type-specific gene regulation in Parkinson's disease heritability");
@@ -163,7 +180,6 @@ namespace RytenLab_Web.Controllers
                 david.Biography = "David chose genetics because it allowed him to combine his practical enjoyment of computational analysis with his interest in human biology. His PhD is focussed on developing algorithms to improve the molecular diagnosis of Mendelian disease patients.";
                 david.NCBIPublicationsID = "30066433";
                 david.ImagePath = "david.jpg";
-                david.CrossRefPublicationsList.Add(publication2);
                 david.GitHub = "dzhang32";
                 //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
                 //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
@@ -184,6 +200,9 @@ namespace RytenLab_Web.Controllers
                 sonia.ImagePath = "sonia.jpg";
                 sonia.GitHub = "SoniaRuiz";
                 teamMembers.TeamMembers.Add(sonia);
+
+
+
 
                 return View(teamMembers);
             }
@@ -216,7 +235,7 @@ namespace RytenLab_Web.Controllers
                 Person genericPerson = new Person();
                 PublicationRepository publications = new PublicationRepository();
 
-                genericPerson.NCBIPublicationsID = "30066433,29289683,25174004";
+                genericPerson.NCBIPublicationsID = "30066433,29289683,25174004,30089514,28010125,27584932,26968196,24259043,24175058,20849322,PMC2045119";
                 genericPerson = publications.GetPublicationsDataNCBI(genericPerson);
 
                 return View(genericPerson);

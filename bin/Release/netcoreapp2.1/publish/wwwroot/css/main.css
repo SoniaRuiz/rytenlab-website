@@ -1,0 +1,50 @@
+﻿body{
+    text-align: justify;
+}
+.header h1 {
+    font-size: 42px;
+    padding-top: 20px;
+}
+article {
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+    article h2 {
+        padding-bottom: 20px;
+    }
+@media (min-width: 1200px) {
+    .container {
+        width: 900px !important;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 900px !important;
+    }
+}
+
+.well{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.year-main {
+    margin-bottom: 15px;
+}
+.year {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.little-image{
+    height: 250px;
+    width: 241px;
+}
+
+@media (min-height: 800px) {
+    article {
+        min-height: 800px !important;
+    }
+}
+.publication {
+    font-size: 15px;
+}
