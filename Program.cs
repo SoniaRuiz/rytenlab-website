@@ -14,7 +14,10 @@ namespace RytenLab_Web
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args)
+            .Build()
+            .Run();
+            //.UseKestrel(options =>{ options.AddServerHeader = false; }).UseStartup<Startup>().UseContentRoot(Directory.GetCurrentDirectory())
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

@@ -22,5 +22,11 @@ namespace RytenLab_Web.Models
         {
             this.Authors = new List<string>();
         }
+
+        public List<string> SetAuthors(string authors)
+        {
+            string[] authorsSplited = authors.Split(",");
+            return authorsSplited.ToList<string>();
+        }
     }
 }
