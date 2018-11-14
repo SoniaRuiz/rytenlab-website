@@ -87,7 +87,7 @@ namespace RytenLab_Web.Controllers
                 ////////////////////////////////////////////
                 Person sanchez = new Person();
                 sanchez.ID = 2;
-                sanchez.Name = "Juan A. Laguna";
+                sanchez.Name = "Juan A. Sanchez";
                 sanchez.Job = "PhD";
                 sanchez.Description = "Description";
                 sanchez.Email = "jlaguna@um.es";
