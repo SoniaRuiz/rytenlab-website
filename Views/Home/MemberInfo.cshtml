@@ -51,7 +51,13 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            <span>@publication.Authors[i], </span>
+                            if (i == 22) { 
+                                <span>@publication.Authors[i]...</span> 
+                                break;
+                            }
+                            else { 
+                                <span>@publication.Authors[i], </span>
+                            }
                         }
                         else
                         {
@@ -77,7 +83,15 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            <span>@publication.Authors[i], </span>
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
                         }
                         else
                         {

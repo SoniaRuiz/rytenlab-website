@@ -62,7 +62,7 @@ namespace RytenLab_Web.Controllers
                 mina.Email = "mina.ryten@ucl.ac.uk";
                 mina.ResearchInterest = "Transcriptomics; Data Analysis of High-throughput Techniques for complex neurological diseases; Data Analysis of High-throughput Techniques to improve the diagnostic yield for rare neurogenetic disorders";
                 mina.Biography = "Mina is a clinician scientist with roughly equivalent experience in clinical and research settings. In her clinical practice she cares for individuals and families with, or at risk of, a range of conditions which may have a genetic basis. As well as providing a diagnosis, the aim of her clinics is to help individuals affected by a genetic disorder live as normally as possible with their condition. Mina’s research lab focuses on the use of transcriptomics, primarily derived from human brain, to improve the molecular understanding of complex and rare neurological disorders.";
-                mina.NCBIPublicationsID = "25174004,30066433";
+                mina.NCBIPublicationsID = "30328509,30225556,30066433,29930110,29365066,29127725,28899015,28602509,28575651,28403906,28137300,28098162,28097204,28076797,28004117,27694991,27500074,27073233,26912063,26707700,28764847,26468326,26085604,25983243,25970246,25799108,25607358,25568836,25439728,25174004,24862029,24503276,24399358,24336208,24264146,24241535,24198383,24014518,23967090,23889843,23855984,23435227,23424103,23360175,23200863,23177596,22723018,22681703,22504417,22433082,21944779,21863007,21848658,21799870,19909261,19734301,18005209,17941929,15911103,15231720,14517997,12135987";
                 mina.ImagePath = "mina.jpg";
                 mina.CrossRefPublicationsList.Add(publication);
                 mina.CrossRefPublicationsList.Add(publication3);
@@ -78,7 +78,9 @@ namespace RytenLab_Web.Controllers
                 botia.Description = "Description";
                 botia.Email = "j.botia@ucl.ac.uk";
                 botia.GitHub = "juanbot";
-                botia.NCBIPublicationsID = "30066433";
+                botia.NCBIPublicationsID = "30328509,30225556,29365066,29127725,28899015,28575651,28403906,28137300,26912063,26707700,22778642,15484912";
+                botia.CrossRefPublicationsList.Add(publication);
+                botia.CrossRefPublicationsList.Add(publication3);
                 botia.ImagePath = "botia.jpg";
                 teamMembers.TeamMembers.Add(botia);
 
@@ -106,7 +108,7 @@ namespace RytenLab_Web.Controllers
                 karishma.Job = "PhD Student";
                 karishma.Description = "Description";
                 karishma.Email = "k.d'sa@ucl.ac.uk";
-                karishma.NCBIPublicationsID = "30066433";
+                karishma.NCBIPublicationsID = "28403906";
                 karishma.ImagePath = "karishma.png";
                 teamMembers.TeamMembers.Add(karishma);
 
@@ -120,7 +122,7 @@ namespace RytenLab_Web.Controllers
                 seb.Job = "PhD Student";
                 seb.Description = "Description";
                 seb.Email = "m.guelfi@ucl.ac.uk";
-                seb.NCBIPublicationsID = "25174004,30066433";
+                seb.NCBIPublicationsID = "28403906,28391543,28098162,27899424,27694991,26912063,25620700,25607358,25174004";
                 seb.ImagePath = "seb.jpg";
                 seb.GitHub = "SebGuelfi";
                 teamMembers.TeamMembers.Add(seb);
@@ -237,7 +239,7 @@ namespace RytenLab_Web.Controllers
                 Person genericPerson = new Person();
                 PublicationRepository publications = new PublicationRepository();
 
-                genericPerson.NCBIPublicationsID = "30066433,29289683,25174004,30089514,28010125,27584932,26968196,24259043,24175058,20849322,20842366,PMC2045119";
+                genericPerson.NCBIPublicationsID = "30328509,30225556,30089514,30066433,29930110,29365066,29127725,29289683,28899015,28764847,28602509,28575651,28403906,28391543,28137300,28098162,28097204,28076797,28010125,28004117,27899424,27694991,27584932,27500074,27073233,26968196,26912063,26707700,26468326,26085604,25983243,25970246,25799108,25620700,25607358,25568836,25439728,25174004,24862029,24503276,24399358,24336208,24264146,24259043,24241535,24198383,24175058,24014518,23967090,23889843,23855984,23435227,23424103,23360175,23200863,23177596,22778642,22723018,22681703,22504417,22433082,21944779,21863007,21848658,21799870,20849322,20842366,19909261,19734301,18005209,17941929,15911103,15231720,15484912,14517997,12135987";
                 genericPerson = publications.GetPublicationsDataNCBI(genericPerson);
 
                 return View(genericPerson);

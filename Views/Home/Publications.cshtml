@@ -21,7 +21,15 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            <span>@publication.Authors[i], </span>
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
                         }
                         else
                         {
@@ -47,7 +55,15 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            <span>@publication.Authors[i], </span>
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
                         }
                         else
                         {
@@ -73,7 +89,49 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            <span>@publication.Authors[i], </span>
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2015</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2015"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
                         }
                         else
                         {
@@ -99,7 +157,15 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            <span>@publication.Authors[i], </span>
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
                         }
                         else
                         {
@@ -129,7 +195,15 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            <span>@publication.Authors[i], </span>
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
                         }
                         else
                         {
@@ -155,7 +229,287 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            <span>@publication.Authors[i], </span>
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2011</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2011"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2010</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2010"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2009</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2009"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2008</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2008"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2005</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2005"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2004</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2004"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2003</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2003"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
+                        }
+                        else
+                        {
+                            <span>@publication.Authors[i]</span>
+                        }
+                    }
+                </small><br /><br />
+                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
+                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
+            </div>
+        }
+    }
+    <h3 class="year-main">2002</h3>
+    @foreach (var publication in Model.NCBIPublicationsList)
+    {
+        @if (@publication.Date.Contains("2002"))
+        {
+            <div class="well">
+                <h4>@publication.Title</h4>
+                <small>
+
+                    @for (var i = 0; i < publication.Authors.Count; i++)
+                    {
+                        if (i < publication.Authors.Count - 1)
+                        {
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
+                                break;
+                            }
+                            else
+                            {
+                                <span>@publication.Authors[i], </span>
+                            }
                         }
                         else
                         {
