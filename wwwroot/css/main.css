@@ -48,3 +48,8 @@ article {
 .publication {
     font-size: 15px;
 }
+
+.mina-biography {
+    width: 100%;
+    padding-bottom:10px;
+}
