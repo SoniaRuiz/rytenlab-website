@@ -18,7 +18,7 @@
             <p>@Model.Job</p>
             @if (!String.IsNullOrEmpty(Model.GitHub))
             {
-            <strong>GitHub: </strong><a href="https://github.com/@Model.GitHub" target="_blank">https://github.com/@Model.GitHub</a><br />
+                <strong>GitHub: </strong><a href="https://github.com/@Model.GitHub" target="_blank">https://github.com/@Model.GitHub</a><br />
             }
             <strong>E-mail: </strong><a href="mailto:@Model.Email">@Model.Email</a><br />
         </address>
@@ -32,7 +32,10 @@
 
     <h3>Biography</h3>
     <p>@Model.Biography</p>
-
+    @if (@Model.Name.Contains("Mina"))
+    {
+        <img src="~/images/mina-bio.PNG" title="@Model.Name" alt="@Model.Name" class="mina-biography">
+    }
 
     @if (Model.CrossRefPublicationsList.Count > 0 || Model.NCBIPublicationsList.Count > 0)
     {
@@ -51,11 +54,13 @@
                     {
                         if (i < publication.Authors.Count - 1)
                         {
-                            if (i == 22) { 
-                                <span>@publication.Authors[i]...</span> 
+                            if (i == 22)
+                            {
+                                <span>@publication.Authors[i]...</span>
                                 break;
                             }
-                            else { 
+                            else
+                            {
                                 <span>@publication.Authors[i], </span>
                             }
                         }
