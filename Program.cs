@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 
 namespace RytenLab_Web
 {
+    /// <summary>
+    /// This is a base class. Should not be modified. 
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)

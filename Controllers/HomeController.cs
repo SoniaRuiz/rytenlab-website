@@ -9,13 +9,27 @@ using RytenLab_Web.Repositories;
 
 namespace RytenLab_Web.Controllers
 {
+    /// <summary>
+    /// This controller sets the main operations of RytenLab web
+    /// </summary>
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Controller method for the main page
+        /// </summary>
+        /// <returns>Returns 'About' view</returns>
         public IActionResult Index()
         {
             return View();
         }
-
+        /// <summary>
+        /// Controller method for 'Team' Page
+        /// Because we don't have the team information stored in a data base, we need to set it here.
+        /// </summary>
+        /// <returns>
+        /// If everything is ok: Returns 'Team' view.
+        /// If an error occurs: returns 'Error' view
+        /// </returns>
         public IActionResult Team()
         {
             try
@@ -71,9 +85,9 @@ namespace RytenLab_Web.Controllers
                 mina.Biography = "Mina is a clinician scientist with roughly equivalent experience in clinical and research settings. In her clinical practice she cares for individuals and families with, or at risk of, a range of conditions which may have a genetic basis. As well as providing a diagnosis, the aim of her clinics is to help individuals affected by a genetic disorder live as normally as possible with their condition. Mina’s research lab focuses on the use of transcriptomics, primarily derived from human brain, to improve the molecular understanding of complex and rare neurological disorders.";
                 mina.NCBIPublicationsID = "30328509,30225556,30066433,29930110,29365066,29127725,28899015,28602509,28575651,28403906,28137300,28098162,28097204,28076797,28004117,27694991,27500074,27073233,26912063,26707700";
                 mina.ImagePath = "mina.jpg";
-                mina.CrossRefPublicationsList.Add(publication4);
-                mina.CrossRefPublicationsList.Add(publication);
-                mina.CrossRefPublicationsList.Add(publication3);
+                mina.PreAcceptedPublicationsList.Add(publication4);
+                mina.PreAcceptedPublicationsList.Add(publication);
+                mina.PreAcceptedPublicationsList.Add(publication3);
                 teamMembers.TeamMembers.Add(mina);
 
                 ////////////////////////////////////////////
@@ -87,9 +101,9 @@ namespace RytenLab_Web.Controllers
                 botia.Email = "j.botia@ucl.ac.uk";
                 botia.GitHub = "juanbot";
                 botia.NCBIPublicationsID = "30328509,30225556,29365066,29127725,28899015,28575651,28403906,28137300,26912063,26707700,22778642,15484912";
-                botia.CrossRefPublicationsList.Add(publication4);
-                botia.CrossRefPublicationsList.Add(publication);
-                botia.CrossRefPublicationsList.Add(publication3);
+                botia.PreAcceptedPublicationsList.Add(publication4);
+                botia.PreAcceptedPublicationsList.Add(publication);
+                botia.PreAcceptedPublicationsList.Add(publication3);
                 botia.ImagePath = "botia.jpg";
                 teamMembers.TeamMembers.Add(botia);
 
@@ -150,8 +164,8 @@ namespace RytenLab_Web.Controllers
                 regina.Biography = "Regina is a PhD student in the Leonard Wolfson Programme at UCL. After a year of rotations, she joined the Ryten lab in 2017 where her research will involve integrating in-house RNA-sequencing, publicly available -omics data, and novel methods of analysis to understand the effect of genetic variation and cell environment on the brain transcriptome and neurodegenerative disease. Regina completed her Bachelor’s and Master’s degree in Molecular Biomedicine at the University of Copenhagen. During this time, she accumulated 2 years of wet lab experience, interrogating the interactions between miR-34a, Sirt1 and p53 in a Huntington’s disease mouse model. As a student making the transition from molecular biology to bioinformatics, Regina is a strong supporter of interdisciplinary collaboration and research; she believes access to different approaches is crucial to unravelling the complexities of the brain in health and disease.";
                 regina.NCBIPublicationsID = "29289683,30066433";
                 regina.ImagePath = "regina.jpg";
-                regina.CrossRefPublicationsList.Add(publication4);
-                regina.CrossRefPublicationsList.Add(publication);
+                regina.PreAcceptedPublicationsList.Add(publication4);
+                regina.PreAcceptedPublicationsList.Add(publication);
                 regina.GitHub = "RHReynolds";
                 //regina.CrossRefPublicationsList.Add()
                 //regina.CrossRefPublicationsTitles.Add("Moving beyond neurons: the role of cell type-specific gene regulation in Parkinson's disease heritability");
@@ -228,6 +242,10 @@ namespace RytenLab_Web.Controllers
             }
         }
 
+        /// <summary>
+        /// Controller method for 'Data' page.
+        /// </summary>
+        /// <returns>Returns 'Data' view.</returns>
         public IActionResult Data()
         {
             ViewData["Message"] = "Your application description page.";
@@ -235,6 +253,10 @@ namespace RytenLab_Web.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Controller method for 'Tools' page.
+        /// </summary>
+        /// <returns>Returns 'Tools' view.</returns>
         public IActionResult Tools()
         {
             ViewData["Message"] = "Your application description page.";
@@ -242,17 +264,25 @@ namespace RytenLab_Web.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Controller method for 'Publications' page.
+        /// </summary>
+        /// <returns>
+        /// If everything is ok: Returns 'Publications' view.
+        /// If an error occurs: returns 'Error' view
+        /// </returns>
         public IActionResult Publications()
         {
             try
             {
-                Person genericPerson = new Person();
+                Person publicationsPerson = new Person();
                 PublicationRepository publications = new PublicationRepository();
 
-                genericPerson.NCBIPublicationsID = "30328509,30225556,30089514,30066433,29930110,29365066,29127725,29289683,28899015,28764847,28602509,28575651,28403906,28391543,28137300,28098162,28097204,28076797,28010125,28004117,27899424,27694991,27584932,27500074,27073233,26968196,26912063,26707700,26468326,26085604,25983243,25970246,25799108,25620700,25607358,25568836,25439728,25174004,24862029,24503276,24399358,24336208,24264146,24259043,24241535,24198383,24175058,24014518,23967090,23889843,23855984,23435227,23424103,23360175,23200863,23177596,22778642,22723018,22681703,22504417,22433082,21944779,21863007,21848658,21799870,20849322,20842366,19909261,19734301,18005209,17941929,15911103,15231720,15484912,14517997,12135987";
-                genericPerson = publications.GetPublicationsDataNCBI(genericPerson);
+                //NCBI publications ID (from all team members)
+                publicationsPerson.NCBIPublicationsID = "30328509,30225556,30089514,30066433,29930110,29365066,29127725,29289683,28899015,28764847,28602509,28575651,28403906,28391543,28137300,28098162,28097204,28076797,28010125,28004117,27899424,27694991,27584932,27500074,27073233,26968196,26912063,26707700,26468326,26085604,25983243,25970246,25799108,25620700,25607358,25568836,25439728,25174004,24862029,24503276,24399358,24336208,24264146,24259043,24241535,24198383,24175058,24014518,23967090,23889843,23855984,23435227,23424103,23360175,23200863,23177596,22778642,22723018,22681703,22504417,22433082,21944779,21863007,21848658,21799870,20849322,20842366,19909261,19734301,18005209,17941929,15911103,15231720,15484912,14517997,12135987";
+                publicationsPerson = publications.GetPublicationsDataNCBI(publicationsPerson);
 
-                return View(genericPerson);
+                return View(publicationsPerson);
             }
             catch (Exception e)
             {
@@ -262,6 +292,10 @@ namespace RytenLab_Web.Controllers
             }
         }
 
+        /// <summary>
+        /// Controller method for 'Contact' page.
+        /// </summary>
+        /// <returns> Returns 'Contact' view. </returns>
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -269,6 +303,11 @@ namespace RytenLab_Web.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Controller method for 'MemberInfo' page
+        /// </summary>
+        /// <param name="person">Information about a particular team member</param>
+        /// <returns>Returns 'MemberInfor' view</returns>
         [HttpPost]
         public IActionResult MemberInfo(Person person)
         {
@@ -288,8 +327,13 @@ namespace RytenLab_Web.Controllers
             }
         }
 
+        /// <summary>
+        /// Controller method for 'Privacy' page
+        /// </summary>
+        /// <returns>Returns 'Privacy' view</returns>
         public IActionResult Privacy()
         {
+            //TODO: set this 'privacy' page
             return View();
         }
 

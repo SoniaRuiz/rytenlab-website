@@ -1,5 +1,6 @@
 ﻿@model Team
 @{
+    //View for 'Team' page
     ViewData["Title"] = "Team";
 }
 
@@ -39,20 +40,20 @@
                             @Html.HiddenFor(m => person.NCBIPublicationsID)
                             @Html.HiddenFor(m => person.ResearchInterest)
                             @Html.HiddenFor(m => person.GitHub)
-                            @for (int i = 0; i < person.CrossRefPublicationsTitles.Count; i++)
+                            @for (int i = 0; i < person.PreAcceptedPublicationsTitles.Count; i++)
                             {
-                                @Html.HiddenFor(m => person.CrossRefPublicationsTitles[i])
+                                @Html.HiddenFor(m => person.PreAcceptedPublicationsTitles[i])
                             }
-                            @for (int i = 0; i < person.CrossRefPublicationsList.Count; i++)
+                            @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
                             {
-                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Title)
-                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].JournalName)
-                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Link)
-                                @for (int x = 0; x < person.CrossRefPublicationsList[i].Authors.Count; x++)
+                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Title)
+                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].JournalName)
+                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Link)
+                                @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
                                 {
-                                    @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Authors[x])
+                                    @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Authors[x])
                                 }
-                                @Html.HiddenFor(m => person.CrossRefPublicationsList[i].Date)
+                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Date)
                             }
                             @Html.HiddenFor(m => person.Biography)
                         </div>
