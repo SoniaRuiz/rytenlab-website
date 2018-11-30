@@ -1,5 +1,6 @@
 ﻿@model Person
 @{
+    //View to show 'Member Info' page
     ViewData["Title"] = "Member Info";
 }
 
@@ -37,14 +38,14 @@
         <img src="~/images/mina-bio.PNG" title="@Model.Name" alt="@Model.Name" class="mina-biography">
     }
 
-    @if (Model.CrossRefPublicationsList.Count > 0 || Model.NCBIPublicationsList.Count > 0)
+    @if (Model.PreAcceptedPublicationsList.Count > 0 || Model.NCBIPublicationsList.Count > 0)
     {
         <h3>Publications</h3>
     }
-    @if (Model.CrossRefPublicationsList.Count > 0)
+    @if (Model.PreAcceptedPublicationsList.Count > 0)
     {
         <h4 class="year-main">Pre-print</h4>
-        @foreach (var publication in Model.CrossRefPublicationsList)
+        @foreach (var publication in Model.PreAcceptedPublicationsList)
         {
             <div class="well">
                 <h4>@publication.Title</h4>

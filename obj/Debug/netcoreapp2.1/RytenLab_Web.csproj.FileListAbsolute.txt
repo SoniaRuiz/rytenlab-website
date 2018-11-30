@@ -5,7 +5,6 @@ C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\bin\Debug\netcoreapp2.1\
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\bin\Debug\netcoreapp2.1\RytenLab_Web.pdb
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\bin\Debug\netcoreapp2.1\RytenLab_Web.Views.dll
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\bin\Debug\netcoreapp2.1\RytenLab_Web.Views.pdb
-C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\RytenLab_Web.csprojAssemblyReference.cache
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\RytenLab_Web.csproj.CoreCompileInputs.cache
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\RytenLab_Web.RazorAssemblyInfo.cache
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\RytenLab_Web.RazorAssemblyInfo.cs
@@ -34,3 +33,4 @@ C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Publications.g.cshtml.cs
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\MemberInfo.g.cshtml.cs
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Team.g.cshtml.cs
+C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\RytenLab_Web.csprojAssemblyReference.cache

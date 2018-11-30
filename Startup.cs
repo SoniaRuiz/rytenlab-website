@@ -13,6 +13,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace RytenLab_Web
 {
+    /// <summary>
+    /// This is a base class. Please, use it carefully. 
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
