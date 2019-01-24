@@ -12,7 +12,7 @@ namespace RytenLab_Web.Controllers
     /// <summary>
     /// This controller sets the main operations of RytenLab web
     /// </summary>
-    public class HomeController : Controller
+    public class RytenLabController : Controller
     {
         /// <summary>
         /// Controller method for the main page
