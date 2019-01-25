@@ -15,7 +15,7 @@
     <div class="row">
         @foreach (var person in Model.TeamMembers)
         {
-            @using (Html.BeginForm("MemberInfo", "Home", FormMethod.Post, new { @id = @person.ID }))
+            @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
             {
                 <div class="cardColumn">
                     <div class="cardData">
@@ -68,6 +68,8 @@
         $("#" + memberID).submit();
         return false;
     }
+
+
 </script>
 @section Scripts{
     <link rel="stylesheet" href="~/css/album.css" />

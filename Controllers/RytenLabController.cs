@@ -132,7 +132,7 @@ namespace RytenLab_Web.Controllers
                 karishma.Description = "Description";
                 karishma.Email = "k.d'sa@ucl.ac.uk";
                 karishma.NCBIPublicationsID = "28403906";
-                karishma.ImagePath = "karishma.png";
+                karishma.ImagePath = "kd.png";
                 teamMembers.TeamMembers.Add(karishma);
 
                 
@@ -215,7 +215,7 @@ namespace RytenLab_Web.Controllers
                 ///////////////// ZHONGBO /////////////////
                 ///////////////////////////////////////////
                 Person zhongbo = new Person();
-                zhongbo.ID = 6;
+                zhongbo.ID = 8;
                 zhongbo.Name = "Zhongbo Chen";
                 zhongbo.Job = "PhD Student";
                 zhongbo.Description = "Description";
@@ -228,6 +228,26 @@ namespace RytenLab_Web.Controllers
                 //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
                 //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
                 teamMembers.TeamMembers.Add(zhongbo);
+
+
+
+                /////////////////////////////////////////
+                ///////////////// SETHI /////////////////
+                /////////////////////////////////////////
+                Person sethi = new Person();
+                sethi.ID = 9;
+                sethi.Name = "Siddharth Sethi";
+                sethi.Job = "MSc";
+                sethi.Description = "Postdoctoral Research Fellow";
+                sethi.Email = "siddharth.sethi@astx.com";
+                sethi.ResearchInterest = "Transcriptomics; UTRs; MicroRNAs; Enhancers; Regulatory domains; Chromatin interactions; 3D genome; Big data analysis; Machine learning; Statistical modelling; Data visualisation.";
+                sethi.Biography = "Siddharth is a joint Postdoctoral Research Fellow between Ryten lab and Astex Pharmaceuticals in Cambridge. His research focuses on alternate 3’UTR mediated regulation in neurodegenerative disorders. Siddharth completed his graduation in Bio-technology in India and moved to the UK to pursue MSc in Bioinformatics from the University of Leicester. Soon after that he joined Mallon lab at MRC Harwell Institute as a Bioinformatics scientist, where he worked on several different projects before starting his PhD. He developed a deep interest in the functional properties of the non-coding part of the genome and focused his PhD research on deciphering regulatory networks and their impact on mouse phenotypes. .";
+                sethi.NCBIPublicationsID = "30395686,29632379,27534441,27373158,26232227,24249052";
+                sethi.ImagePath = "sethi.png";
+                sethi.GitHub = "";
+                //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
+                //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
+                teamMembers.TeamMembers.Add(sethi);
 
 
 

@@ -10,7 +10,7 @@ html {
 }
 .cardColumn {
     float: left;
-    width: 33.3%;
+    width: 33%;
     margin-bottom: 16px;
     padding: 0 10px 25px;
 }
