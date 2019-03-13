@@ -36,8 +36,8 @@ article {
     margin-bottom: 15px;
 }
 .little-image{
-    height: 250px;
-    width: 241px;
+    height: 250px !important;
+    width: 241px !important;
 }
 
 @media (min-height: 800px) {

@@ -25,17 +25,17 @@
                             </a>
                         </figure>
                         <div class="cardMember">
-                            <h3 class="cardName">@person.Name</h3>
-                            <p class="cardTitle">@person.Job</p>
-                            <p class="cardDescription">@person.Description</p>
+                            <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
+                            <p class="cardTitle">@person.Title</p>
+                            @*<p class="cardDescription">@person.Description</p>*@
                             <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
                             <p>
                                 <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
                             </p>
                             @Html.HiddenFor(m => person.Name)
                             @Html.HiddenFor(m => person.ImagePath)
+                            @Html.HiddenFor(m => person.Title)
                             @Html.HiddenFor(m => person.Job)
-                            @Html.HiddenFor(m => person.Description)
                             @Html.HiddenFor(m => person.Email)
                             @Html.HiddenFor(m => person.NCBIPublicationsID)
                             @Html.HiddenFor(m => person.ResearchInterest)

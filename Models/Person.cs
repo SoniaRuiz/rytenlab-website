@@ -18,11 +18,11 @@ namespace RytenLab_Web.Models
         /// Team member's name
         /// </summary>
         public string Name { get; set; }
-        public string Job { get; set; }
+        public string Title { get; set; }
         /// <summary>
         /// Team member's quote
         /// </summary>
-        public string Description { get; set; }
+        public string Job { get; set; }
         public string Email { get; set; }
         public string ResearchInterest { get; set; }
         public string Biography { get; set; }
