@@ -10,12 +10,13 @@
     <hr />
 </header>
 <article>
-    <div class="media-left media-top">
+    <div class="media-left media-top little-image" >
         <img src="~/images/modified/filter/@Model.ImagePath" title="@Model.Name" alt="@Model.Name" class="media-object little-image">
     </div>
     <div class="media-body">
         <address style="padding-top:5px;">
             <strong>@Model.Name</strong><br />
+            <p>@Model.Title</p>
             <p>@Model.Job</p>
             @if (!String.IsNullOrEmpty(Model.GitHub))
             {
@@ -32,7 +33,7 @@
 
 
     <h3>Biography</h3>
-    <p>@Model.Biography</p>
+    <p>@Html.Raw(@Model.Biography)</p>
     @if (@Model.Name.Contains("Mina"))
     {
         <img src="~/images/mina-bio.PNG" title="@Model.Name" alt="@Model.Name" class="mina-biography">
