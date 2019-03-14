@@ -100,6 +100,7 @@ namespace RytenLab_Web.Controllers
                 botia.Job = "Professor/Honorary Senior Research";
                 botia.Email = "j.botia@ucl.ac.uk";
                 botia.GitHub = "juanbot";
+                botia.ResearchGate = "Juan_Botia";
                 botia.ResearchInterest = "Machine Learning; Algorithmic Design; Statistical Learning; Neuro-degeneration; Genetics of disease; Transcriptomics; Interplay between mendelian and complex diseases.";
                 botia.Biography = "<b>Juan A. Botía, Phd.</b> is Professor in Computer Science and Artificial Intelligence at the University of Murcia, Murcia, Spain. He is also Honorary Senior Research Fellow at the Institute of Neurology, University College London, UK since July, 2017. Juan A. Botía is PhD in Computational Science and Artificial Intelligence(March 2002).He obtained a position at Universidad de Murcia as Reader in April 2009. His research interests include, from the very beginning of his career, multi - agent systems, distributed artificial intelligence and machine learning with an emphasis on applications of AI. He has been involved in research and innovation projects with a common aspect: applying AI and algorithm approaches to real life problems, including domains like agriculture, multi-media content recommendation, indoor location of mobile devices and ambient assisted living. During 2013 Dr.Botía moved to London to enjoy a sabbatical period with Dr.Juan C. Augusto at Middlesex University. In 2014 he joined the UKBEC project at King’s College London to work as Research Associate, in the Department of Molecular and Medical Genetics, School of Medicine under the supervision of Mike Weale and Mina Ryten. In 2015, within the same project, he was honoured to start working with John Hardy and Mina Ryten at the Department of Molecular Neuroscience, University College London, until mid 2017 when he returned to Universidad de Murcia. During his period at the UK, he started applying AI techniques to transcriptomics and genetics within the area of neurology, until now. Currently, he is member of the Ryten Lab.";
                 botia.NCBIPublicationsID = "30328509,30225556,29365066,29127725,28899015,28575651,28403906,28137300,26912063,26707700,22778642,15484912";
@@ -171,6 +172,7 @@ namespace RytenLab_Web.Controllers
                 regina.PreAcceptedPublicationsList.Add(publication4);
                 regina.PreAcceptedPublicationsList.Add(publication);
                 regina.GitHub = "RHReynolds";
+                regina.ResearchGate = "Regina_Reynolds";
                 //regina.CrossRefPublicationsList.Add()
                 //regina.CrossRefPublicationsTitles.Add("Moving beyond neurons: the role of cell type-specific gene regulation in Parkinson's disease heritability");
                 //regina.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
@@ -194,6 +196,7 @@ namespace RytenLab_Web.Controllers
                 david.NCBIPublicationsID = "30066433";
                 david.ImagePath = "david.jpg";
                 david.GitHub = "dzhang32";
+                david.ResearchGate = "David_Zhang98";
                 //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
                 //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
                 teamMembers.TeamMembers.Add(david);
