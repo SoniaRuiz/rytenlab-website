@@ -10,24 +10,26 @@
     <hr />
 </header>
 <article>
-    <div class="media-left media-top little-image" >
+    <div class="media-left media-top little-image">
         <img src="~/images/modified/filter/@Model.ImagePath" title="@Model.Name" alt="@Model.Name" class="media-object little-image">
     </div>
     <div class="media-body">
         <address style="padding-top:5px;">
             <strong style="font-size:17px">@Model.Name</strong><br />
-            <p>@Model.Title<br/>
-            @Model.Job</p>
+            <p>
+                @Model.Title<br />
+                @Html.Raw(@Model.Job)
+            </p>
             <small>
-            <strong>E-mail: </strong><a href="mailto:@Model.Email">@Model.Email</a><br />
-            @if (!String.IsNullOrEmpty(Model.GitHub))
-            {
-                <strong>GitHub: </strong><a href="https://github.com/@Model.GitHub" target="_blank">@Model.GitHub</a><br />
-            }
-            @if (!String.IsNullOrEmpty(Model.ResearchGate))
-            {
-                <strong>ResearchGate: </strong><a href="https://www.researchgate.net/profile/@Model.ResearchGate" target="_blank">@Model.ResearchGate</a><br />
-            }
+                <strong>E-mail: </strong><a href="mailto:@Model.Email">@Model.Email</a><br />
+                @if (!String.IsNullOrEmpty(Model.GitHub))
+                {
+                    <strong>GitHub: </strong><a href="https://github.com/@Model.GitHub" target="_blank">@Model.GitHub</a><br />
+                }
+                @if (!String.IsNullOrEmpty(Model.ResearchGate))
+                {
+                    <strong>ResearchGate: </strong><a href="https://www.researchgate.net/profile/@Model.ResearchGate" target="_blank">@Model.ResearchGate</a><br />
+                }
             </small>
         </address>
     </div>
@@ -44,7 +46,11 @@
     {
         <img src="~/images/mina-bio.PNG" title="@Model.Name" alt="@Model.Name" class="mina-biography">
     }
-
+    @if (!String.IsNullOrEmpty(Model.ResearchGate))
+    {
+        <h3>Publications</h3>
+        <p>Latest publications available via <a href="https://www.researchgate.net/profile/@Model.ResearchGate" target="_blank">ResearchGate</a> profile.</p>
+    }
     @if (Model.PreAcceptedPublicationsList.Count > 0 || Model.NCBIPublicationsList.Count > 0)
     {
         <h3>Publications</h3>
