@@ -123,6 +123,7 @@ namespace RytenLab_Web.Controllers
                 sanchez.Biography = "<b>Juan A. Sánchez</b> is an Associate Professor in the Department of Communications and Information Engineering (DIIC) at the Computer Science Faculty, of the University of Murcia, Spain. He received a B.Sc. (1997), M.Sc. (1999) and Ph.D. (2006) degree in Computer Science from the University of Murcia.";
                 //sanchez.NCBIPublicationsID = "30328509";
                 sanchez.ImagePath = "sanchez.jpg";
+                sanchez.ResearchGate = "Juan_Sanchez23";
                 teamMembers.TeamMembers.Add(sanchez);
 
                 //////////////////////////////////////////////
