@@ -83,11 +83,12 @@ namespace RytenLab_Web.Controllers
                 mina.Email = "mina.ryten@ucl.ac.uk";
                 mina.ResearchInterest = "Transcriptomics; Data Analysis of High-throughput Techniques for complex neurological diseases; Data Analysis of High-throughput Techniques to improve the diagnostic yield for rare neurogenetic disorders";
                 mina.Biography = "<b>Mina Ryten </b>is a clinician scientist with roughly equivalent experience in clinical and research settings. In her clinical practice she cares for individuals and families with, or at risk of, a range of conditions which may have a genetic basis. As well as providing a diagnosis, the aim of her clinics is to help individuals affected by a genetic disorder live as normally as possible with their condition. Mina’s research lab focuses on the use of transcriptomics, primarily derived from human brain, to improve the molecular understanding of complex and rare neurological disorders.";
-                mina.NCBIPublicationsID = "30328509,30225556,30066433,29930110,29365066,29127725,28899015,28602509,28575651,28403906,28137300,28098162,28097204,28076797,28004117,27694991,27500074,27073233,26912063,26707700";
+                //mina.NCBIPublicationsID = "30328509,30225556,30066433,29930110,29365066,29127725,28899015,28602509,28575651,28403906,28137300,28098162,28097204,28076797,28004117,27694991,27500074,27073233,26912063,26707700";
                 mina.ImagePath = "mina.jpg";
-                mina.PreAcceptedPublicationsList.Add(publication4);
+                /*mina.PreAcceptedPublicationsList.Add(publication4);
                 mina.PreAcceptedPublicationsList.Add(publication);
-                mina.PreAcceptedPublicationsList.Add(publication3);
+                mina.PreAcceptedPublicationsList.Add(publication3);*/
+                mina.ResearchGate = "Mina_Ryten";
                 teamMembers.TeamMembers.Add(mina);
 
                 ////////////////////////////////////////////
