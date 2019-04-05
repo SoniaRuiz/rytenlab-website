@@ -220,6 +220,7 @@ namespace RytenLab_Web.Controllers
                 //sonia.NCBIPublicationsID = "30328509";
                 sonia.ImagePath = "sonia.jpg";
                 sonia.GitHub = "SoniaRuiz";
+                sonia.ResearchGate = "Sonia_Garcia_Ruiz";
                 teamMembers.TeamMembers.Add(sonia);
 
 
@@ -243,9 +244,9 @@ namespace RytenLab_Web.Controllers
 
 
 
-                /////////////////////////////////////////
-                ///////////////// SETHI /////////////////
-                /////////////////////////////////////////
+                ///////////////////////////////////////
+                ///////////////// SID /////////////////
+                ///////////////////////////////////////
                 Person sethi = new Person();
                 sethi.ID = 9;
                 sethi.Name = "Siddharth Sethi";
@@ -256,7 +257,7 @@ namespace RytenLab_Web.Controllers
                 sethi.Biography = "<b>Siddharth Sethi</b> is a joint Postdoctoral Research Fellow between Ryten lab and Astex Pharmaceuticals in Cambridge. His research focuses on alternate 3’UTR mediated regulation in neurodegenerative disorders. Siddharth completed his graduation in Bio-technology in India and moved to the UK to pursue MSc in Bioinformatics from the University of Leicester. Soon after that he joined Mallon lab at MRC Harwell Institute as a Bioinformatics scientist, where he worked on several different projects before starting his PhD. He developed a deep interest in the functional properties of the non-coding part of the genome and focused his PhD research on deciphering regulatory networks and their impact on mouse phenotypes.";
                 sethi.NCBIPublicationsID = "30395686,29632379,27534441,27373158,26232227,24249052";
                 sethi.ImagePath = "sethi.png";
-                sethi.GitHub = "";
+                sethi.GitHub = "sid-sethi";
                 //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
                 //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
                 teamMembers.TeamMembers.Add(sethi);
@@ -370,6 +371,25 @@ namespace RytenLab_Web.Controllers
                 return View(person);
             }
             catch(Exception e)
+            {
+                ErrorViewModel errorModel = new ErrorViewModel();
+                errorModel.Message = e.Message;
+                return View("Error", errorModel);
+            }
+        }
+        [HttpGet]
+        [ActionName("MemberInfo")]
+        public ActionResult MemberInfoGet(Person person)
+        {
+            try
+            {
+                PublicationRepository publications = new PublicationRepository();
+                person = publications.GetPublicationsDataNCBI(person);
+                person = publications.GetPublicationsDataCrossRef(person);
+
+                return View(person);
+            }
+            catch (Exception e)
             {
                 ErrorViewModel errorModel = new ErrorViewModel();
                 errorModel.Message = e.Message;
