@@ -377,16 +377,139 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
+
         [HttpGet]
         [ActionName("MemberInfo")]
         public ActionResult MemberInfoGet(Person person)
         {
             try
-            {
-                PublicationRepository publications = new PublicationRepository();
-                person = publications.GetPublicationsDataNCBI(person);
-                person = publications.GetPublicationsDataCrossRef(person);
-
+            {   
+                if(person.ID == 0)
+                {
+                    person.Name = "Mina Ryten";
+                    person.Title = "Dr (MBBS, PhD)";
+                    person.Job = "MRC Clinician Scientist/ Proleptic Clinical Lecturer";
+                    person.Email = "mina.ryten@ucl.ac.uk";
+                    person.ResearchInterest = "Transcriptomics; Data Analysis of High-throughput Techniques for complex neurological diseases; Data Analysis of High-throughput Techniques to improve the diagnostic yield for rare neurogenetic disorders";
+                    person.Biography = "<b>Mina Ryten </b>is a clinician scientist with roughly equivalent experience in clinical and research settings. In her clinical practice she cares for individuals and families with, or at risk of, a range of conditions which may have a genetic basis. As well as providing a diagnosis, the aim of her clinics is to help individuals affected by a genetic disorder live as normally as possible with their condition. Mina’s research lab focuses on the use of transcriptomics, primarily derived from human brain, to improve the molecular understanding of complex and rare neurological disorders.";
+                    person.ImagePath = "mina.jpg";
+                    person.ResearchGate = "Mina_Ryten";
+                }
+                else if(person.ID == 1)
+                {
+                    person.Name = "Juan A. Botía";
+                    person.Title = "PhD";
+                    person.Job = "Professor/Honorary Senior Research<br/><br/>";
+                    person.Email = "j.botia@ucl.ac.uk";
+                    person.GitHub = "juanbot";
+                    person.ResearchGate = "Juan_Botia";
+                    person.ResearchInterest = "Machine Learning; Algorithmic Design; Statistical Learning; Neuro-degeneration; Genetics of disease; Transcriptomics; Interplay between mendelian and complex diseases.";
+                    person.Biography = "<b>Juan A. Botía</b>, Phd. is Professor in Computer Science and Artificial Intelligence at the University of Murcia, Murcia, Spain. He is also Honorary Senior Research Fellow at the Institute of Neurology, University College London, UK since July, 2017. Juan A. Botía is PhD in Computational Science and Artificial Intelligence(March 2002).He obtained a position at Universidad de Murcia as Reader in April 2009. His research interests include, from the very beginning of his career, multi - agent systems, distributed artificial intelligence and machine learning with an emphasis on applications of AI. He has been involved in research and innovation projects with a common aspect: applying AI and algorithm approaches to real life problems, including domains like agriculture, multi-media content recommendation, indoor location of mobile devices and ambient assisted living. During 2013 Dr.Botía moved to London to enjoy a sabbatical period with Dr.Juan C. Augusto at Middlesex University. In 2014 he joined the UKBEC project at King’s College London to work as Research Associate, in the Department of Molecular and Medical Genetics, School of Medicine under the supervision of Mike Weale and Mina Ryten. In 2015, within the same project, he was honoured to start working with John Hardy and Mina Ryten at the Department of Molecular Neuroscience, University College London, until mid 2017 when he returned to Universidad de Murcia. During his period at the UK, he started applying AI techniques to transcriptomics and genetics within the area of neurology, until now. Currently, he is member of the Ryten Lab.";
+                    person.ImagePath = "botia.jpg";
+                }
+                else if (person.ID == 2)
+                {
+                    person.Name = "Juan A. Sanchez";
+                    person.Title = "PhD";
+                    person.Job = "Associate Lecturer<br/><br/>";
+                    person.Email = "jlaguna@um.es";
+                    person.ResearchInterest = "Applying artificial intelligence, machine learning and data mining techniques to help MDs intepretate the aetiology of neurological diseases such as Alzheimer or Parkinson.";
+                    person.Biography = "<b>Juan A. Sánchez</b> is an Associate Professor in the Department of Communications and Information Engineering (DIIC) at the Computer Science Faculty, of the University of Murcia, Spain. He received a B.Sc. (1997), M.Sc. (1999) and Ph.D. (2006) degree in Computer Science from the University of Murcia.";
+                    person.ImagePath = "sanchez.jpg";
+                    person.ResearchGate = "Juan_Sanchez23";
+                }
+                else if (person.ID == 3)
+                {
+                    person.Name = "Karishma D'Sa";
+                    person.Title = "MSc";
+                    person.Job = "Research assistant/PhD student";
+                    person.Email = "k.d'sa@ucl.ac.uk";
+                    person.ResearchInterest = "Transcriptomics; Genetics; Neurodegeneration; Bioinformatics; Personalized medicine.";
+                    person.Biography = "<b>Karishma</b>’s research focuses on the analysis of transcriptomic data with the aim of understanding how genetic variation affects gene expression in human brain using allele specific expression. She holds a Master’s degree in Bioinformatics from King’s College London.";
+                    person.ImagePath = "kd.png";
+                }
+                else if (person.ID == 4)
+                {
+                    person.Name = "Sebastian Guelfi";
+                    person.Title = "PhD";
+                    person.Job = "Research Associate";
+                    person.Email = "m.guelfi@ucl.ac.uk";
+                    person.ResearchGate = "Sebastian_Guelfi";
+                    person.ImagePath = "seb.jpg";
+                    person.ResearchInterest = "Genomics; Genetics; Bioinformatics; Novel transcription; Gene regulation; RNA Splicing; Neurodegeneration; Machine Learning;  Biostatistics, Data integration.";
+                    person.Biography = "<b>Sebastian Guelfi</b>, is Postdoctoral Research Fellow in the Ryten Lab. Currently, he studies RNA splicing by leveraging large genomic datasets. He obtained his PhD in bioinformatics at University College London where he integrated different forms of genomic data to investigate the relationship between gene regulation and neurodegenerative diseases. Before pursuing his interests in data analysis and health care, Sebastian worked for 6 years in the private sector designing and developing software to solve logistics problems.";
+                    person.GitHub = "SebGuelfi";
+                }
+                else if (person.ID == 5)
+                {
+                    person.Name = "Regina H. Reynolds";
+                    person.Title = "MSc";
+                    person.Job = "PhD Student";
+                    person.Email = "regina.reynolds.16@ucl.ac.uk";
+                    person.ResearchInterest = "Functional genomics; Neurodegeneration; Statistical Genetics; Transcriptomics.";
+                    person.Biography = "<b>Regina H. Reynolds</b> is a PhD student in the Leonard Wolfson Programme at UCL. After a year of rotations, she joined the Ryten lab in 2017 where her research involves integrating in-house RNA-sequencing, publicly available -omics data, and novel methods of analysis to understand the effect of genetic variation on the brain transcriptome in health and disease. Regina completed her Bachelor’s and Master’s degree in Molecular Biomedicine at the University of Copenhagen. During this time, she accumulated 2 years of wet lab experience, interrogating the interactions between miR-34a, Sirt1 and p53 in a Huntington’s disease mouse model. As a student making the transition from molecular biology to bioinformatics, Regina is a strong supporter of interdisciplinary collaboration and research.";
+                    person.ImagePath = "regina.jpg";
+                    person.GitHub = "RHReynolds";
+                    person.ResearchGate = "Regina_Reynolds";
+                }
+                else if (person.ID == 6)
+                {
+                    person.Name = "David Zhang";
+                    person.Title = "MSc";
+                    person.Job = "PhD Student";
+                    person.Email = "david.zhang.12@ucl.ac.uk";
+                    person.ResearchInterest = "Transcriptomics; Genetics; Bioinformatics; Novel transcription; Molecular diagnosis; Neurodegeneration; Mendelian Disease; Machine Learning; Statistical Modelling.";
+                    person.Biography = "<b>David Zhang</b> chose genetics because it allowed him to combine his practical enjoyment of computational analysis with his interest in human biology. His PhD is focussed on developing algorithms to improve the molecular diagnosis of Mendelian disease patients.";
+                    person.ImagePath = "david.jpg";
+                    person.GitHub = "dzhang32";
+                    person.ResearchGate = "David_Zhang98";
+                }
+                else if (person.ID == 7)
+                {
+                    person.Name = "Sonia García Ruiz";
+                    person.Title = "MSc";
+                    person.Job = "Research assistant";
+                    person.Email = "s.ruiz@ucl.ac.uk";
+                    person.ResearchInterest = "Web Development; Artificial Intelligence; Machine Learning, Software Development;  Transcriptomics.";
+                    person.Biography = "<b>Sonia García Ruiz</b> is a software developer at UCL. She completed her Bachelor’s in Computer Science at the University of Miguel Hernández (Spain) in 2014. After that, she accumulated 2 years of experience as a web developer, working with clients such as Microsoft and Deloitte. Nevertheless, in 2017 she decided to return to university and completed her Master’s degree in Artificial Intelligence at the University of Murcia in 2018. In the Ryten lab, Sonia uses her knowledge of web development to help build analysis and visualisation tools for easier data interpretation.";
+                    person.ImagePath = "sonia.jpg";
+                    person.GitHub = "SoniaRuiz";
+                    person.ResearchGate = "Sonia_Garcia_Ruiz";
+                }
+                else if (person.ID == 8)
+                {
+                    person.Name = "Zhongbo Chen";
+                    person.Title = "MA BMBCh MRCP";
+                    person.Job = "PhD Student";
+                    person.Email = "zhongbo.chen@ucl.ac.uk";
+                    person.ResearchInterest = "Genetics; Neurodegenerative diseases; Clinical Neurology; Bioinformatics.";
+                    person.Biography = "<b>Zhongbo Chen</b> is a first-year PhD student and clinical research fellow on the Leonard Wolfson Programme at UCL. She is excited to be on her first rotation in the Ryten Lab. Zhongbo qualified as a doctor in 2010.Before embarking on the PhD, she was a specialist registrar in Neurology working at the National Hospital for Neurology and Neurosurgery.Zhongbo’s clinical and academic research interests are in studying the underlying genetics and molecular mechanisms of neurodegenerative diseases, including amyotrophic lateral sclerosis and progressive supranuclear palsy. Zhongbo’s research interests started during her undergraduate degree in Physiology and Neuroscience at the University of Cambridge, where she studied the electrophysiology of skeletal muscle using microelectrodes for her final year project She completed her clinical medicine degree at the University of Oxford.After graduating from Oxford, Zhongbo was awarded an academic foundation post at Imperial College London investigating the epidemiology of stroke, which was followed by a three - year NIHR - funded academic clinical fellowship(ACF) in Neurology at King’s College London.Alongside clinical neurology training, she developed her interests in the genetics of neurodegenerative diseases during the ACF, which culminated in the award of the Leonard Wolfson PhD fellowship.";
+                    person.ImagePath = "zhongbo.jpg";
+                    person.GitHub = "";
+                }
+                else if (person.ID == 9)
+                {
+                    person.Name = "Siddharth Sethi";
+                    person.Title = "MSc";
+                    person.Job = "Postdoctoral Research Fellow";
+                    person.Email = "siddharth.sethi@astx.com";
+                    person.ResearchInterest = "Transcriptomics; UTRs; MicroRNAs; Enhancers; Regulatory domains; Chromatin interactions; 3D genome; Big data analysis; Machine learning; Statistical modelling; Data visualisation.";
+                    person.Biography = "<b>Siddharth Sethi</b> is a joint Postdoctoral Research Fellow between Ryten lab and Astex Pharmaceuticals in Cambridge. His research focuses on alternate 3’UTR mediated regulation in neurodegenerative disorders. Siddharth completed his graduation in Bio-technology in India and moved to the UK to pursue MSc in Bioinformatics from the University of Leicester. Soon after that he joined Mallon lab at MRC Harwell Institute as a Bioinformatics scientist, where he worked on several different projects before starting his PhD. He developed a deep interest in the functional properties of the non-coding part of the genome and focused his PhD research on deciphering regulatory networks and their impact on mouse phenotypes.";
+                    person.NCBIPublicationsID = "30395686,29632379,27534441,27373158,26232227,24249052";
+                    person.ImagePath = "sethi.png";
+                    person.GitHub = "sid-sethi";
+                }
+                else if (person.ID == 10)
+                {
+                    person.Name = "Aine Fairbrother-Browne";
+                    person.Title = "BSc, MSc";
+                    person.Job = "PhD student";
+                    person.Email = "aine.fairbrother-browne.18@ucl.ac.uk";
+                    person.ResearchInterest = "Neurodegenerative disease, medical genetics, bioinformatics.";
+                    person.Biography = "<b>Aine Fairbrother-Browne</b> Aine is a BBSRC funded LIDo PhD student in both the Ryten lab at UCL and the Hodgkinson Medical and Molecular Genetics lab at King’s. She completed at BSc in Biology at Bristol University (2016), and then did an MSc in Bioinformatics and Systems Biology at Birkbeck (2017). In 2018 she started on the BBSRC funded LIDo PhD programme. Whilst working with Mina Ryten and Alan Hodgkinson, she is focused on nuclear regulation of the mitochondrial genome in brain and its role in age-related pathologies.";
+                    person.ImagePath = "aine.png";
+                    person.GitHub = "";
+                }
                 return View(person);
             }
             catch (Exception e)
