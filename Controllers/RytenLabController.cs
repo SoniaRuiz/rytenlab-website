@@ -357,8 +357,8 @@ namespace RytenLab_Web.Controllers
         /// <summary>
         /// Controller method for 'MemberInfo' page
         /// </summary>
-        /// <param name="person">Information about a particular team member</param>
-        /// <returns>Returns 'MemberInfor' view</returns>
+        /// <param name="person">Team member info</param>
+        /// <returns>'MemberInfo' view</returns>
         [HttpPost]
         public IActionResult MemberInfo(Person person)
         {
@@ -378,13 +378,19 @@ namespace RytenLab_Web.Controllers
             }
         }
 
+        /// <summary>
+        /// Controller method for returning 'MemberInfo' page
+        /// Is requesting using GET protocol.
+        /// </summary>
+        /// <param name="person">Team member info</param>
+        /// <returns>'MemberInfo' view</returns>
         [HttpGet]
         [ActionName("MemberInfo")]
         public ActionResult MemberInfoGet(Person person)
         {
             try
             {   
-                if(person.ID == 0)
+                if(person.Id == "8774A_!52101")
                 {
                     person.Name = "Mina Ryten";
                     person.Title = "Dr (MBBS, PhD)";
@@ -395,7 +401,7 @@ namespace RytenLab_Web.Controllers
                     person.ImagePath = "mina.jpg";
                     person.ResearchGate = "Mina_Ryten";
                 }
-                else if(person.ID == 1)
+                else if(person.Id == "BP98-F74160")
                 {
                     person.Name = "Juan A. Botía";
                     person.Title = "PhD";
@@ -407,7 +413,7 @@ namespace RytenLab_Web.Controllers
                     person.Biography = "<b>Juan A. Botía</b>, Phd. is Professor in Computer Science and Artificial Intelligence at the University of Murcia, Murcia, Spain. He is also Honorary Senior Research Fellow at the Institute of Neurology, University College London, UK since July, 2017. Juan A. Botía is PhD in Computational Science and Artificial Intelligence(March 2002).He obtained a position at Universidad de Murcia as Reader in April 2009. His research interests include, from the very beginning of his career, multi - agent systems, distributed artificial intelligence and machine learning with an emphasis on applications of AI. He has been involved in research and innovation projects with a common aspect: applying AI and algorithm approaches to real life problems, including domains like agriculture, multi-media content recommendation, indoor location of mobile devices and ambient assisted living. During 2013 Dr.Botía moved to London to enjoy a sabbatical period with Dr.Juan C. Augusto at Middlesex University. In 2014 he joined the UKBEC project at King’s College London to work as Research Associate, in the Department of Molecular and Medical Genetics, School of Medicine under the supervision of Mike Weale and Mina Ryten. In 2015, within the same project, he was honoured to start working with John Hardy and Mina Ryten at the Department of Molecular Neuroscience, University College London, until mid 2017 when he returned to Universidad de Murcia. During his period at the UK, he started applying AI techniques to transcriptomics and genetics within the area of neurology, until now. Currently, he is member of the Ryten Lab.";
                     person.ImagePath = "botia.jpg";
                 }
-                else if (person.ID == 2)
+                else if (person.Id == "1A_P04986")
                 {
                     person.Name = "Juan A. Sanchez";
                     person.Title = "PhD";
@@ -418,7 +424,7 @@ namespace RytenLab_Web.Controllers
                     person.ImagePath = "sanchez.jpg";
                     person.ResearchGate = "Juan_Sanchez23";
                 }
-                else if (person.ID == 3)
+                else if (person.Id == "2548LOP641")
                 {
                     person.Name = "Karishma D'Sa";
                     person.Title = "MSc";
@@ -428,7 +434,7 @@ namespace RytenLab_Web.Controllers
                     person.Biography = "<b>Karishma</b>’s research focuses on the analysis of transcriptomic data with the aim of understanding how genetic variation affects gene expression in human brain using allele specific expression. She holds a Master’s degree in Bioinformatics from King’s College London.";
                     person.ImagePath = "kd.png";
                 }
-                else if (person.ID == 4)
+                else if (person.Id == "91AA_B35843")
                 {
                     person.Name = "Sebastian Guelfi";
                     person.Title = "PhD";
@@ -440,7 +446,7 @@ namespace RytenLab_Web.Controllers
                     person.Biography = "<b>Sebastian Guelfi</b>, is Postdoctoral Research Fellow in the Ryten Lab. Currently, he studies RNA splicing by leveraging large genomic datasets. He obtained his PhD in bioinformatics at University College London where he integrated different forms of genomic data to investigate the relationship between gene regulation and neurodegenerative diseases. Before pursuing his interests in data analysis and health care, Sebastian worked for 6 years in the private sector designing and developing software to solve logistics problems.";
                     person.GitHub = "SebGuelfi";
                 }
-                else if (person.ID == 5)
+                else if (person.Id == "103698KFT714")
                 {
                     person.Name = "Regina H. Reynolds";
                     person.Title = "MSc";
@@ -452,7 +458,7 @@ namespace RytenLab_Web.Controllers
                     person.GitHub = "RHReynolds";
                     person.ResearchGate = "Regina_Reynolds";
                 }
-                else if (person.ID == 6)
+                else if (person.Id == "103PO8741457")
                 {
                     person.Name = "David Zhang";
                     person.Title = "MSc";
@@ -464,7 +470,7 @@ namespace RytenLab_Web.Controllers
                     person.GitHub = "dzhang32";
                     person.ResearchGate = "David_Zhang98";
                 }
-                else if (person.ID == 7)
+                else if (person.Id == "LO96_F34158")
                 {
                     person.Name = "Sonia García Ruiz";
                     person.Title = "MSc";
@@ -476,7 +482,7 @@ namespace RytenLab_Web.Controllers
                     person.GitHub = "SoniaRuiz";
                     person.ResearchGate = "Sonia_Garcia_Ruiz";
                 }
-                else if (person.ID == 8)
+                else if (person.Id == "189635LLDP42")
                 {
                     person.Name = "Zhongbo Chen";
                     person.Title = "MA BMBCh MRCP";
@@ -487,7 +493,7 @@ namespace RytenLab_Web.Controllers
                     person.ImagePath = "zhongbo.jpg";
                     person.GitHub = "";
                 }
-                else if (person.ID == 9)
+                else if (person.Id == "3DD_P9652844")
                 {
                     person.Name = "Siddharth Sethi";
                     person.Title = "MSc";
@@ -499,7 +505,7 @@ namespace RytenLab_Web.Controllers
                     person.ImagePath = "sethi.png";
                     person.GitHub = "sid-sethi";
                 }
-                else if (person.ID == 10)
+                else if (person.Id == "1_FON05125800")
                 {
                     person.Name = "Aine Fairbrother-Browne";
                     person.Title = "BSc, MSc";

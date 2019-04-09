@@ -15,6 +15,10 @@ namespace RytenLab_Web.Models
         /// </summary>
         public int ID { get; set; }
         /// <summary>
+        /// Unique string identifier
+        /// </summary>
+        public string Id { get; set; }
+        /// <summary>
         /// Team member's name
         /// </summary>
         public string Name { get; set; }
