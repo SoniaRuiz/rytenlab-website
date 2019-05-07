@@ -1,4 +1,5 @@
 ﻿using RytenLab_Web.Adapters;
+using RytenLab_Web.Models.API;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,10 @@ namespace RytenLab_API.Repositories
         /// URL to connect with CoExp R application API (published by Plumber package)
         /// </summary>
         private string _coexpURL;
+        /// <summary>
+        /// POST request parameters
+        /// </summary>
+        private string _postData { get; set; }
 
         /// <summary>
         /// Constructor. Here we initialize the class properties with a default value.
@@ -96,23 +101,26 @@ namespace RytenLab_API.Repositories
             return response;
         }
 
+        /*******************************************************************************************/
+        /********************************* POST METHODS ********************************************/
+        /*******************************************************************************************/
 
         /// <summary>
         /// Method to obtain data from 'ReportOnGenes()' method of CoExp R application
         /// </summary>
-        /// <param name="tissue">Tissue</param>
-        /// <param name="category">Category</param>
-        /// <param name="genes">Genes</param>
+        /// <param name="data">Tissue, category and genes</param>
         /// <returns>Response from CoExp R application</returns>
-        public string ReportOnGenes(string tissue, string category, string genes)
-        {
+        public string ReportOnGenes(ReportOnGenes data)
+        {            
             //Set the URL with parameters. This URL will allow us to establish a communication with
             //CoExp R application API (published using Plumber R package)
-            _coexpURL = _coexpURL + "reportOnGenes?tissue=" + tissue
-                + "&which.one=" + category
-                + "&genes=" + genes;
+            _coexpURL = _coexpURL + "reportOnGenes";
+            _postData = "{\"tissue\":\"" + data.Network + "\",\"which.one\":\"" + data.Category 
+                + "\",\"genes\":\"" + data.Genes + "\"}";
+
             //Make the request
-            string response = _adapter.HttpRequestJSON(_coexpURL);
+            string response = _adapter.POSTHttpRequestJSON(_coexpURL, _postData);
+
             //Return the response
             return response;
         }
@@ -120,19 +128,25 @@ namespace RytenLab_API.Repositories
         /// <summary>
         /// Method to obtain data from 'ReportOnGenesMultipleTissue()' method of CoExp R application
         /// </summary>
-        /// <param name="tissues">Tissues</param>
-        /// <param name="category">Category</param>
-        /// <param name="genes">Genes</param>
+        /// <param name="data">Tissues, category and genes</param>
         /// <returns>Response from CoExp R application</returns>
-        public string ReportOnGenesMultipleTissue(string tissues, string category, string genes)
+        public string ReportOnGenesMultipleTissue(ReportOnGenesMultipleTissue data)
         {
             //Set the URL with parameters. This URL will allow us to establish a communication with
             //CoExp R application API (published using Plumber R package)
-            _coexpURL = _coexpURL + "reportOnGenesMultipleTissue?tissues=" + tissues
-                + "&which.one=" + category
-                + "&genes=" + genes;
+            //_coexpURL = _coexpURL + "reportOnGenesMultipleTissue?tissues=" + tissues
+            //    + "&which.one=" + category
+            //    + "&genes=" + genes;
             //Make the request
-            string response = _adapter.HttpRequestJSON(_coexpURL);
+            //string response = _adapter.HttpRequestJSON(_coexpURL);
+            
+            
+            _coexpURL = _coexpURL + "reportOnGenesMultipleTissue";
+            _postData = "{\"tissues\":\"" + data.Networks + "\",\"which.one\":\"" + 
+                data.Category + "\",\"genes\":\"" + data.Genes + "\"}";
+
+            //Make the request
+            string response = _adapter.POSTHttpRequestJSON(_coexpURL, _postData);
             //Return the response
             return response;
         }
@@ -140,19 +154,19 @@ namespace RytenLab_API.Repositories
         /// <summary>
         /// Method to obtain data from 'GlobalReportOnGenes()' method of CoExp R application
         /// </summary>
-        /// <param name="tissues">Tissues</param>
-        /// <param name="categories">Categories</param>
-        /// <param name="genes">Genes</param>
+        /// <param name="data">Tissues, categories and genes</param>
         /// <returns>Response from CoExp R application</returns>
-        public string GlobalReportOnGenes(string tissues, string categories, string genes)
+        public string GlobalReportOnGenes(GlobalReportOnGenes data)
         {
             //Set the URL with parameters. This URL will allow us to establish a communication with
             //CoExp R application API (published using Plumber R package)
-            _coexpURL = _coexpURL + "globalReportOnGenes?tissues=" + tissues
-                + "&categories=" + categories
-                + "&genes=" + genes;
+            _coexpURL = _coexpURL + "globalReportOnGenes";
+            _postData = "{\"tissues\":\"" + data.Networks + "\",\"which.one\":\"" 
+                + data.Categories + "\",\"genes\":\"" + data.Genes + "\"}";
+            
             //Make the request
-            string response = _adapter.HttpRequestJSON(_coexpURL);
+            string response = _adapter.POSTHttpRequestJSON(_coexpURL, _postData);
+        
             //Return the response
             return response;
         }

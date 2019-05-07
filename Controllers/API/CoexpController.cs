@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RytenLab_API.Repositories;
+using RytenLab_Web.Models.API;
 
 namespace RytenLab_API.Controllers
 {
@@ -13,12 +14,14 @@ namespace RytenLab_API.Controllers
     [ApiController]
     public class CoexpController : ControllerBase
     {
+        /**************************************************************************************/
+        /********************************* GET METHODS ****************************************/
+        /**************************************************************************************/
 
         /// <summary>
         /// GET method to make a request to 'GetNetworkCategories()' method from CoExp R application.
         /// </summary>
         /// <returns>Response from CoExp R application</returns>
-        // GET: api/<controller>
         [HttpGet]
         [Route("GetNetworkCategories")]
         public string GetNetworkCategories()
@@ -35,7 +38,6 @@ namespace RytenLab_API.Controllers
         /// </summary>
         /// <param name="category">Category selected</param>
         /// <returns>Response from CoExp R application</returns>
-        // GET: api/<controller>
         [HttpGet]
         [Route("GetAvailableNetworks")]
         public string GetAvailableNetworks([FromQuery] string category)
@@ -71,7 +73,6 @@ namespace RytenLab_API.Controllers
         /// <param name="tissue">Tissue</param>
         /// <param name="category">Category</param>
         /// <returns>Response from CoExp R application</returns>
-        // GET: api/<controller>
         [HttpGet]
         [Route("GetCellTypeFromTissue")]
         public string GetCellTypeFromTissue([FromQuery] string tissue, string category)
@@ -83,59 +84,54 @@ namespace RytenLab_API.Controllers
             return response;
         }
 
+        /***************************************************************************************/
+        /********************************* POST METHODS ****************************************/
+        /***************************************************************************************/
+
         /// <summary>
-        /// GET method to obtain data from 'ReportOnGenes()' method of CoExp R application
+        /// POST method to obtain data from 'ReportOnGenes()' method of CoExp R application
         /// </summary>
-        /// <param name="tissue">Tissue</param>
-        /// <param name="category">Category</param>
-        /// <param name="genes">Genes</param>
+        /// <param name="data">Tissue, category and genes</param>
         /// <returns>Response from CoExp R application</returns>
-        // GET: api/<controller>
-        [HttpGet]
+        [HttpPost]
         [Route("ReportOnGenes")]
-        public string ReportOnGenes([FromQuery] string tissue, string category, string genes)
+        public string ReportOnGenes([FromBody] ReportOnGenes data)
         {
             CoexpRepository repository = new CoexpRepository();
             //First, we send the information to the repository
-            string response = repository.ReportOnGenes(tissue, category, genes);
+            string response = repository.ReportOnGenes(data);
             //Finally, we return the response received from CoExp R application back
             return response;
         }
 
         /// <summary>
-        /// GET method to obtain data from 'ReportOnGenesMultipleTissue()' method of CoExp R application
+        /// POST method to obtain data from 'ReportOnGenesMultipleTissue()' method of CoExp R application
         /// </summary>
-        /// <param name="tissues">Tissues</param>
-        /// <param name="category">Category</param>
-        /// <param name="genes">Genes</param>
+        /// <param name="data">Tissues, category and genes</param>
         /// <returns>Response from CoExp R application</returns>
-        // GET: api/<controller>
-        [HttpGet]
+        [HttpPost]
         [Route("ReportOnGenesMultipleTissue")]
-        public string ReportOnGenesMultipleTissue([FromQuery] string tissues, string category, string genes)
+        public string ReportOnGenesMultipleTissue([FromBody] ReportOnGenesMultipleTissue data)
         {
             CoexpRepository repository = new CoexpRepository();
             //First, we send the information to the repository
-            string response = repository.ReportOnGenesMultipleTissue(tissues, category, genes);
+            string response = repository.ReportOnGenesMultipleTissue(data);
             //Finally, we return the response received from CoExp R application back
             return response;
         }
 
         /// <summary>
-        /// GET method to obtain data from 'GlobalReportOnGenes()' method of CoExp R application
+        /// POST method to obtain data from 'GlobalReportOnGenes()' method of CoExp R application
         /// </summary>
-        /// <param name="tissues">Tissues</param>
-        /// <param name="categories">Categories</param>
-        /// <param name="genes">Genes</param>
+        /// <param name="data">Tissues, categories and genes</param>
         /// <returns>Response from CoExp R application</returns>
-        // GET: api/<controller>
-        [HttpGet]
+        [HttpPost]
         [Route("GlobalReportOnGenes")]
-        public string GlobalReportOnGenes([FromQuery] string tissues, string categories, string genes)
+        public string GlobalReportOnGenes([FromBody] GlobalReportOnGenes data)
         {
             CoexpRepository repository = new CoexpRepository();
             //First, we send the information to the repository
-            string response = repository.GlobalReportOnGenes(tissues, categories, genes);
+            string response = repository.GlobalReportOnGenes(data);
             //Finally, we return the response received from CoExp R application back
             return response;
         }

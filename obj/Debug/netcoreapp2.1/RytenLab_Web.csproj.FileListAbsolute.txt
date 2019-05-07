@@ -27,10 +27,10 @@ C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\RytenLab_Web.csproj.CopyComplete
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\Contact.g.cshtml.cs
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\Data.g.cshtml.cs
-C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\Index.g.cshtml.cs
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\MemberInfo.g.cshtml.cs
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\Privacy.g.cshtml.cs
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\Publications.g.cshtml.cs
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\Team.g.cshtml.cs
 C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\Tools.g.cshtml.cs
-C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\RytenLab_Web.csprojAssemblyReference.cache
+C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\About.g.cshtml.cs
+C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\Index.g.cshtml.cs
