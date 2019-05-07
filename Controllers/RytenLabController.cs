@@ -14,11 +14,15 @@ namespace RytenLab_Web.Controllers
     /// </summary>
     public class RytenLabController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
         /// <summary>
         /// Controller method for the main page
         /// </summary>
         /// <returns>Returns 'About' view</returns>
-        public IActionResult Index()
+        public IActionResult About()
         {
             return View();
         }
@@ -276,7 +280,7 @@ namespace RytenLab_Web.Controllers
                 aine.Biography = "<b>Aine Fairbrother-Browne</b> Aine is a BBSRC funded LIDo PhD student in both the Ryten lab at UCL and the Hodgkinson Medical and Molecular Genetics lab at King’s. She completed at BSc in Biology at Bristol University (2016), and then did an MSc in Bioinformatics and Systems Biology at Birkbeck (2017). In 2018 she started on the BBSRC funded LIDo PhD programme. Whilst working with Mina Ryten and Alan Hodgkinson, she is focused on nuclear regulation of the mitochondrial genome in brain and its role in age-related pathologies.";
                 //aine.NCBIPublicationsID = "";
                 aine.ImagePath = "aine.png";
-                aine.GitHub = "";
+                aine.GitHub = "ainefairbrother";
                 //david.CrossRefPublicationsTitles.Add("Regulatory sites for known and novel splicing in human basal ganglia are enriched for disease-relevant information");
                 //david.CrossRefPublicationsTitles.Add("G2P: Using machine learning to understand and predict genes causing rare neurological disorders");
                 teamMembers.TeamMembers.Add(aine);
@@ -292,7 +296,6 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
-
         /// <summary>
         /// Controller method for 'Data' page.
         /// </summary>
@@ -303,7 +306,6 @@ namespace RytenLab_Web.Controllers
 
             return View();
         }
-
         /// <summary>
         /// Controller method for 'Tools' page.
         /// </summary>
@@ -314,7 +316,6 @@ namespace RytenLab_Web.Controllers
 
             return View();
         }
-
         /// <summary>
         /// Controller method for 'Publications' page.
         /// </summary>
@@ -342,7 +343,6 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
-
         /// <summary>
         /// Controller method for 'Contact' page.
         /// </summary>
@@ -353,7 +353,6 @@ namespace RytenLab_Web.Controllers
 
             return View();
         }
-
         /// <summary>
         /// Controller method for 'MemberInfo' page
         /// </summary>
@@ -377,7 +376,6 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
-
         /// <summary>
         /// Controller method for returning 'MemberInfo' page
         /// Is requesting using GET protocol.
@@ -514,7 +512,7 @@ namespace RytenLab_Web.Controllers
                     person.ResearchInterest = "Neurodegenerative disease, medical genetics, bioinformatics.";
                     person.Biography = "<b>Aine Fairbrother-Browne</b> Aine is a BBSRC funded LIDo PhD student in both the Ryten lab at UCL and the Hodgkinson Medical and Molecular Genetics lab at King’s. She completed at BSc in Biology at Bristol University (2016), and then did an MSc in Bioinformatics and Systems Biology at Birkbeck (2017). In 2018 she started on the BBSRC funded LIDo PhD programme. Whilst working with Mina Ryten and Alan Hodgkinson, she is focused on nuclear regulation of the mitochondrial genome in brain and its role in age-related pathologies.";
                     person.ImagePath = "aine.png";
-                    person.GitHub = "";
+                    person.GitHub = "ainefairbrother";
                 }
                 return View(person);
             }
@@ -525,7 +523,6 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
-
         /// <summary>
         /// Controller method for 'Privacy' page
         /// </summary>

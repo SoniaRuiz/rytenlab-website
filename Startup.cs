@@ -77,7 +77,7 @@ namespace RytenLab_Web
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=RytenLab}/{action=Index}/{id?}");
+                    template: "{controller=RytenLab}/{action=About}/{id?}");
             });
         }
     }
