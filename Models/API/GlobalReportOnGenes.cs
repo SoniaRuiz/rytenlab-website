@@ -8,7 +8,7 @@ namespace RytenLab_Web.Models.API
     public class GlobalReportOnGenes
     {
         public string Categories { get; set; }
-        public string Genes { get; set; }
         public string Networks { get; set; }
+        public string Genes { get; set; }
     }
 }
