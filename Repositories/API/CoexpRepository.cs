@@ -161,7 +161,7 @@ namespace RytenLab_API.Repositories
             //Set the URL with parameters. This URL will allow us to establish a communication with
             //CoExp R application API (published using Plumber R package)
             _coexpURL = _coexpURL + "globalReportOnGenes";
-            _postData = "{\"tissues\":\"" + data.Networks + "\",\"which.one\":\"" 
+            _postData = "{\"tissues\":\"" + data.Networks + "\",\"categories\":\"" 
                 + data.Categories + "\",\"genes\":\"" + data.Genes + "\"}";
             
             //Make the request
