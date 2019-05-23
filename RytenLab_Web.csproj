@@ -5,14 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\team_cv\BiographyMR.pdf" />
-    <None Include="wwwroot\team_cv\Ryten-Lab-Template_MR.docx" />
-    <None Include="wwwroot\team_cv\Ryten-Lab-Template_Regina.docx" />
-    <None Include="wwwroot\team_cv\Ryten-Lab-Template_Sanchez.docx" />
-    <None Include="wwwroot\team_cv\Ryten-Lab-Template_Sonia.docx" />
-    <None Include="wwwroot\team_cv\Ryten-Lab-Template_SS.docx" />
-    <None Include="wwwroot\team_cv\RytenLab website_zhongbo.docx" />
-    <None Include="wwwroot\team_cv\Ryten_website_details_for_sonia_David.docx" />
+    <Compile Remove="wwwroot\team_cv\**" />
+    <Content Remove="wwwroot\team_cv\**" />
+    <EmbeddedResource Remove="wwwroot\team_cv\**" />
+    <None Remove="wwwroot\team_cv\**" />
   </ItemGroup>
 
   <ItemGroup>

@@ -34,6 +34,12 @@ namespace RytenLab_API.Repositories
             //TODO: cambiar por la URL 'localhost'
             _coexpURL = "https://snca.atica.um.es/api/";
         }
+
+
+        /****************************************************************************************/
+        /********************************* GET METHODS ******************************************/
+        /****************************************************************************************/
+
         /// <summary>
         /// Method to obtain data from 'GetNetworkCategories()' method of CoExp R application
         /// </summary>
