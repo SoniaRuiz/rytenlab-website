@@ -15,12 +15,12 @@ article {
     }
 @media (min-width: 1200px) {
     .container {
-        width: 900px !important;
+        width: 65% !important;
     }
 }
 @media (min-width: 992px) {
     .container {
-        width: 900px !important;
+        width: 65% !important;
     }
 }
 
@@ -53,3 +53,16 @@ article {
     width: 100%;
     padding-bottom:10px;
 }
+
+#footer {
+    width: 100%;
+    background-color: #101010;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+    #footer small {
+        float: right;
+        margin: 7px 20px;
+        color: #9d9d9d;
+    }

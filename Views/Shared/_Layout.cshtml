@@ -45,7 +45,7 @@
                     <li><a asp-area="" asp-controller="RytenLab" asp-action="Team">Team</a></li>
                     @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Data">Data</a></li>*@
                     <li><a asp-area="" asp-controller="RytenLab" asp-action="Tools">Tools</a></li>
-                    <li><a asp-area="" asp-controller="RytenLab" asp-action="Publications">Publications</a></li>
+                    @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Publications">Publications</a></li>*@
                     <li><a asp-area="" asp-controller="RytenLab" asp-action="Contact">Contact</a></li>
                 </ul>
             </div>
@@ -57,9 +57,10 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2019 - Ryten Lab</p>
-        </footer>
+        
+    </div>
+    <div id="footer">
+        <small>&copy; 2020 - Ryten Lab</small>
     </div>
 
     <environment include="Development">
