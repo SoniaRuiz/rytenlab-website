@@ -14,18 +14,21 @@ namespace RytenLab_Web.Adapters
     public class HttpAdapter
     {
         /// <summary>
-        /// Method to make a http request and have a JSON as response
+        /// Method to make a GET http request and have a JSON as response
         /// </summary>
         /// <param name="url">URL where we want to make the request</param>
         /// <returns>Response (in JSON format) received from the URL</returns>
-        public string HttpRequestJSON(string url)
+        public string GETHttpRequestJSON(Uri url)
         {
             try
             {
                 var request = WebRequest.Create(url);
+
                 string data = null;
-                request.Timeout = 15000;
+                request.Timeout = 1500000;
                 request.ContentType = "application/json; charset=utf-8";
+
+
                 //Make the request
                 var response = (HttpWebResponse)request.GetResponse();
                 //Read the response
@@ -33,22 +36,28 @@ namespace RytenLab_Web.Adapters
                 {
                     data = sr.ReadToEnd();
                 }
-                //Return the response
+                //Return data
                 return data;
             }
-            catch(Exception e)
+            catch (HttpListenerException e)
             {
-                string message = "Problems with web service connection. Please try again. " + e.Message;
-                throw new Exception(message);
+                string message = "Problems with web service connection. An error has occurred during an HTTP GET request made to the API service. The details of the exception thrown are: " + e.Message;
+                return message;
+            }
+            catch (WebException e)
+            {
+                string message = "Problems with web service connection. An error has occurred during an HTTP GET request made to the API service. The details of the exception thrown are: " + e.Message;
+                return message;
             }
         }
+
         /// <summary>
         /// Method to make a POST http request and have a JSON as response
         /// </summary>
         /// <param name="url">URL where we want to make the request</param>
         /// <param name="postData">parameters to send in the request body</param>
         /// <returns>Response (in JSON format) received from the URL</returns>
-        public string POSTHttpRequestJSON(string url, string postData = null)
+        public string POSTHttpRequestJSON(Uri url, string postData = null)
         {
             try
             {
@@ -57,6 +66,7 @@ namespace RytenLab_Web.Adapters
                 request.Timeout = 1500000;
                 request.Method = "POST";
                 request.ContentType = "application/json; charset=utf-8";
+
 
                 if (postData != null)
                 {
@@ -68,14 +78,20 @@ namespace RytenLab_Web.Adapters
                         streamWriter.Close();
                     }
                 }
-                var response = (HttpWebResponse)request.GetResponse();
-                string responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                var final_response = response.GetResponseStream();
+                string responseString = new StreamReader(final_response).ReadToEnd();
                 //Return data
                 return responseString;
             }
-            catch (Exception e)
+            catch (HttpListenerException e)
             {
-                string message = "Problems with web service connection. Please try again. " + e.Message;
+                string message = "Problems with web service connection. An error has occurred during an HTTP POST request made to the API service. The details of the exception thrown are: " + e.Message;
+                return message;
+            }
+            catch (WebException e)
+            {
+                string message = "Problems with web service connection. An error has occurred during an HTTP GET request made to the API service. The details of the exception thrown are: " + e.Message;
                 return message;
             }
         }
