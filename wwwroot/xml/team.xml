@@ -4,7 +4,7 @@
     <ID>0</ID>
     <Name>Mina Ryten</Name>
     <Title>Dr (MBBS, PhD)</Title>
-    <Job>MRC Clinician Scientist/ Proleptic Clinical Lecturer</Job>
+    <Job>MRC Clinician Scientist/Proleptic Clinical Lecturer</Job>
     <Email>mina.ryten@ucl.ac.uk</Email>
     <ResearchInterest>Transcriptomics; Data Analysis of High-throughput Techniques for complex neurological diseases; Data Analysis of High-throughput Techniques to improve the diagnostic yield for rare neurogenetic disorders</ResearchInterest>
     <Biography>
@@ -33,7 +33,7 @@
     <Name>Juan A. Sanchez</Name>
     <Title>PhD</Title>
     <Job>
-      Associate Lecturer<br/><br/>
+      Associate Lecturer
     </Job>
     <Email>jlaguna@um.es</Email>
     <ResearchInterest>Applying artificial intelligence, machine learning and data mining techniques to help MDs intepretate the aetiology of neurological diseases such as Alzheimer or Parkinson.</ResearchInterest>
@@ -104,11 +104,12 @@
     <ID>7</ID>
     <Name>Sonia García Ruiz</Name>
     <Title>MSc</Title>
-    <Job>Research assistant</Job>
+    <Job>PhD Student/Research Assistant</Job>
     <Email>s.ruiz@ucl.ac.uk</Email>
-    <ResearchInterest>Web Development; Artificial Intelligence; Machine Learning, Software Development;  Transcriptomics.</ResearchInterest>
+    <ResearchInterest>Transcriptomics; Novel transcription; Web Development; Artificial Intelligence; Machine Learning; Software Development.</ResearchInterest>
     <Biography>
       <b>Sonia García Ruiz</b> is a software developer at UCL. She completed her Bachelor’s in Computer Science at the University of Miguel Hernández (Spain) in 2014. After that, she accumulated 2 years of experience as a web developer, working with clients such as Microsoft and Deloitte. Nevertheless, in 2017 she decided to return to university and completed her Master’s degree in Artificial Intelligence at the University of Murcia in 2018. In the Ryten lab, Sonia uses her knowledge of web development to help build analysis and visualisation tools for easier data interpretation.
+      In addition, she started a PhD program in August 2018 at UCL, with the aim of studying how the different results generated from the spliceosome activity may interfiere in the human health.
     </Biography>
     <ImagePath>sonia.jpg</ImagePath>
     <GitHub>SoniaRuiz</GitHub>
@@ -156,7 +157,7 @@
     <GitHub>ainefairbrother</GitHub>
     <ResearchGate></ResearchGate>
   </Person>
-  <Person>
+  <!--<Person>
     <ID>11</ID>
     <Name>Fran Kiernan</Name>
     <Title>MSc</Title>
@@ -169,5 +170,5 @@
     <ImagePath>fran.png</ImagePath>
     <GitHub>FranKiernan</GitHub>
     <ResearchGate>Fran_Kiernan</ResearchGate>
-  </Person>
+  </Person>-->
 </TeamMembers>

@@ -214,9 +214,9 @@ namespace RytenLab_Web.Controllers
                     case "1_FON05125800":
                         memberName = "Aine Fairbrother-Browne";
                         break;
-                    case "85_RR4347H20":
-                        memberName = "Fran Kiernan";
-                        break;
+                    //case "85_RR4347H20":
+                    //    memberName = "Fran Kiernan";
+                    //    break;
                 };
 
                 var path = Path.Combine(_hostingEnvironment.WebRootPath, "xml/team.xml");
