@@ -80,8 +80,10 @@ namespace RytenLab_Web.Controllers
             }
             catch (Exception e)
             {
-                ErrorViewModel errorModel = new ErrorViewModel();
-                errorModel.Message = e.Message;
+                ErrorViewModel errorModel = new ErrorViewModel
+                {
+                    Message = e.Message
+                };
                 return View("Error", errorModel);
             }
         }
@@ -112,26 +114,26 @@ namespace RytenLab_Web.Controllers
         /// If everything is ok: Returns 'Publications' view.
         /// If an error occurs: returns 'Error' view
         /// </returns>
-        public IActionResult Publications()
-        {
-            try
-            {
-                Person publicationsPerson = new Person();
-                PublicationRepository publications = new PublicationRepository();
+        //public IActionResult Publications()
+        //{
+        //    try
+        //    {
+        //        Person publicationsPerson = new Person();
+        //        PublicationRepository publications = new PublicationRepository();
 
-                //NCBI publications ID (from all team members)
-                publicationsPerson.NCBIPublicationsID = "30328509,30225556,30089514,30066433,29930110,29365066,29127725,29289683,28899015,28764847,28602509,28575651,28403906,28391543,28137300,28098162,28097204,28076797,28010125,28004117,27899424,27694991,27584932,27500074,27073233,26968196,26912063,26707700,26468326,26085604,25983243,25970246,25799108,25620700,25607358,25568836,25439728,25174004,24862029,24503276,24399358,24336208,24264146,24259043,24241535,24198383,24175058,24014518,23967090,23889843,23855984,23435227,23424103,23360175,23200863,23177596,22778642,22723018,22681703,22504417,22433082,21944779,21863007,21848658,21799870,20849322,20842366,19909261,19734301,18005209,17941929,15911103,15231720,15484912,14517997,12135987";
-                publicationsPerson = publications.GetPublicationsDataNCBI(publicationsPerson);
+        //        //NCBI publications ID (from all team members)
+        //        publicationsPerson.NCBIPublicationsID = "30328509,30225556,30089514,30066433,29930110,29365066,29127725,29289683,28899015,28764847,28602509,28575651,28403906,28391543,28137300,28098162,28097204,28076797,28010125,28004117,27899424,27694991,27584932,27500074,27073233,26968196,26912063,26707700,26468326,26085604,25983243,25970246,25799108,25620700,25607358,25568836,25439728,25174004,24862029,24503276,24399358,24336208,24264146,24259043,24241535,24198383,24175058,24014518,23967090,23889843,23855984,23435227,23424103,23360175,23200863,23177596,22778642,22723018,22681703,22504417,22433082,21944779,21863007,21848658,21799870,20849322,20842366,19909261,19734301,18005209,17941929,15911103,15231720,15484912,14517997,12135987";
+        //        publicationsPerson = publications.GetPublicationsDataNCBI(publicationsPerson);
 
-                return View(publicationsPerson);
-            }
-            catch (Exception e)
-            {
-                ErrorViewModel errorModel = new ErrorViewModel();
-                errorModel.Message = e.Message;
-                return View("Error", errorModel);
-            }
-        }
+        //        return View(publicationsPerson);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        ErrorViewModel errorModel = new ErrorViewModel();
+        //        errorModel.Message = e.Message;
+        //        return View("Error", errorModel);
+        //    }
+        //}
         /// <summary>
         /// Controller method for 'Contact' page.
         /// </summary>
@@ -152,16 +154,18 @@ namespace RytenLab_Web.Controllers
         {
             try
             {
-                PublicationRepository publications = new PublicationRepository();
-                person = publications.GetPublicationsDataNCBI(person);
-                person = publications.GetPublicationsDataCrossRef(person);
+                //PublicationRepository publications = new PublicationRepository();
+                //person = publications.GetPublicationsDataNCBI(person);
+                //person = publications.GetPublicationsDataCrossRef(person);
 
                 return View(person);
             }
             catch(Exception e)
             {
-                ErrorViewModel errorModel = new ErrorViewModel();
-                errorModel.Message = e.Message;
+                ErrorViewModel errorModel = new ErrorViewModel
+                {
+                    Message = e.Message
+                };
                 return View("Error", errorModel);
             }
         }
@@ -245,8 +249,10 @@ namespace RytenLab_Web.Controllers
             }
             catch (Exception e)
             {
-                ErrorViewModel errorModel = new ErrorViewModel();
-                errorModel.Message = e.Message;
+                ErrorViewModel errorModel = new ErrorViewModel
+                {
+                    Message = e.Message
+                };
                 return View("Error", errorModel);
             }
         }
