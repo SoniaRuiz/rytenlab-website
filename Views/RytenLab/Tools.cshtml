@@ -39,3 +39,14 @@
         <a class="btn btn-primary button" href="https://snca.atica.um.es/rytenlab_api/" role="button" target="_blank">View »</a>
     </div>
 </article>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Turn active current menu's option
+            $(".nav-item").find(".active").removeClass("active");
+            $("#tab_tools").addClass("active");
+
+        });
+    </script>
+}

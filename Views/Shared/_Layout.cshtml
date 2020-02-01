@@ -37,16 +37,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="RytenLab" asp-action="About" class="navbar-brand">Ryten Lab</a>
+                <a asp-area="" asp-controller="RytenLab" asp-action="About" class="navbar-brand" style="color:white;">Ryten Lab</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="RytenLab" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="RytenLab" asp-action="Team">Team</a></li>
+                    <li id="tab_about"><a asp-area="" asp-controller="RytenLab" asp-action="About">About</a></li>
+                    <li id="tab_team"><a asp-area="" asp-controller="RytenLab" asp-action="Team">Team</a></li>
                     @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Data">Data</a></li>*@
-                    <li><a asp-area="" asp-controller="RytenLab" asp-action="Tools">Tools</a></li>
+                    <li id="tab_tools"><a asp-area="" asp-controller="RytenLab" asp-action="Tools">Tools</a></li>
                     @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Publications">Publications</a></li>*@
-                    <li><a asp-area="" asp-controller="RytenLab" asp-action="Contact">Contact</a></li>
+                    <li id="tab_contact"><a asp-area="" asp-controller="RytenLab" asp-action="Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -57,7 +57,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        
+
     </div>
     <div id="footer">
         <small>&copy; 2020 - Ryten Lab</small>
@@ -85,7 +85,10 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+
+
     
+
 
 </body>
 </html>
