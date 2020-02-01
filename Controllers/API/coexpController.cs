@@ -45,7 +45,7 @@ namespace RytenLab_API.Controllers
         ///        "Category": "CoExpROSMAP"
         ///     }
         /// </remarks>
-        /// <param name="category">
+        /// <param name="data">
         /// The requested body must be a JSON object formed by the key "Category" (this is the name of the category from which to obtain all the networks).
         /// An example of the 'Request Body' is provided above.
         /// </param>
