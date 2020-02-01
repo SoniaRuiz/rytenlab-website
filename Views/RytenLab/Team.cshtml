@@ -27,7 +27,7 @@
                         <div class="cardMember">
                             <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
                             <p class="cardTitle">@Html.Raw(@person.Job)</p>
-                            @if(person.Name == "Juan A. Botía" || person.Name == "Juan A. Sanchez")
+                            @if (person.Name == "Juan A. Botía" || person.Name == "Juan A. Sanchez")
                             {
                                 <br />
                             }
@@ -67,14 +67,23 @@
         }
     </div>
 </article>
-<script type="text/javascript">
-    function sendForm(memberID) {
-        $("#" + memberID).submit();
-        return false;
-    }
 
-
-</script>
 @section Scripts{
     <link rel="stylesheet" href="~/css/album.css" />
+
+    <script type="text/javascript">
+        function sendForm(memberID) {
+            $("#" + memberID).submit();
+            return false;
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Turn active current menu's option
+            $(".nav-item").find(".active").removeClass("active");
+            $("#tab_team").addClass("active");
+        });
+    </script>
+
 }

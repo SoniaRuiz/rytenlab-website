@@ -25,3 +25,14 @@
         <strong>Get in touch:</strong> <a href="mailto:mina.ryten@ucl.ac.uk">mina.ryten@ucl.ac.uk</a><br />
     </address>
 </article>
+@section Scripts{
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Turn active current menu's option
+            $(".nav-item").find(".active").removeClass("active");
+            $("#tab_contact").addClass("active");
+        });
+    </script>
+
+}
