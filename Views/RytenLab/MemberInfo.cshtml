@@ -11,7 +11,9 @@
 </header>
 <article>
     <div class="media-left media-top little-image">
-        <img src="~/images/modified/filter/@Model.ImagePath" title="@Model.Name" alt="@Model.Name" class="media-object little-image">
+        <a href="mailto:@Model.Email" title="Get in touch with @Model.Name">
+            <img src="~/images/modified/filter/@Model.ImagePath" alt="@Model.Name" class="media-object little-image">
+        </a>
     </div>
     <div class="media-body">
         <address style="padding-top:5px;">
@@ -35,6 +37,11 @@
     </div>
     <br />
 
+    @if (!String.IsNullOrEmpty(Model.ResearchGate))
+    {
+        <h3>Publications</h3>
+        <p>Latest publications of @Model.Name available on <a href="https://www.researchgate.net/profile/@Model.ResearchGate" target="_blank">ResearchGate</a>.</p>
+    }
 
     <h3>Research Interests</h3>
     <p>@Model.ResearchInterest</p>
@@ -46,88 +53,8 @@
     {
         <img src="~/images/mina-bio.PNG" title="@Model.Name" alt="@Model.Name" class="mina-biography">
     }
-    @if (!String.IsNullOrEmpty(Model.ResearchGate))
-    {
-        <h3>Publications</h3>
-        <p>Latest publications available via <a href="https://www.researchgate.net/profile/@Model.ResearchGate" target="_blank">ResearchGate</a> profile.</p>
-    }
-    @if (Model.PreAcceptedPublicationsList.Count > 0 || Model.NCBIPublicationsList.Count > 0)
-    {
-        <h3>Publications</h3>
-    }
-    @if (Model.PreAcceptedPublicationsList.Count > 0)
-    {
-        <h4 class="year-main">Pre-print</h4>
-        @foreach (var publication in Model.PreAcceptedPublicationsList)
-        {
-            <div class="well">
-                <h4>@publication.Title</h4>
-                <small>
 
-                    @for (var i = 0; i < publication.Authors.Count; i++)
-                    {
-                        if (i < publication.Authors.Count - 1)
-                        {
-                            if (i == 22)
-                            {
-                                <span>@publication.Authors[i]...</span>
-                                break;
-                            }
-                            else
-                            {
-                                <span>@publication.Authors[i], </span>
-                            }
-                        }
-                        else
-                        {
-                            <span>@publication.Authors[i]</span>
-                        }
-                    }
-                </small><br /><br />
-                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
-                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
-            </div>
-        }
-    }
-    @if (Model.NCBIPublicationsList.Count > 0)
-    {
-        <h4 class="year">Accepted</h4>
-        @foreach (var publication in Model.NCBIPublicationsList)
-        {
-            <div class="well">
-                <h4>@publication.Title</h4>
-                <small>
 
-                    @for (var i = 0; i < publication.Authors.Count; i++)
-                    {
-                        if (i < publication.Authors.Count - 1)
-                        {
-                            if (i == 22)
-                            {
-                                <span>@publication.Authors[i]...</span>
-                                break;
-                            }
-                            else
-                            {
-                                <span>@publication.Authors[i], </span>
-                            }
-                        }
-                        else
-                        {
-                            <span>@publication.Authors[i]</span>
-                        }
-                    }
-                </small><br />
-                <br />
-                <p class="publication">Published in @publication.JournalName - @publication.Date</p>
-                @if (@publication.Title.Contains("Genetic variability in the regulation of gene expression in ten regions of the human brain"))
-                {
-                    <p class="publication">Supporting <a href="http://braineac.org/" target="_blank">data</a></p>
-                }
-                <a class="btn btn-primary" href="@publication.Link" role="button" target="_blank">View »</a>
-            </div>
-        }
-    }
 </article>
 
 
