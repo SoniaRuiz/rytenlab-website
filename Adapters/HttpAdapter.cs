@@ -91,7 +91,7 @@ namespace RytenLab_Web.Adapters
             }
             catch (WebException e)
             {
-                string message = "Problems with web service connection. An error has occurred during an HTTP GET request made to the API service. The details of the exception thrown are: " + e.Message;
+                string message = "Problems with web service connection. An error has occurred during an HTTP POST request made to the API service. The details of the exception thrown are: " + e.Message;
                 return message;
             }
         }

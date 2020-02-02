@@ -215,7 +215,7 @@ namespace RytenLab_Web.Controllers
         /// and "Genes" (this must be a list of comma-separated genes). 
         /// An example of the 'Request Body' is provided above.
         /// </param>
-        /// <returns></returns>
+        /// <returns>Returns an extensive report about the different genes that belong to one or more networks from one or more categories. The categories, networks and genes must be comma-separated.</returns>
         [HttpPost]
         [Route("GlobalReportOnGenes")]
         public string GlobalReportOnGenes([FromBody, Required] CoExpParameters data)
@@ -244,7 +244,7 @@ namespace RytenLab_Web.Controllers
         /// The requested body must be a JSON object formed by the keys: "Category", "Network", "Module" and "TopGenes".
         /// An example of the 'Request Body' is shown above.
         /// </param>
-        /// <returns>An example of the 'Request Body' is provided above.</returns>
+        /// <returns>Returns the most important genes that belong to an specific category, network and module.</returns>
         [HttpPost]
         [Route("GetModuleTOMGraph")]
         public string GetModuleTOMGraph([FromBody, Required] CoExpParameters data)
