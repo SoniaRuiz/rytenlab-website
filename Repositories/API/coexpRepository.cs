@@ -30,6 +30,12 @@ namespace RytenLab_Web.Repositories
             //TODO: cambiar por la URL 'localhost'
             _coexpURL = "https://snca.atica.um.es/api/";
         }
+
+        /****************************************************************************/
+        /******************************* GET METHODS ********************************/
+        /****************************************************************************/
+
+
         /// <summary>
         /// Method to obtain data from 'GetNetworkCategories()' method of CoExp R application
         /// </summary>
@@ -45,14 +51,18 @@ namespace RytenLab_Web.Repositories
         }
 
 
-        public string GetAvailableNetworks(string category)
+        /****************************************************************************/
+        /******************************* POST METHODS *******************************/
+        /****************************************************************************/
+
+        public string GetAvailableNetworks(string whichone)
         {
             //Set the URL with parameters. This URL will allow us to establish a communication with
             //CoExp R application API (published using Plumber R package)
             _coexpURL += "getAvailableNetworks";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"category\":\"" + category + "\"}";
+            PostData = "{\"category\":\"" + whichone + "\"}";
 
             //Make the request
             var finalResponse = _adapter.POSTHttpRequestJSON(uri, PostData);
