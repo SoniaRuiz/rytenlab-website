@@ -14,22 +14,22 @@ namespace RytenLab_Web.Repositories
     /// </summary>
     public class PublicationRepository
     {
-        /// <summary>
-        /// Property to stablish comunication with HttpAdapter class
-        /// </summary>
-        private HttpAdapter adapter;
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        public PublicationRepository()
-        {
-            adapter = new HttpAdapter();
-        }
-        /// <summary>
-        /// Method to obtain publications from NCBI
-        /// </summary>
-        /// <param name="person">Team member data</param>
-        /// <returns>Updated data of a team member</returns>
+        ///// <summary>
+        ///// Property to stablish comunication with HttpAdapter class
+        ///// </summary>
+        //private HttpAdapter adapter;
+        ///// <summary>
+        ///// Constructor
+        ///// </summary>
+        //public PublicationRepository()
+        //{
+        //    adapter = new HttpAdapter();
+        //}
+        ///// <summary>
+        ///// Method to obtain publications from NCBI
+        ///// </summary>
+        ///// <param name="person">Team member data</param>
+        ///// <returns>Updated data of a team member</returns>
         //public Person GetPublicationsDataNCBI(Person person)
         //{
         //    //We must to have, at least, one NCBI publication ID
@@ -74,11 +74,11 @@ namespace RytenLab_Web.Repositories
         //    }
         //    return person;
         //}
-        /// <summary>
-        /// Method to obtain publications from CrossRef (is not used now because this web service is highly slow)
-        /// </summary>
-        /// <param name="person">Team member data</param>
-        /// <returns>Team member updated</returns>
+        ///// <summary>
+        ///// Method to obtain publications from CrossRef (is not used now because this web service is highly slow)
+        ///// </summary>
+        ///// <param name="person">Team member data</param>
+        ///// <returns>Team member updated</returns>
         //public Person GetPublicationsDataCrossRef(Person person)
         //{
         //    if (person.PreAcceptedPublicationsTitles.Count > 0 && !String.IsNullOrEmpty(person.Name))
