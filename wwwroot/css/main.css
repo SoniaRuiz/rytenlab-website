@@ -15,12 +15,12 @@ article {
     }
 @media (min-width: 1200px) {
     .container {
-        width: 65% !important;
+        width: 75% !important;
     }
 }
 @media (min-width: 992px) {
     .container {
-        width: 65% !important;
+        width: 75% !important;
     }
 }
 

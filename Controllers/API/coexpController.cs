@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using RytenLab_Web.Models;
 using RytenLab_Web.Repositories;
 using System.ComponentModel.DataAnnotations;
@@ -45,6 +46,9 @@ namespace RytenLab_Web.Controllers
         ///        "Category": "CoExpROSMAP"
         ///     }
         /// </remarks>
+        /// <example>
+        /// my example
+        /// </example>
         /// <param name="data">
         /// The requested body must be a JSON object formed by the key "Category" (this is the name of the category from which to obtain all the networks).
         /// An example of the 'Request Body' is provided above.
@@ -52,8 +56,9 @@ namespace RytenLab_Web.Controllers
         /// <returns>All networks that belong to the specified category.</returns>
         [HttpPost]
         [Route("GetAvailableNetworks")]
-        public string GetAvailableNetworks([FromBody, Required] CoExpParameters data)
+        public string GetAvailableNetworks([FromBody] CoExpParameters data)
         {
+  
             CoexpRepository repository = new CoexpRepository();
             string response = repository.GetAvailableNetworks(data.Category);
             return response;

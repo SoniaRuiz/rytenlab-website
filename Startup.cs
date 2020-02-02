@@ -43,7 +43,17 @@ namespace RytenLab_Web
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v2", new OpenApiInfo { Title = "RytenLab API", Version = "v2" });
+                c.SwaggerDoc("v2", new OpenApiInfo { 
+                    Title = "RytenLab API", 
+                    Version = "v2",
+                    Description = "This is an ASP.NET Core Web API, built to request different methods of the CoExp R framework. Property of the RytenLab Team.",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "RytenLab team",
+                        Email = "mina.ryten@ucl.ac.uk",
+                        Url = new Uri("https://snca.atica.um.es/"),
+                    }
+                });
 
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
