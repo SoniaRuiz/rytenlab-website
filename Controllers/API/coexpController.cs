@@ -3,7 +3,7 @@ using RytenLab_Web.Models;
 using RytenLab_Web.Repositories;
 using System.ComponentModel.DataAnnotations;
 
-namespace RytenLab_API.Controllers
+namespace RytenLab_Web.Controllers
 {
 
     [Route("rytenlab_api/[controller]")]

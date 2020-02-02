@@ -107,13 +107,14 @@ namespace RytenLab_Web.Controllers
 
             return View();
         }
-        /// <summary>
-        /// Controller method for 'Publications' page.
-        /// </summary>
-        /// <returns>
-        /// If everything is ok: Returns 'Publications' view.
-        /// If an error occurs: returns 'Error' view
-        /// </returns>
+
+        ///// <summary>
+        ///// Controller method for 'Publications' page.
+        ///// </summary>
+        ///// <returns>
+        ///// If everything is ok: Returns 'Publications' view.
+        ///// If an error occurs: returns 'Error' view
+        ///// </returns>
         //public IActionResult Publications()
         //{
         //    try
