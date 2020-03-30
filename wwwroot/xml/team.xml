@@ -184,4 +184,18 @@
     <GitHub></GitHub>
     <ResearchGate>Ana_Luisa_Gil_Martinez</ResearchGate>
   </Person>
+  <Person>
+    <ID>12</ID>
+    <Name>Emil Gustavsson</Name>
+    <Title>PhD</Title>
+    <Job>Postdoctoral Research Fellow</Job>
+    <Email>e.gustavsson@ucl.ac.uk</Email>
+    <ResearchInterest>Genetics; Neurodegenerative diseases; Bioinformatics; Genetic analysis to improve the diagnostic yield for neurological disorders.</ResearchInterest>
+    <Biography>
+      Emil is a Postdoctoral Research Fellow in the Ryten lab at University College London. Emil completed his BSc and MSc in molecular genetics at Uppsala University. During this time, he worked on the influence of mtDNA variability on behaviour as well as the role of genetic variability of a vesicular monoaminergic associated transporter in addiction. For his PhD training Emil moved to Canada (University of British Columbia) to work on the molecular genetics of Parkinson’s and neurological diseases. His work mainly related to the identification of genes and how genetic variability influences the penetrance and progression of disease. Emil joined the Ryten lab in early 2020 and his aims to investigate the role of recursive splicing on previously identified novel expressed regions and using long-read sequencing techniques to define the expression of novel transcripts of genes involved in neurological disease.
+    </Biography>
+    <ImagePath>emil.png</ImagePath>
+    <GitHub></GitHub>
+    <ResearchGate>Emil_Gustavsson</ResearchGate>
+  </Person>
 </TeamMembers>
