@@ -4,11 +4,11 @@
     <ID>0</ID>
     <Name>Mina Ryten</Name>
     <Title>Dr (MBBS, PhD)</Title>
-    <Job>MRC Clinician Scientist/Proleptic Clinical Lecturer</Job>
+    <Job>Professor of Clinical Genetics, UCL Great Ormond Street Institute of Child Health / Honorary Consultant in Clinical Genetics, Great Ormond Street Hospital for Children</Job>
     <Email>mina.ryten@ucl.ac.uk</Email>
     <ResearchInterest>Transcriptomics; Data Analysis of High-throughput Techniques for complex neurological diseases; Data Analysis of High-throughput Techniques to improve the diagnostic yield for rare neurogenetic disorders</ResearchInterest>
     <Biography>
-      <b>Mina Ryten </b>is a clinician scientist with roughly equivalent experience in clinical and research settings. In her clinical practice she cares for individuals and families with, or at risk of, a range of conditions which may have a genetic basis. As well as providing a diagnosis, the aim of her clinics is to help individuals affected by a genetic disorder live as normally as possible with their condition. Mina’s research lab focuses on the use of transcriptomics, primarily derived from human brain, to improve the molecular understanding of complex and rare neurological disorders.
+      <b>Mina Ryten </b>is Professor of Clinical Genetics at UCL Great Ormond Street Institute of Child Health and is an Honorary Consultant in Clinical Genetics at Great Ormond Street Hospital for Children and at Guy’s Hospital. She is a clinician scientist with experience in both clinical and research settings. In her clinical practice she cares for individuals and families with, or at risk of, a range of conditions which may have a genetic basis. As well as providing a diagnosis, the aim of her clinics is to help individuals affected by a genetic disorder live as normally as possible with their condition. Mina’s research lab focuses on the use of transcriptomics, primarily derived from human brain, to improve the molecular understanding of complex and rare neurological disorders.
     </Biography>
     <ImagePath>mina.jpg</ImagePath>
     <GitHub></GitHub>
@@ -18,7 +18,7 @@
     <ID>1</ID>
     <Name>Juan A. Botía</Name>
     <Title>PhD</Title>
-    <Job>Professor/Honorary Senior Research</Job>
+    <Job>Professor/Honorary Senior Research Fellow</Job>
     <Email>j.botia@ucl.ac.uk</Email>
     <ResearchInterest>Machine Learning; Algorithmic Design; Statistical Learning; Neuro-degeneration; Genetics of disease; Transcriptomics; Interplay between mendelian and complex diseases.</ResearchInterest>
     <Biography>
@@ -108,7 +108,7 @@
     <Email>s.ruiz@ucl.ac.uk</Email>
     <ResearchInterest>RNA Splicing; Transcriptomics; Novel transcription; Web Development; Artificial Intelligence; Machine Learning; Software Development.</ResearchInterest>
     <Biography>
-      <b>Sonia García Ruiz</b> is a PhD student and software developer at UCL. She completed her Bachelor’s in Computer Science at the University of Miguel Hernández (Spain) in 2014. After that, she accumulated 2 years of experience as a software and web developer, working with clients such as Microsoft and Deloitte. Nevertheless, in 2017 she decided to return to university and completed her master’s degree in Artificial Intelligence at the University of Murcia in 2018. In the Ryten lab, she is focused on finding the mechanisms underlying the alternative splicing in human cells, and how those different products may interfiere in the human health. Additionally, she uses her knowledge of web development to help build analysis and visualisation tools for easier data interpretation. For further details, please visit our <a href="#" >Tools</a> section.
+      <b>Sonia García Ruiz</b> is a PhD student and software developer at UCL. She completed her Bachelor’s in Computer Science at the University of Miguel Hernández (Spain) in 2014. After that, she accumulated 2 years of experience as a software and web developer, working with clients such as Microsoft and Deloitte. Nevertheless, in 2017 she decided to return to university and completed her master’s degree in Artificial Intelligence at the University of Murcia in 2018. In the Ryten lab, she is focused on finding the mechanisms underlying the alternative splicing in human cells, and how those different products may interfiere in the human health. Additionally, she uses her knowledge of web development to help build analysis and visualisation tools for easier data interpretation.
     </Biography>
     <ImagePath>sonia.jpg</ImagePath>
     <GitHub>SoniaRuiz</GitHub>
