@@ -28,14 +28,15 @@
                 <div class="row">
                     @foreach (var person in Model.TeamMembers)
                     {
-                        @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
+
+                        @if (person.CurrentMember == "Y")
                         {
-                            @if (person.CurrentMember == "Y")
+                            @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
                             {
                                 <div class="cardColumn">
                                     <div class="cardData">
                                         <figure>
-                                            <a href="#" title="@person.Name" onclick="javascript:document.getElementById(@person.ID).submit();">
+                                            <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
                                                 <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
                                             </a>
                                         </figure>
@@ -56,20 +57,20 @@
                                             @Html.HiddenFor(p => person.GitHub)
                                             @Html.HiddenFor(p => person.ResearchGate)
                                             @*@for (int i = 0; i < person.PreAcceptedPublicationsTitles.Count; i++)
-                                            {
-                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsTitles[i])
-                                            }
-                                            @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
-                                            {
-                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Title)
-                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].JournalName)
-                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Link)
-                                                @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
-                                                {
-                                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Authors[x])
-                                                }
-                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Date)
-                                            }*@
+                                {
+                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsTitles[i])
+                                }
+                                @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
+                                {
+                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Title)
+                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].JournalName)
+                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Link)
+                                    @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
+                                    {
+                                        @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Authors[x])
+                                    }
+                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Date)
+                                }*@
                                             @Html.HiddenFor(p => person.Biography)
                                         </div>
                                     </div>
@@ -89,14 +90,14 @@
                 <div class="row">
                     @foreach (var person in Model.TeamMembers)
                     {
-                        @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
+                        @if (person.CurrentMember == "N")
                         {
-                            @if (person.CurrentMember == "N")
+                            @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
                             {
                                 <div class="cardColumn">
                                     <div class="cardData">
                                         <figure>
-                                            <a href="#" title="@person.Name" >
+                                            <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID)">
                                                 <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
                                             </a>
                                         </figure>
@@ -116,21 +117,7 @@
                                             @Html.HiddenFor(m => person.ResearchInterest)
                                             @Html.HiddenFor(m => person.GitHub)
                                             @Html.HiddenFor(m => person.ResearchGate)
-                                            @*@for (int i = 0; i < person.PreAcceptedPublicationsTitles.Count; i++)
-                                            {
-                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsTitles[i])
-                                            }
-                                            @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
-                                            {
-                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Title)
-                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].JournalName)
-                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Link)
-                                                @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
-                                                {
-                                                    @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Authors[x])
-                                                }
-                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Date)
-                                            }*@
+
                                             @Html.HiddenFor(m => person.Biography)
                                             @Html.HiddenFor(m => person.CurrentMember)
                                         </div>
