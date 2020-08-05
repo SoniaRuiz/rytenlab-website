@@ -13,6 +13,7 @@
     <ImagePath>mina.jpg</ImagePath>
     <GitHub></GitHub>
     <ResearchGate>Mina_Ryten</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>1</ID>
@@ -22,11 +23,12 @@
     <Email>j.botia@ucl.ac.uk</Email>
     <ResearchInterest>Machine Learning; Algorithmic Design; Statistical Learning; Neuro-degeneration; Genetics of disease; Transcriptomics; Interplay between mendelian and complex diseases.</ResearchInterest>
     <Biography>
-      <b>Juan A. Botía</b>, Phd. is Professor in Computer Science and Artificial Intelligence at the University of Murcia, Murcia, Spain. He is also Honorary Senior Research Fellow at the Institute of Neurology, University College London, UK since July, 2017. Juan A. Botía is PhD in Computational Science and Artificial Intelligence(March 2002).He obtained a position at Universidad de Murcia as Reader in April 2009. His research interests include, from the very beginning of his career, multi - agent systems, distributed artificial intelligence and machine learning with an emphasis on applications of AI. He has been involved in research and innovation projects with a common aspect: applying AI and algorithm approaches to real life problems, including domains like agriculture, multi-media content recommendation, indoor location of mobile devices and ambient assisted living. During 2013 Dr.Botía moved to London to enjoy a sabbatical period with Dr.Juan C. Augusto at Middlesex University. In 2014 he joined the UKBEC project at King’s College London to work as Research Associate, in the Department of Molecular and Medical Genetics, School of Medicine under the supervision of Mike Weale and Mina Ryten. In 2015, within the same project, he was honoured to start working with John Hardy and Mina Ryten at the Department of Molecular Neuroscience, University College London, until mid 2017 when he returned to Universidad de Murcia. During his period at the UK, he started applying AI techniques to transcriptomics and genetics within the area of neurology, until now. Currently, he is member of the Ryten Lab.
+      <b>Juan A. Botía</b>, Phd. is Professor in Computer Science and Artificial Intelligence at the University of Murcia, Murcia, Spain. He is also Honorary Senior Research Fellow at the Institute of Neurology, University College London, UK since July, 2017. Juan A. Botía is PhD in Computational Science and Artificial Intelligence(March 2002).He obtained a position at Universidad de Murcia as Reader in April 2009. His research interests include, from the very beginning of his career, multi - agent systems, distributed artificial intelligence and machine learning with an emphasis on applications of AI. He has been involved in research and innovation projects with a common aspect: applying AI and algorithm approaches to real life problems, including domains like agriculture, multi-media content recommendation, indoor location of mobile devices and ambient assisted living. During 2013 Dr.Botía moved to London to enjoy a sabbatical period with Dr.Juan C. Augusto at Middlesex University. In 2014 he joined the UKBEC project at King’s College London to work as Research Associate, in the Department of Molecular and Medical Genetics, School of Medicine under the supervision of Mike Weale and Mina Ryten. In 2015, within the same project, he was honoured to start working with John Hardy and Mina Ryten at the Department of Molecular Neuroscience, University College London, until mid 2017 when he returned to Universidad de Murcia. During his period at the UK, he started applying AI techniques to transcriptomics and genetics within the area of neurology, until now. CurrentMemberly, he is member of the Ryten Lab.
     </Biography>
     <ImagePath>botia.jpg</ImagePath>
     <GitHub>juanbot</GitHub>
     <ResearchGate>Juan_Botia</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>2</ID>
@@ -43,6 +45,7 @@
     <ImagePath>sanchez.jpg</ImagePath>
     <GitHub></GitHub>
     <ResearchGate>Juan_Sanchez23</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>3</ID>
@@ -57,6 +60,7 @@
     <ImagePath>kd.png</ImagePath>
     <GitHub></GitHub>
     <ResearchGate></ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>4</ID>
@@ -66,11 +70,12 @@
     <Email>m.guelfi@ucl.ac.uk</Email>
     <ResearchInterest>Genomics; Genetics; Bioinformatics; Novel transcription; Gene regulation; RNA Splicing; Neurodegeneration; Machine Learning;  Biostatistics, Data integration.</ResearchInterest>
     <Biography>
-      <b>Sebastian Guelfi</b>, is Postdoctoral Research Fellow in the Ryten Lab. Currently, he studies RNA splicing by leveraging large genomic datasets. He obtained his PhD in bioinformatics at University College London where he integrated different forms of genomic data to investigate the relationship between gene regulation and neurodegenerative diseases. Before pursuing his interests in data analysis and health care, Sebastian worked for 6 years in the private sector designing and developing software to solve logistics problems.
+      <b>Sebastian Guelfi</b>, is Postdoctoral Research Fellow in the Ryten Lab. CurrentMemberly, he studies RNA splicing by leveraging large genomic datasets. He obtained his PhD in bioinformatics at University College London where he integrated different forms of genomic data to investigate the relationship between gene regulation and neurodegenerative diseases. Before pursuing his interests in data analysis and health care, Sebastian worked for 6 years in the private sector designing and developing software to solve logistics problems.
     </Biography>
     <ImagePath>seb.jpg</ImagePath>
     <GitHub>SebGuelfi</GitHub>
     <ResearchGate>Sebastian_Guelfi</ResearchGate>
+    <CurrentMember>N</CurrentMember>
   </Person>
   <Person>
     <ID>5</ID>
@@ -85,6 +90,7 @@
     <ImagePath>regina.jpg</ImagePath>
     <GitHub>RHReynolds</GitHub>
     <ResearchGate>Regina_Reynolds</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>6</ID>
@@ -99,6 +105,7 @@
     <ImagePath>david.jpg</ImagePath>
     <GitHub>dzhang32</GitHub>
     <ResearchGate>David_Zhang98</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>7</ID>
@@ -113,6 +120,7 @@
     <ImagePath>sonia.jpg</ImagePath>
     <GitHub>SoniaRuiz</GitHub>
     <ResearchGate>Sonia_Garcia_Ruiz</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>8</ID>
@@ -127,6 +135,7 @@
     <ImagePath>zhongbo.jpg</ImagePath>
     <GitHub></GitHub>
     <ResearchGate></ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>9</ID>
@@ -141,6 +150,7 @@
     <ImagePath>sethi.png</ImagePath>
     <GitHub>sid-sethi</GitHub>
     <ResearchGate></ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>10</ID>
@@ -155,6 +165,7 @@
     <ImagePath>aine.png</ImagePath>
     <GitHub>ainefairbrother</GitHub>
     <ResearchGate></ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <!--<Person>
     <ID>11</ID>
@@ -178,11 +189,12 @@
     <Email>analuisagilm@gmail.com</Email>
     <ResearchInterest>Functional genomics, neurodegeneration, neuroinflammation, statistical genetics, transcriptomics.</ResearchInterest>
     <Biography>
-      <b>Ana Luisa Gil Martinez</b> is a Postdoctoral Research Fellow in the Ryten lab. She completed her Bachelor's in Biochemistry (2010-2014) and her Master’s Degree in Molecular Biology and Biotechnology (2014-2015) at the University of Murcia (Spain). During this time, she specialized in the study of inorganic compounds in nanoparticles for therapeutic purposes. After that, she was selected for a PhD position in the Clinical and Experimental Neuroscience Group. Her thesis was focused on the study of the involvement of glial cells in the neurodegenerative processes associated with Parkinsonism and aging. In 2019, she obtained a Double Doctor's degree by the University of Murcia (Spain) and Maastricht University (The Netherlands). Currently, her postdoctoral project in the Ryten Lab aims to integrate co-expression models to investigate molecular mechanisms driving the progression of Parkinson's disease.
+      <b>Ana Luisa Gil Martinez</b> is a Postdoctoral Research Fellow in the Ryten lab. She completed her Bachelor's in Biochemistry (2010-2014) and her Master’s Degree in Molecular Biology and Biotechnology (2014-2015) at the University of Murcia (Spain). During this time, she specialized in the study of inorganic compounds in nanoparticles for therapeutic purposes. After that, she was selected for a PhD position in the Clinical and Experimental Neuroscience Group. Her thesis was focused on the study of the involvement of glial cells in the neurodegenerative processes associated with Parkinsonism and aging. In 2019, she obtained a Double Doctor's degree by the University of Murcia (Spain) and Maastricht University (The Netherlands). CurrentMemberly, her postdoctoral project in the Ryten Lab aims to integrate co-expression models to investigate molecular mechanisms driving the progression of Parkinson's disease.
     </Biography>
     <ImagePath>analuisa.png</ImagePath>
     <GitHub></GitHub>
     <ResearchGate>Ana_Luisa_Gil_Martinez</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
     <ID>12</ID>
@@ -197,5 +209,6 @@
     <ImagePath>emil.png</ImagePath>
     <GitHub></GitHub>
     <ResearchGate>Emil_Gustavsson</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
   </Person>
 </TeamMembers>
