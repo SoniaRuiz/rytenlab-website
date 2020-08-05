@@ -9,136 +9,144 @@
     <hr />
 </header>
 <!-- Tab links -->
-<div class="tab">
-    <button class="tablinks active" onclick="openMember(event, 'current')">Current members</button>
-    <button class="tablinks" onclick="openMember(event, 'past')">Past members</button>
-</div>
+<ul id="tabs" class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Current members</a></li>
+    <li><a href="#tab2" data-toggle="tab">Past members</a></li>
+</ul>
 
 <!-- Tab content -->
-<div id="current" class="tabcontent">
-    <article>
-        <h2>Current members</h2>
-        
-        <h4>While our transcriptomes may have changed, our childlike curiosity remains the same.</h4>
-        <br />
-        <div class="row">
-            @foreach (var person in Model.TeamMembers)
-            {
-                @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
-                {
-                    @if (person.CurrentMember == "Y")
-                    {
-                    <div class="cardColumn">
-                        <div class="cardData">
-                            <figure>
-                                <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
-                                    <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
-                                </a>
-                            </figure>
-                            <div class="cardMember">
-                                <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
-                                <p class="cardTitle">@Html.Raw(@person.Job)</p>
-                                <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
-                                <p>
-                                    <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
-                                </p>
-                                @Html.HiddenFor(m => person.Name)
-                                @Html.HiddenFor(m => person.ImagePath)
-                                @Html.HiddenFor(m => person.Title)
-                                @Html.HiddenFor(m => person.Job)
-                                @Html.HiddenFor(m => person.Email)
-                                @Html.HiddenFor(m => person.NCBIPublicationsID)
-                                @Html.HiddenFor(m => person.ResearchInterest)
-                                @Html.HiddenFor(m => person.GitHub)
-                                @Html.HiddenFor(m => person.ResearchGate)
-                                @for (int i = 0; i < person.PreAcceptedPublicationsTitles.Count; i++)
-                                {
-                                    @Html.HiddenFor(m => person.PreAcceptedPublicationsTitles[i])
-                                }
-                                @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
-                                {
-                                    @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Title)
-                                    @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].JournalName)
-                                    @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Link)
-                                    @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
-                                    {
-                                        @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Authors[x])
-                                    }
-                                    @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Date)
-                                }
-                                @Html.HiddenFor(m => person.Biography)
-                            </div>
-                        </div>
-                    </div>
-                        }
-                    }
-            }
-        </div>
-    </article>
 
-</div>
+<div class="tabcontent">
+    <div class="tab-content">
 
-<div id="past" class="tabcontent">
-    <article>
-        <h2>Past members</h2>
-        <h4>While our transcriptome and lab have changed, our companionship remains the same.</h4>
-        <br />
-        <div class="row">
-            @foreach (var person in Model.TeamMembers)
-            {
-                @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
-                {
-                    @if (person.CurrentMember == "N")
+        <div class="tab-pane fade in active" id="tab1">
+            <article>
+                <h2>Current members</h2>
+
+                <h4>While our transcriptomes may have changed, our childlike curiosity remains the same.</h4>
+                <br />
+                <div class="row">
+                    @foreach (var person in Model.TeamMembers)
                     {
-                        <div class="cardColumn">
-                            <div class="cardData">
-                                <figure>
-                                    <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
-                                        <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
-                                    </a>
-                                </figure>
-                                <div class="cardMember">
-                                    <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
-                                    <p class="cardTitle">@Html.Raw(@person.Job)</p>
-                                    <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
-                                    <p>
-                                        <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
-                                    </p>
-                                    @Html.HiddenFor(m => person.Name)
-                                    @Html.HiddenFor(m => person.ImagePath)
-                                    @Html.HiddenFor(m => person.Title)
-                                    @Html.HiddenFor(m => person.Job)
-                                    @Html.HiddenFor(m => person.Email)
-                                    @Html.HiddenFor(m => person.NCBIPublicationsID)
-                                    @Html.HiddenFor(m => person.ResearchInterest)
-                                    @Html.HiddenFor(m => person.GitHub)
-                                    @Html.HiddenFor(m => person.ResearchGate)
-                                    @for (int i = 0; i < person.PreAcceptedPublicationsTitles.Count; i++)
-                                    {
-                                        @Html.HiddenFor(m => person.PreAcceptedPublicationsTitles[i])
-                                    }
-                                    @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
-                                    {
-                                        @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Title)
-                                        @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].JournalName)
-                                        @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Link)
-                                        @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
-                                        {
-                                            @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Authors[x])
-                                        }
-                                        @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Date)
-                                    }
-                                    @Html.HiddenFor(m => person.Biography)
+                        @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
+                        {
+                            @if (person.CurrentMember == "Y")
+                            {
+                                <div class="cardColumn">
+                                    <div class="cardData">
+                                        <figure>
+                                            <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
+                                                <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
+                                            </a>
+                                        </figure>
+                                        <div class="cardMember">
+                                            <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
+                                            <p class="cardTitle">@Html.Raw(@person.Job)</p>
+                                            <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
+                                            <p>
+                                                <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
+                                            </p>
+                                            @Html.HiddenFor(p => person.Name)
+                                            @Html.HiddenFor(p => person.ImagePath)
+                                            @Html.HiddenFor(p => person.Title)
+                                            @Html.HiddenFor(p => person.Job)
+                                            @Html.HiddenFor(p => person.Email)
+                                            @Html.HiddenFor(p => person.NCBIPublicationsID)
+                                            @Html.HiddenFor(p => person.ResearchInterest)
+                                            @Html.HiddenFor(p => person.GitHub)
+                                            @Html.HiddenFor(p => person.ResearchGate)
+                                            @for (int i = 0; i < person.PreAcceptedPublicationsTitles.Count; i++)
+                                            {
+                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsTitles[i])
+                                            }
+                                            @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
+                                            {
+                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Title)
+                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].JournalName)
+                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Link)
+                                                @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
+                                                {
+                                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Authors[x])
+                                                }
+                                                @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Date)
+                                            }
+                                            @Html.HiddenFor(p => person.Biography)
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            }
                         }
                     }
-                }
-            </div>
-    </article>
+                </div>
+            </article>
+        </div>
+
+        <div class="tab-pane fade" id="tab2">
+            <article>
+                <h2>Past members</h2>
+                <h4>While our transcriptome and lab have changed, our companionship remains the same.</h4>
+                <br />
+                <div class="row">
+                    @foreach (var person in Model.TeamMembers)
+                    {
+                        @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
+                        {
+                            @if (person.CurrentMember == "N")
+                            {
+                                <div class="cardColumn">
+                                    <div class="cardData">
+                                        <figure>
+                                            <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
+                                                <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
+                                            </a>
+                                        </figure>
+                                        <div class="cardMember">
+                                            <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
+                                            <p class="cardTitle">@Html.Raw(@person.Job)</p>
+                                            <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
+                                            <p>
+                                                <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
+                                            </p>
+                                            @Html.HiddenFor(m => person.Name)
+                                            @Html.HiddenFor(m => person.ImagePath)
+                                            @Html.HiddenFor(m => person.Title)
+                                            @Html.HiddenFor(m => person.Job)
+                                            @Html.HiddenFor(m => person.Email)
+                                            @Html.HiddenFor(m => person.NCBIPublicationsID)
+                                            @Html.HiddenFor(m => person.ResearchInterest)
+                                            @Html.HiddenFor(m => person.GitHub)
+                                            @Html.HiddenFor(m => person.ResearchGate)
+                                            @for (int i = 0; i < person.PreAcceptedPublicationsTitles.Count; i++)
+                                            {
+                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsTitles[i])
+                                            }
+                                            @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
+                                            {
+                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Title)
+                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].JournalName)
+                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Link)
+                                                @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
+                                                {
+                                                    @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Authors[x])
+                                                }
+                                                @Html.HiddenFor(m => person.PreAcceptedPublicationsList[i].Date)
+                                            }
+                                            @Html.HiddenFor(m => person.Biography)
+                                            @Html.HiddenFor(m => person.CurrentMember)
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+            </article>
+        </div>
+    </div>
+    
 
 </div>
+
 
 
 
@@ -151,26 +159,7 @@
             $("#" + memberID).submit();
             return false;
         }
-        function openMember(evt, cityName) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
-
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+        
     </script>
 
     <script type="text/javascript">
@@ -178,7 +167,9 @@
             // Turn active current menu's option
             $(".nav-item").find(".active").removeClass("active");
             $("#tab_team").addClass("active");
+
         });
+       
     </script>
 
 }
