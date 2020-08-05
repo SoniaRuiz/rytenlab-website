@@ -49,6 +49,7 @@ namespace RytenLab_Web.Models
         /// </summary>
         public string GitHub { get; set; }
         public string ResearchGate { get; set; }
+        public string CurrentMember { get; set; }
         /// <summary>
         /// Constructor
         /// </summary>

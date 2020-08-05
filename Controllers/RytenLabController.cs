@@ -72,7 +72,8 @@ namespace RytenLab_Web.Controllers
                         Biography = node["Biography"].InnerText,
                         ImagePath = node["ImagePath"].InnerText,
                         GitHub = node["GitHub"].InnerText,
-                        ResearchGate = node["ResearchGate"].InnerText
+                        ResearchGate = node["ResearchGate"].InnerText,
+                        CurrentMember = node["CurrentMember"].InnerText
                     });
                 }
 
@@ -243,6 +244,7 @@ namespace RytenLab_Web.Controllers
                         person.ImagePath = node["ImagePath"].InnerText;
                         person.GitHub = node["GitHub"].InnerText;
                         person.ResearchGate = node["ResearchGate"].InnerText;
+                        person.CurrentMember = node["CurrentMember"].InnerText;
                         break;
                     }
                 }

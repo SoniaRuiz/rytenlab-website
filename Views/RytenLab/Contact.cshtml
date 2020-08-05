@@ -2,29 +2,33 @@
     //View for 'Contact' page
     ViewData["Title"] = "Contact";
 }
-<header class="header">
-    <h1>@ViewData["Title"]</h1>
-    <hr />
-</header>
-<article>
-    <h2>Dr Mina Ryten</h2>
+    <header class="header">
+        <h1>@ViewData["Title"]</h1>
+        <hr />
+    </header>
+    <article>
+        <div class="row">
 
-    <div class="media-left media-top">
-        <a href="mailto:mina.ryten@ucl.ac.uk" title="Get in touch">
-            <img width="242" height="250" src="~/images/modified/filter/mina.jpg" alt="Mina Ryten" class="media-object">
-        </a>
-    </div>
-    <div class="media-body">
-        <address style="padding-top:5px;">
-            <strong><u>Professor of Clinical Genetics</u></strong>, UCL Great Ormond Street Institute of Child Health<br />
-            <strong><u>Honorary Consultant in Clinical Genetics</u></strong>, Great Ormond Street Hospital for Children<br />
-        </address>
-    </div>
-    <br />
-    <address>
-        <strong>Get in touch:</strong> <a href="mailto:mina.ryten@ucl.ac.uk">mina.ryten@ucl.ac.uk</a><br />
-    </address>
-</article>
+
+            <div class="media-left media-top">
+                <figure>
+                    <a href="mailto:mina.ryten@ucl.ac.uk" title="Get in touch">
+                        <img width="242" height="250" src="~/images/modified/filter/mina.jpg" alt="Mina Ryten" class="media-object">
+                    </a>
+                </figure>
+
+            </div>
+            <div class="media-body">
+                <h2>Dr Mina Ryten</h2>
+                <address style="padding-top:5px;">
+                    <strong>Professor of Clinical Genetics</strong>, UCL Great Ormond Street Institute of Child Health<br />
+                    <strong>Honorary Consultant in Clinical Genetics</strong>, Great Ormond Street Hospital for Children<br />
+                </address>
+            </div>
+            <br />
+            <strong>Get in touch:</strong> <a href="mailto:mina.ryten@ucl.ac.uk">mina.ryten@ucl.ac.uk</a><br />
+        </div>
+    </article>
 @section Scripts{
 
     <script type="text/javascript">
