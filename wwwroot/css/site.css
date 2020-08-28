@@ -51,5 +51,19 @@ body {
 
 
 
+.navbar-nav .dropdown-menu {
+    background-color: #101010 !important;
+    color: white !important;
+}
+    .navbar-nav .dropdown-menu li {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+        .navbar-nav .dropdown-menu li a {
+            color: white !important;
+        }
+        .navbar-nav .dropdown-menu li a:hover {
+            color: black !important;
+        }
 
 
