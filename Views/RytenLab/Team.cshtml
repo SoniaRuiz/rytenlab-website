@@ -8,130 +8,60 @@
     <h1>@ViewData["Title"]</h1>
     <hr />
 </header>
-<!-- Tab links -->
-<ul id="tabs" class="nav nav-tabs">
+ 
+@*<ul id="tabs" class="nav nav-tabs">
     <li class="active"><a href="#tab1" data-toggle="tab">Current members</a></li>
     <li><a href="#tab2" data-toggle="tab">Past members</a></li>
-</ul>
+</ul>*@
 
 <!-- Tab content -->
 
 <div class="tabcontent">
     <div class="tab-content">
-
-        <div class="tab-pane fade in active" id="tab1">
-            <article>
-                <h2>Current members</h2>
-
-                <h4>While our transcriptomes may have changed, our childlike curiosity remains the same.</h4>
-                <br />
-                <div class="row">
-                    @foreach (var person in Model.TeamMembers)
+        <article>
+            <h2>Current members</h2>
+            <h4>While our transcriptomes may have changed, our childlike curiosity remains the same.</h4>
+            <br />
+            <div class="row">
+                @foreach (var person in Model.TeamMembers)
+                {
+                    @if (person.CurrentMember == "Y")
                     {
-
-                        @if (person.CurrentMember == "Y")
+                        @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
                         {
-                            @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
-                            {
-                                <div class="cardColumn">
-                                    <div class="cardData">
-                                        <figure>
-                                            <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
-                                                <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
-                                            </a>
-                                        </figure>
-                                        <div class="cardMember">
-                                            <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
-                                            <p class="cardTitle">@Html.Raw(@person.Job)</p>
-                                            <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
-                                            <p>
-                                                <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
-                                            </p>
-                                            @Html.HiddenFor(p => person.Name)
-                                            @Html.HiddenFor(p => person.ImagePath)
-                                            @Html.HiddenFor(p => person.Title)
-                                            @Html.HiddenFor(p => person.Job)
-                                            @Html.HiddenFor(p => person.Email)
-                                            @Html.HiddenFor(p => person.NCBIPublicationsID)
-                                            @Html.HiddenFor(p => person.ResearchInterest)
-                                            @Html.HiddenFor(p => person.GitHub)
-                                            @Html.HiddenFor(p => person.ResearchGate)
-                                            @*@for (int i = 0; i < person.PreAcceptedPublicationsTitles.Count; i++)
-                                {
-                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsTitles[i])
-                                }
-                                @for (int i = 0; i < person.PreAcceptedPublicationsList.Count; i++)
-                                {
-                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Title)
-                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].JournalName)
-                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Link)
-                                    @for (int x = 0; x < person.PreAcceptedPublicationsList[i].Authors.Count; x++)
-                                    {
-                                        @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Authors[x])
-                                    }
-                                    @Html.HiddenFor(p => person.PreAcceptedPublicationsList[i].Date)
-                                }*@
-                                            @Html.HiddenFor(p => person.Biography)
-                                        </div>
+                            <div class="cardColumn">
+                                <div class="cardData">
+                                    <figure>
+                                        <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
+                                            <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
+                                        </a>
+                                    </figure>
+                                    <div class="cardMember">
+                                        <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
+                                        <p class="cardTitle">@Html.Raw(@person.Job)</p>
+                                        <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
+                                        <p>
+                                            <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
+                                        </p>
+                                        @Html.HiddenFor(p => person.Name)
+                                        @Html.HiddenFor(p => person.ImagePath)
+                                        @Html.HiddenFor(p => person.Title)
+                                        @Html.HiddenFor(p => person.Job)
+                                        @Html.HiddenFor(p => person.Email)
+                                        @Html.HiddenFor(p => person.NCBIPublicationsID)
+                                        @Html.HiddenFor(p => person.ResearchInterest)
+                                        @Html.HiddenFor(p => person.GitHub)
+                                        @Html.HiddenFor(p => person.ResearchGate)
+                                        @Html.HiddenFor(p => person.Biography)
                                     </div>
                                 </div>
-                            }
+                            </div>
                         }
                     }
-                </div>
+                }
+            </div>
             </article>
-        </div>
-
-        <div class="tab-pane fade" id="tab2">
-            <article>
-                <h2>Past members</h2>
-                <h4>While our transcriptome and lab have changed, our companionship remains the same.</h4>
-                <br />
-                <div class="row">
-                    @foreach (var person in Model.TeamMembers)
-                    {
-                        @if (person.CurrentMember == "N")
-                        {
-                            @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
-                            {
-                                <div class="cardColumn">
-                                    <div class="cardData">
-                                        <figure>
-                                            <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID)">
-                                                <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
-                                            </a>
-                                        </figure>
-                                        <div class="cardMember">
-                                            <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
-                                            <p class="cardTitle">@Html.Raw(@person.Job)</p>
-                                            <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
-                                            <p>
-                                                <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
-                                            </p>
-                                            @Html.HiddenFor(m => person.Name)
-                                            @Html.HiddenFor(m => person.ImagePath)
-                                            @Html.HiddenFor(m => person.Title)
-                                            @Html.HiddenFor(m => person.Job)
-                                            @Html.HiddenFor(m => person.Email)
-                                            @Html.HiddenFor(m => person.NCBIPublicationsID)
-                                            @Html.HiddenFor(m => person.ResearchInterest)
-                                            @Html.HiddenFor(m => person.GitHub)
-                                            @Html.HiddenFor(m => person.ResearchGate)
-
-                                            @Html.HiddenFor(m => person.Biography)
-                                            @Html.HiddenFor(m => person.CurrentMember)
-                                        </div>
-                                    </div>
-                                </div>
-                            }
-                        }
-                    }
-                </div>
-            </article>
-        </div>
     </div>
-    
-
 </div>
 
 

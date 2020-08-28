@@ -88,15 +88,48 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
-        /// <summary>
-        /// Controller method for 'Data' page.
-        /// </summary>
-        /// <returns>Returns 'Data' view.</returns>
-        public IActionResult Data()
-        {
-            ViewData["Message"] = "Your application description page.";
 
-            return View();
+        public IActionResult PastMembers()
+        {
+            try
+            {
+                Team pastMembers = new Team();
+
+                var path = Path.Combine(_hostingEnvironment.WebRootPath, "xml/team.xml");
+                //Load the XML file in XmlDocument.
+                XmlDocument doc = new XmlDocument();
+                doc.Load(path);
+
+                //Loop through the selected Nodes.
+                foreach (XmlNode node in doc.SelectNodes("/TeamMembers/Person"))
+                {
+                    //Fetch the Node values and assign it to Model.
+                    pastMembers.TeamMembers.Add(new Person
+                    {
+                        ID = int.Parse(node["ID"].InnerText),
+                        Name = node["Name"].InnerText,
+                        Title = node["Title"].InnerText,
+                        Job = node["Job"].InnerText,
+                        Email = node["Email"].InnerText,
+                        ResearchInterest = node["ResearchInterest"].InnerText,
+                        Biography = node["Biography"].InnerText,
+                        ImagePath = node["ImagePath"].InnerText,
+                        GitHub = node["GitHub"].InnerText,
+                        ResearchGate = node["ResearchGate"].InnerText,
+                        CurrentMember = node["CurrentMember"].InnerText
+                    });
+                }
+
+                return View(pastMembers);
+            }
+            catch (Exception e)
+            {
+                ErrorViewModel errorModel = new ErrorViewModel
+                {
+                    Message = e.Message
+                };
+                return View("Error", errorModel);
+            }
         }
         /// <summary>
         /// Controller method for 'Tools' page.
@@ -109,33 +142,6 @@ namespace RytenLab_Web.Controllers
             return View();
         }
 
-        ///// <summary>
-        ///// Controller method for 'Publications' page.
-        ///// </summary>
-        ///// <returns>
-        ///// If everything is ok: Returns 'Publications' view.
-        ///// If an error occurs: returns 'Error' view
-        ///// </returns>
-        //public IActionResult Publications()
-        //{
-        //    try
-        //    {
-        //        Person publicationsPerson = new Person();
-        //        PublicationRepository publications = new PublicationRepository();
-
-        //        //NCBI publications ID (from all team members)
-        //        publicationsPerson.NCBIPublicationsID = "30328509,30225556,30089514,30066433,29930110,29365066,29127725,29289683,28899015,28764847,28602509,28575651,28403906,28391543,28137300,28098162,28097204,28076797,28010125,28004117,27899424,27694991,27584932,27500074,27073233,26968196,26912063,26707700,26468326,26085604,25983243,25970246,25799108,25620700,25607358,25568836,25439728,25174004,24862029,24503276,24399358,24336208,24264146,24259043,24241535,24198383,24175058,24014518,23967090,23889843,23855984,23435227,23424103,23360175,23200863,23177596,22778642,22723018,22681703,22504417,22433082,21944779,21863007,21848658,21799870,20849322,20842366,19909261,19734301,18005209,17941929,15911103,15231720,15484912,14517997,12135987";
-        //        publicationsPerson = publications.GetPublicationsDataNCBI(publicationsPerson);
-
-        //        return View(publicationsPerson);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        ErrorViewModel errorModel = new ErrorViewModel();
-        //        errorModel.Message = e.Message;
-        //        return View("Error", errorModel);
-        //    }
-        //}
         /// <summary>
         /// Controller method for 'Contact' page.
         /// </summary>

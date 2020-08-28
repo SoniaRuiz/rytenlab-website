@@ -167,20 +167,7 @@
     <ResearchGate></ResearchGate>
     <CurrentMember>Y</CurrentMember>
   </Person>
-  <!--<Person>
-    <ID>11</ID>
-    <Name>Fran Kiernan</Name>
-    <Title>MSc</Title>
-    <Job>Research assistant</Job>
-    <Email>f.kiernan@ucl.ac.uk</Email>
-    <ResearchInterest>Clinical genetics; Genomics; Transcriptomics; RNA-seq; Neurodegenerative diseases; Long-read sequencing.</ResearchInterest>
-    <Biography>
-      <b>Fran Kiernan</b> Fran is completing an MSc in Genomic Medicine at King’s College London and St. George’s, University of London. Their project is focused on novel exon discovery and validation in genes associated with neurodegenerative diseases. This project uses a combination of wet-lab and dry-lab techniques, including RNA-sequencing on Sanger and nanopore (MinIon) technologies.
-    </Biography>
-    <ImagePath>fran.png</ImagePath>
-    <GitHub>FranKiernan</GitHub>
-    <ResearchGate>Fran_Kiernan</ResearchGate>
-  </Person>-->
+
   <Person>
     <ID>11</ID>
     <Name>Ana Luisa Gil Martínez</Name>
@@ -210,5 +197,20 @@
     <GitHub></GitHub>
     <ResearchGate>Emil_Gustavsson</ResearchGate>
     <CurrentMember>Y</CurrentMember>
+  </Person>
+  <Person>
+    <ID>13</ID>
+    <Name>Fran Kiernan</Name>
+    <Title>MSc</Title>
+    <Job>Research assistant</Job>
+    <Email>f.kiernan@ucl.ac.uk</Email>
+    <ResearchInterest>Clinical genetics; Genomics; Transcriptomics; RNA-seq; Neurodegenerative diseases; Long-read sequencing.</ResearchInterest>
+    <Biography>
+      <b>Fran Kiernan</b> Fran is completing an MSc in Genomic Medicine at King’s College London and St. George’s, University of London. Their project is focused on novel exon discovery and validation in genes associated with neurodegenerative diseases. This project uses a combination of wet-lab and dry-lab techniques, including RNA-sequencing on Sanger and nanopore (MinIon) technologies.
+    </Biography>
+    <ImagePath>fran.png</ImagePath>
+    <GitHub>FranKiernan</GitHub>
+    <ResearchGate>Fran_Kiernan</ResearchGate>
+    <CurrentMember>N</CurrentMember>
   </Person>
 </TeamMembers>
