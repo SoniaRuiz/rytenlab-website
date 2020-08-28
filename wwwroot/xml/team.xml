@@ -70,7 +70,7 @@
     <Email>m.guelfi@ucl.ac.uk</Email>
     <ResearchInterest>Genomics; Genetics; Bioinformatics; Novel transcription; Gene regulation; RNA Splicing; Neurodegeneration; Machine Learning;  Biostatistics, Data integration.</ResearchInterest>
     <Biography>
-      <b>Sebastian Guelfi</b>, is Postdoctoral Research Fellow in the Ryten Lab. CurrentMemberly, he studies RNA splicing by leveraging large genomic datasets. He obtained his PhD in bioinformatics at University College London where he integrated different forms of genomic data to investigate the relationship between gene regulation and neurodegenerative diseases. Before pursuing his interests in data analysis and health care, Sebastian worked for 6 years in the private sector designing and developing software to solve logistics problems.
+      Sebastian Guelfi was a Postdoctoral Research Fellow in the Ryten Lab, where he studied RNA splicing by leveraging large genomic datasets. He obtained his PhD in bioinformatics at University College London where he integrated different forms of genomic data to investigate the relationship between gene regulation and neurodegenerative diseases. Before pursuing his interests in data analysis and health care, Sebastian worked for 6 years in the private sector designing and developing software to solve logistics problems.
     </Biography>
     <ImagePath>seb.jpg</ImagePath>
     <GitHub>SebGuelfi</GitHub>
@@ -115,7 +115,7 @@
     <Email>s.ruiz@ucl.ac.uk</Email>
     <ResearchInterest>RNA Splicing; Transcriptomics; Novel transcription; Web Development; Artificial Intelligence; Machine Learning; Software Development.</ResearchInterest>
     <Biography>
-      <b>Sonia García Ruiz</b> is a PhD student and software developer at UCL. She completed her Bachelor’s in Computer Science at the University of Miguel Hernández (Spain) in 2014. After that, she accumulated 2 years of experience as a software and web developer, working with clients such as Microsoft and Deloitte. Nevertheless, in 2017 she decided to return to university and completed her master’s degree in Artificial Intelligence at the University of Murcia in 2018. In the Ryten lab, she is focused on finding the mechanisms underlying the alternative splicing in human cells, and how those different products may interfiere in the human health. Additionally, she uses her knowledge of web development to help build analysis and visualisation tools for easier data interpretation.
+      Sonia García Ruiz is a PhD student and software developer at UCL. She completed her Bachelor’s in Computer Science at the University of Miguel Hernández (Spain) in 2014. After that, she accumulated 2 years of experience as a software and web developer, working with clients such as Microsoft and Deloitte. Nevertheless, in 2017 she decided to return to university and completed her master’s degree in Artificial Intelligence at the University of Murcia in 2018. In the Ryten lab, she is focused on finding the mechanisms underlying the alternative splicing in human cells, and how those different products may interfiere in the human health. Additionally, she uses her knowledge of web development to help build analysis and visualisation tools for easier data interpretation.
     </Biography>
     <ImagePath>sonia.jpg</ImagePath>
     <GitHub>SoniaRuiz</GitHub>
@@ -134,7 +134,7 @@
     </Biography>
     <ImagePath>zhongbo.jpg</ImagePath>
     <GitHub></GitHub>
-    <ResearchGate></ResearchGate>
+    <ResearchGate>Zhongbo_Chen</ResearchGate>
     <CurrentMember>Y</CurrentMember>
   </Person>
   <Person>
@@ -176,7 +176,7 @@
     <Email>analuisagilm@gmail.com</Email>
     <ResearchInterest>Functional genomics, neurodegeneration, neuroinflammation, statistical genetics, transcriptomics.</ResearchInterest>
     <Biography>
-      <b>Ana Luisa Gil Martinez</b> is a Postdoctoral Research Fellow in the Ryten lab. She completed her Bachelor's in Biochemistry (2010-2014) and her Master’s Degree in Molecular Biology and Biotechnology (2014-2015) at the University of Murcia (Spain). During this time, she specialized in the study of inorganic compounds in nanoparticles for therapeutic purposes. After that, she was selected for a PhD position in the Clinical and Experimental Neuroscience Group. Her thesis was focused on the study of the involvement of glial cells in the neurodegenerative processes associated with Parkinsonism and aging. In 2019, she obtained a Double Doctor's degree by the University of Murcia (Spain) and Maastricht University (The Netherlands). CurrentMemberly, her postdoctoral project in the Ryten Lab aims to integrate co-expression models to investigate molecular mechanisms driving the progression of Parkinson's disease.
+      Ana Luisa Gil Martinez is a Postdoctoral Research Fellow in the Ryten lab. She completed her Bachelor's in Biochemistry (2010-2014) and her Master’s Degree in Molecular Biology and Biotechnology (2014-2015) at the University of Murcia (Spain). During this time, she specialized in the study of inorganic compounds in nanoparticles for therapeutic purposes. After that, she was selected for a PhD position in the Clinical and Experimental Neuroscience Group. Her thesis was focused on the study of the involvement of glial cells in the neurodegenerative processes associated with Parkinsonism and aging. In 2019, she obtained a Double Doctor's degree by the University of Murcia (Spain) and Maastricht University (The Netherlands). CurrentMemberly, her postdoctoral project in the Ryten Lab aims to integrate co-expression models to investigate molecular mechanisms driving the progression of Parkinson's disease.
     </Biography>
     <ImagePath>analuisa.png</ImagePath>
     <GitHub></GitHub>
@@ -206,7 +206,7 @@
     <Email>f.kiernan@ucl.ac.uk</Email>
     <ResearchInterest>Clinical genetics; Genomics; Transcriptomics; RNA-seq; Neurodegenerative diseases; Long-read sequencing.</ResearchInterest>
     <Biography>
-      <b>Fran Kiernan</b> Fran is completing an MSc in Genomic Medicine at King’s College London and St. George’s, University of London. Their project is focused on novel exon discovery and validation in genes associated with neurodegenerative diseases. This project uses a combination of wet-lab and dry-lab techniques, including RNA-sequencing on Sanger and nanopore (MinIon) technologies.
+      Fran Kiernan completed an MSc in Genomic Medicine at King's College London and St. George's, University of London in 2019. In the RytenLab, he focused on novel exon discovery and validation in genes associated with neurodegenerative diseases using a combination of wet-lab and dry-lab techniques, including RNA-sequencing on Sanger and nanopore (MinIon) technologies.
     </Biography>
     <ImagePath>fran.png</ImagePath>
     <GitHub>FranKiernan</GitHub>
