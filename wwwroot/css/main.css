@@ -62,7 +62,7 @@ article {
     z-index: 10;
 }
     #footer small {
-        float: right;
-        margin: 7px 20px;
+        float: left;
+        margin: 10px 20px;
         color: #9d9d9d;
     }

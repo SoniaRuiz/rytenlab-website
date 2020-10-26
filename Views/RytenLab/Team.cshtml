@@ -19,13 +19,58 @@
 <div class="tabcontent">
     <div class="tab-content">
         <article>
+            @foreach (var person in Model.TeamMembers)
+            {
+                @if (person.Name == "Mina Ryten")
+                {
+                <div class="text-center">
+                    <h2>Principal investigator</h2>
+                    @*<h4>While our transcriptomes may have changed, our childlike curiosity remains the same.</h4>*@
+                    <div class="row justify-content-center">
+                        @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
+                        {
+                            <div class="cardColumn_center">
+                                <div class="cardData">
+                                    <figure>
+                                        <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
+                                            <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
+                                        </a>
+                                    </figure>
+                                    <div class="cardMember">
+                                        <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
+                                        <p class="cardTitle">@Html.Raw(@person.Job)</p>
+                                        <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
+                                        <p>
+                                            <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
+                                        </p>
+                                        @Html.HiddenFor(p => person.Name)
+                                        @Html.HiddenFor(p => person.ImagePath)
+                                        @Html.HiddenFor(p => person.Title)
+                                        @Html.HiddenFor(p => person.Job)
+                                        @Html.HiddenFor(p => person.Email)
+                                        @Html.HiddenFor(p => person.NCBIPublicationsID)
+                                        @Html.HiddenFor(p => person.ResearchInterest)
+                                        @Html.HiddenFor(p => person.GitHub)
+                                        @Html.HiddenFor(p => person.ResearchGate)
+                                        @Html.HiddenFor(p => person.Biography)
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <hr />
+                }
+            }
+  
             <h2>Current members</h2>
+    
             <h4>While our transcriptomes may have changed, our childlike curiosity remains the same.</h4>
             <br />
-            <div class="row">
+            <div class="row ">
                 @foreach (var person in Model.TeamMembers)
                 {
-                    @if (person.CurrentMember == "Y")
+                    @if (person.CurrentMember == "Y" && person.Name != "Mina Ryten")
                     {
                         @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
                         {
@@ -60,7 +105,7 @@
                     }
                 }
             </div>
-            </article>
+        </article>
     </div>
 </div>
 

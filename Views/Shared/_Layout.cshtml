@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - RytenLab</title>
 
-    @*<environment include="Development">*@
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="~/css/site.css" type="text/css" />
-    <link rel="stylesheet" href="~/css/main.css" />
-    <link rel="stylesheet" href="~/css/album.css" />
-    @*</environment>*@
+    <link rel="stylesheet" href="~/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/album.css" type="text/css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" type="text/css" />
+
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
@@ -25,7 +25,7 @@
             gtag('js', new Date());
             gtag('config', 'UA-129116044-1');
         </script>
-    </environment>   
+    </environment>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -49,7 +49,7 @@
                             <li id="tab_past_members"><a asp-area="" asp-controller="RytenLab" asp-action="PastMembers">Past Members</a></li>
                         </ul>
                     </li>
-                    
+
                     @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Data">Data</a></li>*@
                     <li id="tab_tools"><a asp-area="" asp-controller="RytenLab" asp-action="Tools">Tools</a></li>
                     @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Publications">Publications</a></li>*@
@@ -67,9 +67,18 @@
 
     </div>
     <div id="footer">
-        <small>&copy; 2020 - Ryten Lab</small>
-    </div>
+        <div class="text-left">
+            <small>&copy; 2020 - Ryten Lab</small>
+        </div>
+        <div class="text-right">
+            <img src="~/images/logo-ucl.png" />
+            <img src="~/images/ich-logo.jpg" />
+            <img src="~/images/logo-um.png" />
+        </div>
 
+
+    </div>
+    <script src="~/lib/font-awesome/js/all.js"></script>
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -94,7 +103,7 @@
     @RenderSection("Scripts", required: false)
 
 
-    
+
 
 
 </body>
