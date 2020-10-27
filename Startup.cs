@@ -51,7 +51,7 @@ namespace RytenLab_Web
                     {
                         Name = "RytenLab team",
                         Email = "mina.ryten@ucl.ac.uk",
-                        Url = new Uri("https://snca.atica.um.es/"),
+                        Url = new Uri("https://rytenlab.com/"),
                     }
                 });
 
