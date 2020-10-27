@@ -186,5 +186,22 @@ namespace RytenLab_Web.Repositories
             return response;
 
         }
+
+        public string GetModuleTOMGenes(string tissue, string whichone, string module)
+        {
+
+            _coexpURL += "getModuleTOMGenes";
+            Uri uri = new Uri(_coexpURL);
+
+            PostData = "{\"tissue\":\"" + tissue +
+                "\",\"which.one\":\"" + whichone +
+                "\",\"module\":\"" + module + "\"}";
+
+            //Make the request
+            string response = _adapter.POSTHttpRequestJSON(uri, PostData);
+
+            return response;
+
+        }
     }
 }
