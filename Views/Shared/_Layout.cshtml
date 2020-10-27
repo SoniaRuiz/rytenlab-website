@@ -19,14 +19,18 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+        <!-- GOOGLE ANALYTICS -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129116044-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+
             gtag('config', 'UA-129116044-1');
         </script>
+
     </environment>
 </head>
 <body>
@@ -51,7 +55,6 @@
                             <li id="tab_past_members"><a asp-area="" asp-controller="RytenLab" asp-action="PastMembers">Past Members</a></li>
                         </ul>
                     </li>
-
                     @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Data">Data</a></li>*@
                     <li id="tab_tools"><a asp-area="" asp-controller="RytenLab" asp-action="Tools">Tools</a></li>
                     @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Publications">Publications</a></li>*@
@@ -80,6 +83,8 @@
 
 
     </div>
+
+    <!-- SCRIPTS -->
     <script src="~/lib/font-awesome/js/all.js"></script>
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -103,10 +108,6 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
-
-
-
-
 
 </body>
 </html>

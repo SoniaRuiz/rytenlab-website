@@ -79,3 +79,4 @@ C:\Users\skgtsg0\source\repos\RytenLab_Web\RytenLab_Web\obj\Debug\netcoreapp2.1\
 \\ad.ucl.ac.uk\home0\skgtsg0\Documents\GitHub\RytenLab_MVC\obj\Debug\netcoreapp2.1\RytenLab_Web.genruntimeconfig.cache
 \\ad.ucl.ac.uk\home0\skgtsg0\Documents\GitHub\RytenLab_MVC\obj\Debug\netcoreapp2.1\Razor\Views\RytenLab\PastMembers.cshtml.g.cs
 \\ad.ucl.ac.uk\home0\skgtsg0\Documents\GitHub\RytenLab_MVC\bin\Debug\netcoreapp2.1\libman.json
+\\ad.ucl.ac.uk\home0\skgtsg0\Documents\GitHub\RytenLab_MVC\obj\Debug\netcoreapp2.1\RytenLab_Web.csprojAssemblyReference.cache
