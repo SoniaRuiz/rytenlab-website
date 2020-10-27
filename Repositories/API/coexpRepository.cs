@@ -28,7 +28,7 @@ namespace RytenLab_Web.Repositories
         { 
             _adapter = new HttpAdapter();
             //TODO: cambiar por la URL 'localhost'
-            _coexpURL = "https://snca.atica.um.es/api/";
+            _coexpURL = "https://rytenlab.com/api/";
         }
 
         /****************************************************************************/

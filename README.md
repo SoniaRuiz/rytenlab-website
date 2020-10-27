@@ -6,7 +6,7 @@ The major focus of the Ryten Laboratory is the use of transcriptomic data as a f
 
 We are highly collaborative and we are interested in making our work accessible and useful within the neuroscience research community, but also within clinical and diagnostic settings. As part of UCL Great Ormond Street Institute of Child Health (London), and in collaboration with UCL Queen Square Institute of Neurology and University of Murcia (Spain), our on-going work covers the genetic regulation of gene expression in human brain, gene co-expression networks, re-annotation of genes associated with neurological diseases and the use of transcriptomics to improve diagnostic yield. We have released many of the outputs of these projects through the development of different web tools.
 
-To find out more about our work and the people behind it just take a look at our [Team](https://snca.atica.um.es/RytenLab/Team) webpage.
+To find out more about our work and the people behind it just take a look at our [Team](https://rytenlab.com/RytenLab/Team) webpage.
 
 ## Built With
 
@@ -29,6 +29,6 @@ Get in touch with Sonia at [s.ruiz@ucl.ac.uk](mailto:s.ruiz@ucl.ac.uk).
 
 ## Acknowledgments
 
-* All [RytenLab](https://snca.atica.um.es/RytenLab/Team) members.
+* All [RytenLab](https://rytenlab.com/RytenLab/Team) members.
 * [University of Murcia](https://www.um.es/).
 * [University College of London](https://www.ucl.ac.uk/).
