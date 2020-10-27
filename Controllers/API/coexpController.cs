@@ -254,9 +254,20 @@ namespace RytenLab_Web.Controllers
         [Route("GetModuleTOMGraph")]
         public string GetModuleTOMGraph([FromBody, Required] CoExpParameters data)
         {
-            
+
             CoexpRepository repository = new CoexpRepository();
             string response = repository.GetModuleTOMGraph(data.Network, data.Category, data.Module, data.TopGenes);
+
+            return response;
+        }
+
+        [HttpPost]
+        [Route("GetModuleTOMGenes")]
+        public string GetModuleTOMGenes([FromBody, Required] CoExpParameters data)
+        {
+
+            CoexpRepository repository = new CoexpRepository();
+            string response = repository.GetModuleTOMGenes(data.Network, data.Category, data.Module);
 
             return response;
         }
