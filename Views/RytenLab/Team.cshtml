@@ -24,22 +24,22 @@
                 @if (person.Name == "Mina Ryten")
                 {
                 <div class="text-center">
-                    <h2>Principal investigator</h2>
+                    <h2>Principal Investigator</h2>
                     @*<h4>While our transcriptomes may have changed, our childlike curiosity remains the same.</h4>*@
                     <div class="row justify-content-center">
                         @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
                         {
                             <div class="cardColumn_center">
-                                <div class="cardData">
+                                <div class="cardData vcard">
                                     <figure>
-                                        <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
+                                        <a class="url fn n" href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);" rel="RytenLab PI">
                                             <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
                                         </a>
                                     </figure>
                                     <div class="cardMember">
-                                        <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
+                                        <h3 style="font-size: 21px !important;" class="cardName given-name">@person.Name</h3>
                                         <p class="cardTitle">@Html.Raw(@person.Job)</p>
-                                        <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
+                                        <p class="cardEmail email"><a href="mailto:@person.Email">@person.Email</a></p>
                                         <p>
                                             <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
                                         </p>
@@ -77,7 +77,7 @@
                             <div class="cardColumn">
                                 <div class="cardData">
                                     <figure>
-                                        <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);">
+                                        <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID);" rel="RytenLab Member">
                                             <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
                                         </a>
                                     </figure>
