@@ -12,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\album.css" />
     <Content Remove="wwwroot\css\font-awesome.min.css" />
+    <Content Remove="wwwroot\css\main.css" />
   </ItemGroup>
 
   <ItemGroup>
