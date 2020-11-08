@@ -67,3 +67,220 @@ body {
         }
 
 
+
+body {
+    text-align: justify;
+}
+
+.header h1 {
+    font-size: 42px;
+    padding-top: 20px;
+}
+
+article {
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+    article h2 {
+        padding-bottom: 20px;
+    }
+
+@media (min-width: 1200px) {
+    .container {
+        width: 75% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 75% !important;
+    }
+}
+
+.well {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.year-main {
+    margin-bottom: 15px;
+}
+
+.year {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.little-image {
+    height: 250px !important;
+    width: 241px !important;
+}
+
+@media (min-height: 800px) {
+    article {
+        min-height: 800px !important;
+    }
+}
+
+.publication {
+    font-size: 15px;
+}
+
+.mina-biography {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #101010;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+    #footer small {
+        float: left;
+        margin: 10px 20px;
+        color: #9d9d9d;
+    }
+
+.key-words {
+    font-style: italic
+}
+
+
+/**********************************************/
+/****************** ALBUM *********************/
+/**********************************************/
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.row {
+    margin: 0px;
+}
+
+.cardColumn_center {
+    margin: auto;
+    width: 33%;
+    margin-bottom: 16px;
+    padding: 0 10px 25px;
+}
+
+.cardColumn {
+    float: left;
+    width: 33%;
+    margin-bottom: 16px;
+    padding: 0 10px 25px;
+}
+
+@media screen and (max-width: 650px) {
+    .cardColumn {
+        width: 100%;
+        display: block;
+    }
+
+    .cardColumn_center {
+        width: 100%;
+        display: block;
+    }
+}
+
+.cardData {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardMember {
+    padding: 0 16px;
+    width: 100%;
+}
+
+    .cardMember::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.cardName {
+    width: 100%;
+}
+
+.cardTitle {
+    color: grey;
+    width: 100%;
+    font-size: 85%;
+    /*height: 70px;*/
+}
+
+.cardDescription {
+    width: 100%;
+}
+
+.cardEmail {
+    width: 100%;
+}
+
+.cardButton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .cardButton:hover {
+        background-color: #555;
+    }
+
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    /*-webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;*/
+}
+
+figure {
+    overflow: hidden;
+    width: 100%;
+}
+
+.cardData figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.cardData figure:hover img {
+    opacity: .6;
+}
+
+
+
+/* Non-IE styles here */
+/*@supports not (-ms-high-contrast: none) {
+
+    .cardData figure:hover img {
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+
+    }
+}*/
+
+
+
