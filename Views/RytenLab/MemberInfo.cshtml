@@ -10,15 +10,21 @@
     <hr />
 </header>
 <article>
-    <div class="media-left media-top little-image">
-        <a href="mailto:@Model.Email" title="Get in touch with @Model.Name">
-            <img src="~/images/modified/filter/@Model.ImagePath" alt="@Model.Name" class="media-object little-image">
-        </a>
-    </div>
-    <div class="media-body">
-        <address style="padding-top:5px;">
-            <strong style="font-size:17px">@Model.Name</strong><br />
+    <div class="row">
+        <div class="col-lg-3">
+            <figure>
+                <a href="mailto:@Model.Email" title="Get in touch with @Model.Name">
+                    <img src="~/images/modified/filter/@Model.ImagePath" alt="@Model.Name" class="media-object little-image">
+                </a>
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            @*<address style="padding-top:5px;">*@
+
+            <h3><strong>@Model.Name</strong></h3>
             <p>
+
                 @Model.Title<br />
                 @Model.Job<br />
             </p>
@@ -36,28 +42,29 @@
                 <strong>ResearchGate: </strong><a href="https://www.researchgate.net/profile/@Model.ResearchGate" target="_blank">@Model.ResearchGate</a><br />
             }
             @*</small>*@
-        </address>
+            @* </address>*@
+        </div>
+        <br />
+        <div class="col-lg-12">
+            @if (!String.IsNullOrEmpty(Model.ResearchGate))
+            {
+                <h3>Publications</h3>
+                <p>Latest publications of @Model.Name available on <a href="https://www.researchgate.net/profile/@Model.ResearchGate" target="_blank">ResearchGate</a>.</p>
+            }
+
+            <h3>Research Interests</h3>
+            <p>@Model.ResearchInterest</p>
+
+
+            <h3>Biography</h3>
+            <p>@Html.Raw(@Model.Biography)</p>
+            @if (@Model.Name.Contains("Mina"))
+            {
+                <img src="~/images/mina-bio.PNG" title="@Model.Name" alt="@Model.Name" class="mina-biography">
+            }
+
+        </div>
     </div>
-    <br />
-
-    @if (!String.IsNullOrEmpty(Model.ResearchGate))
-    {
-        <h3>Publications</h3>
-        <p>Latest publications of @Model.Name available on <a href="https://www.researchgate.net/profile/@Model.ResearchGate" target="_blank">ResearchGate</a>.</p>
-    }
-
-    <h3>Research Interests</h3>
-    <p>@Model.ResearchInterest</p>
-
-
-    <h3>Biography</h3>
-    <p>@Html.Raw(@Model.Biography)</p>
-    @if (@Model.Name.Contains("Mina"))
-    {
-        <img src="~/images/mina-bio.PNG" title="@Model.Name" alt="@Model.Name" class="mina-biography">
-    }
-
-
 </article>
 
 
