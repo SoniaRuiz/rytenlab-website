@@ -45,11 +45,11 @@ namespace RytenLab_Web
             {
                 c.SwaggerDoc("v2", new OpenApiInfo { 
                     Title = "RytenLab API", 
-                    Version = "v2",
-                    Description = "This is an ASP.NET Core Web API, built to request different methods of the CoExp R framework. Property of the RytenLab Team.",
+                    Version = "v1.0.1",
+                    Description = "This is an ASP.NET Core Web API, built to request different methods of the family of CoExpNets R packages. Property of the RytenLab Team.",
                     Contact = new OpenApiContact
                     {
-                        Name = "RytenLab team",
+                        Name = "The RytenLab team",
                         Email = "mina.ryten@ucl.ac.uk",
                         Url = new Uri("https://rytenlab.com/"),
                     }
@@ -99,7 +99,7 @@ namespace RytenLab_Web
             app.UseSwaggerUI(c =>
             {
 
-                c.SwaggerEndpoint("/swagger/v2/swagger.json", "RytenLab API V2");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "RytenLab API v1.0.1");
                 //c.RoutePrefix = "";
             });
         }
