@@ -53,7 +53,7 @@ namespace RytenLab_Web.Controllers
         /// The requested body must be a JSON object formed by the key "Category" (this is the name of the category from which to obtain all the networks).
         /// An example of the 'Request Body' is provided above.
         /// </param>
-        /// <returns>All networks that belong to the specified category.</returns>
+        /// <returns>Returns all gene co-expression networks that belong to the specified category.</returns>
         [HttpPost]
         [Route("GetAvailableNetworks")]
         public string GetAvailableNetworks([FromBody] CoExpParameters data)
@@ -65,7 +65,7 @@ namespace RytenLab_Web.Controllers
         }
 
         /// <summary>
-        /// Returns all modules that belong to a specific category and network.
+        /// Returns all modules that belong to the specified category and co-expression network.
         /// </summary>
         /// <remarks>
         /// A sample for the 'Request Body':
@@ -81,7 +81,7 @@ namespace RytenLab_Web.Controllers
         /// The requested body must be a JSON object formed by the keys: "Category" (this is the name of the category) and "Network" (this is the name of the network from which to obtain all the modules - this network must belong to the category specified before). 
         /// An example of the 'Request Body' is provided above.
         /// </param>
-        /// <returns>Returns all modules that belong to a specific category and network.</returns>
+        /// <returns>Returns all modules that belong to the specified category and co-expression network.</returns>
         [HttpPost]
         [Route("GetAvailableModules")]
         public string GetAvailableModules([FromBody, Required] CoExpParameters data)
@@ -92,7 +92,7 @@ namespace RytenLab_Web.Controllers
         }
 
         /// <summary>
-        /// Returns the Module Membership (MM) of each gene that belongs to he module, network and category specified.
+        /// Returns the module membership (MM) of each gene to its module.
         /// </summary>
         /// <remarks>
         /// A sample for the 'Request Body':
@@ -108,7 +108,7 @@ namespace RytenLab_Web.Controllers
         /// and "Module" (this is the name of the module from which to obtain all the genes - this module must belong to the network specified before). 
         /// An example of the 'Request Body' is provided above.
         /// </param>
-        /// <returns>Returns the Module Membership (MM) of each gene that belongs to he module, network and category specified.</returns>
+        /// <returns>Returns the module membership (MM) of each gene to its module.</returns>
         [HttpPost]
         [Route("GetMM")]
         public string GetMM([FromBody] CoExpParameters data)
@@ -119,7 +119,7 @@ namespace RytenLab_Web.Controllers
         }
 
         /// <summary>
-        /// Returns the Gene Ontology (GO) information from the specified network.
+        /// Returns the Gene Ontology (GO) terminology associated to each gene belonging to the specified co-expression network.
         /// </summary>
         /// <remarks>
         /// A sample for the 'Request Body':
@@ -133,7 +133,7 @@ namespace RytenLab_Web.Controllers
         /// The requested body must be a JSON object formed by the keys: "Category" (this is the name of the category) and "Network" (this is the name of the network from which to obtain all the modules - this network must belong to the category specified before). 
         /// An example of the 'Request Body' is provided above.
         /// </param>
-        /// <returns>Returns the Gene Ontology (GO) information from the specified network.</returns>        
+        /// <returns>Returns the Gene Ontology (GO) terminology associated to each gene belonging to the specified co-expression network.</returns>        
         [HttpPost]
         [Route("GetGOFromTissue")]
         public string GetGOFromTissue([FromBody, Required] CoExpParameters data)
@@ -147,7 +147,7 @@ namespace RytenLab_Web.Controllers
         }
 
         /// <summary>
-        /// Returns all the different cell types and their p-values associated to each module from the specified network.
+        /// Returns a matrix of p-values, corrected by the Bonferroni method, that support the linkage between each cell type and all genes found in each module.
         /// </summary>
         /// <remarks>
         /// A sample for the 'Request Body':
@@ -161,7 +161,7 @@ namespace RytenLab_Web.Controllers
         /// The requested body must be a JSON object formed by the keys: "Category" (this is the name of the category) and "Network" (this is the name of the network from which to obtain all the modules - this network must belong to the category specified before). 
         /// An example of the 'Request Body' is provided above.
         /// </param>
-        /// <returns>Returns all the different cell types and their p-values associated to each module from the specified network.</returns>
+        /// <returns>Returns a matrix of p-values, corrected by the Bonferroni method, that support the linkage between each cell type and all genes found in each module.</returns>
         [HttpPost]
         [Route("GetCellTypeFromTissue")]
         public string GetCellTypeFromTissue([FromBody, Required] CoExpParameters data)
@@ -261,6 +261,23 @@ namespace RytenLab_Web.Controllers
             return response;
         }
 
+        /// <summary>
+        /// Returns all genes from a module.
+        /// </summary>
+        /// <remarks>
+        /// A sample for the 'Request Body':
+        ///
+        ///     {
+        ///        "Category": "CoExpROSMAP",
+        ///        "Network": "ad",
+        ///        "Module": "yellow"
+        ///     }
+        /// </remarks>
+        /// <param name="data">
+        /// The requested body must be a JSON object formed by the keys: "Category", "Network" and "Module".
+        /// An example of the 'Request Body' is shown above.
+        /// </param>
+        /// <returns>Returns all genes from a module.</returns>
         [HttpPost]
         [Route("GetModuleTOMGenes")]
         public string GetModuleTOMGenes([FromBody, Required] CoExpParameters data)
