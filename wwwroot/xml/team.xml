@@ -213,4 +213,19 @@
     <ResearchGate>Fran_Kiernan</ResearchGate>
     <CurrentMember>N</CurrentMember>
   </Person>
+  <Person>
+    <ID>14</ID>
+    <Name>Amy Hicks</Name>
+    <Title>BSc</Title>
+    <Job>PhD Student</Job>
+    <Email>amy.hicks.19@ucl.ac.uk</Email>
+    <ResearchInterest>Parkinson’s disease, mitochondrial dysfunction, gene regulatory mechanisms.</ResearchInterest>
+    <Biography>
+      Amy is a first year PhD student at UCL. She completed her Bachelor’s in Neuroscience at the University of Leeds in 2019, during which she completed an industrial placement year at Eisai Ltd in Hatfield. In 2020 she began a joint PhD project between the Ryten and Plun-Favreau labs, examining the gene regulatory networks underlying mitophagy modulation and other Parkinson’s disease related pathways.
+    </Biography>
+    <ImagePath>amy.png</ImagePath>
+    <GitHub>amyrosehicks</GitHub>
+    <ResearchGate>Amy_Hicks7</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
+  </Person>
 </TeamMembers>
