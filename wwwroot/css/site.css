@@ -218,6 +218,7 @@ html {
     color: grey;
     width: 100%;
     font-size: 85%;
+    min-height: 40px;
     /*height: 70px;*/
 }
 
