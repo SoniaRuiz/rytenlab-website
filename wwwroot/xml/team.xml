@@ -80,12 +80,13 @@
   <Person>
     <ID>5</ID>
     <Name>Regina H. Reynolds</Name>
-    <Title>MSc</Title>
-    <Job>PhD Student</Job>
+    <Title>PhD</Title>
+    <Job>Postdoctoral Research Fellow</Job>
     <Email>regina.reynolds.16@ucl.ac.uk</Email>
     <ResearchInterest>Functional genomics; Neurodegeneration; Statistical Genetics; Transcriptomics.</ResearchInterest>
     <Biography>
-      <b>Regina H. Reynolds</b> is a PhD student in the Leonard Wolfson Programme at UCL. After a year of rotations, she joined the Ryten lab in 2017 where her research involves integrating in-house RNA-sequencing, publicly available -omics data, and novel methods of analysis to understand the effect of genetic variation on the brain transcriptome in health and disease. Regina completed her Bachelor’s and Master’s degree in Molecular Biomedicine at the University of Copenhagen. During this time, she accumulated 2 years of wet lab experience, interrogating the interactions between miR-34a, Sirt1 and p53 in a Huntington’s disease mouse model. As a student making the transition from molecular biology to bioinformatics, Regina is a strong supporter of interdisciplinary collaboration and research.
+      Regina is a Postdoctoral Research Fellow working in the Ryten Lab at University College London. Her work uses transcriptomics to identify molecular signatures of Parkinson's disease progression.
+      Regina's background is a blend of molecular biology and bioinformatics. She completed a BSc and MSc in Molecular Biomedicine at the University of Copenhagen, where she investigated the role of miR-34 and SIRT1 in Huntington's disease-affected tissues. In addition, she completed her PhD at University College London, where she explored the importance of cell-type-specific gene expression regulation and splicing in Parkinson’s disease.
     </Biography>
     <ImagePath>regina.jpg</ImagePath>
     <GitHub>RHReynolds</GitHub>
