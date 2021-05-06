@@ -236,4 +236,19 @@
     <ResearchGate>Amy_Hicks7</ResearchGate>
     <CurrentMember>Y</CurrentMember>
   </Person>
+  <Person>
+    <ID>15</ID>
+    <Name>Federica Merella</Name>
+    <Title>Dr</Title>
+    <Job>MSc student</Job>
+    <Email>merellafede@gmail.com</Email>
+    <ResearchInterest>Personalised medicine, genomic, paediatric pain.</ResearchInterest>
+    <Biography>
+      Dr Federica Merella is a consultant paediatric anaesthetist the Birmingham Children's Hospital, UK. She is a strong advocate for the use of paediatric regional anaesthesia ultrasound guided as opioid sparing pain management technique in children. Her interest in research in pain, stratified medicine and genomics motivated her to return to university, UCL, where she is completing the MSc in Cell and Gene therapy. She has recently joined the Ryten lab as MSc student where, she is learning the bioinformatic foundations of gene expression analysis. Under the supervision of Ana Luisa Gil and professor Mina Ryten, is looking at possible identification of gene co-expression networks distinctive for Parkinson disease progression.
+    </Biography>
+    <ImagePath>federica.png</ImagePath>
+    <GitHub></GitHub>
+    <ResearchGate>Federica-Merella</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
+  </Person>
 </TeamMembers>

@@ -113,9 +113,9 @@ article {
 }
 
 .little-image {
-    height: 350px !important;
-    width: 341px !important;
-    
+    max-height: 450px !important;
+    max-width: 441px !important;
+    width: 100%
 }
 
 @media (min-height: 800px) {
@@ -145,6 +145,7 @@ footer {
         float: left;
         margin: 10px 20px;
         color: #9d9d9d;
+
     }
 
 .key-words {

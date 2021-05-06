@@ -11,15 +11,15 @@
 </header>
 <article>
     <div class="row col-12">
-        <div class="col-lg-5">
+        <div class="col-lg-4">
             <figure>
                 <a href="mailto:@Model.Email" title="Get in touch with @Model.Name">
-                    <img src="~/images/modified/filter/@Model.ImagePath" alt="@Model.Name" class="media-object little-image">
+                    <img src="~/images/modified/filter/@Model.ImagePath" alt="@Model.Name" class="img-fluid little-image">
                 </a>
             </figure>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-5">
             @*<address style="padding-top:5px;">*@
 
             <h3><strong>@Model.Name</strong></h3>
@@ -45,7 +45,7 @@
             @* </address>*@
         </div>
         <br />
-        <div class="col-lg-12">
+        <div class="col-md-12">
             @if (!String.IsNullOrEmpty(Model.ResearchGate))
             {
                 <h3>Publications</h3>
