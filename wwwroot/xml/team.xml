@@ -266,4 +266,34 @@
 		<ResearchGate>Aaron-Wagen</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
+	<Person>
+		<ID>17</ID>
+		<Name>Kylie Montgomery</Name>
+		<Title></Title>
+		<Job>Research Assistant</Job>
+		<Email>kylie.montgomery@ucl.ac.uk</Email>
+		<ResearchInterest>
+			Genetics, neurodevelopment, rare disease, transcriptomics, novel therapies.
+		</ResearchInterest>
+		<Biography>
+			Kylie studied biomedical science at Victoria University of Wellington, Te Herenga Waka, and has more recently completed her MSc at King’s College London. 
+			She has over 15 years of experience in molecular genetics, predominantly in prenatal diagnosis, and has attained HCPC registration as a clinical scientist in genetics. 
+			Her research experience includes contributing to the 100,000 genomes project and working in translational genetics. She is particularly interested in the overlaps between neurodevelopmental and neurodegenerative diseases as well as the development of novel therapies for rare diseases. 
+			Kylie is currently a research assistant in the Ryten lab at UCL. Her focus is on long-read sequencing methods and analysis and will be starting a PhD exploring gene expression during neurodevelopment.
+		</Biography>
+		<ImagePath>kylie.png</ImagePath>
+		<GitHub>KylieMontgomery</GitHub>
+		<ResearchGate>Kylie-Montgomery-2</ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
+	<Pet>
+		<ID>18</ID>
+		<Name>Ted</Name>
+		<Nickname>Boof</Nickname>
+		<HumanName>Kylie</HumanName>
+		<ImagePath>ted.png</ImagePath>
+		<Bio>
+			Ted is a rehomed Newfie that loves chasing birds, demanding treats, and being the centre of attention. Ted specialises in using his big brown eyes and raising his expressive eyebrows to get his way.
+		</Bio>
+	</Pet>
 </TeamMembers>

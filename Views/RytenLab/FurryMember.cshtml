@@ -1,0 +1,52 @@
+﻿@model Pet
+@{
+    //View to show 'Member Info' page
+    ViewData["Title"] = "Furry Member Info";
+}
+
+
+<header class="header">
+    <h1>@Model.Name</h1>
+    <hr />
+</header>
+<article>
+    <div class="row col-12">
+        <div class="col-lg-4">
+            <figure>
+                <img src="~/images/modified/filter/@Model.ImagePath" 
+                     alt="@Model.Name" class="img-fluid little-image">
+            </figure>
+        </div>
+
+        <div class="col-lg-5">
+
+            <h3><strong>@Model.Name</strong></h3>
+            <br />
+
+            <i class="fa fa-id-card" style="font-size:24px"></i>
+            <span><strong>Nickname:</strong> @Model.Nickname </span><br />
+
+            <i class="fa fa-home" style="font-size:24px"></i>
+            <span><strong>Human's name:</strong> <span>@Model.HumanName</span></span>
+
+            <br /><br />
+
+            <h3>Bio</h3>
+            <span>@Model.Bio</span>
+
+        </div>
+    </div>
+</article>
+
+
+@section Scripts{
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Turn active current menu's option
+            $(".nav-item").find(".active").removeClass("active");
+            $("#tab_team").addClass("active");
+        });
+    </script>
+
+}
