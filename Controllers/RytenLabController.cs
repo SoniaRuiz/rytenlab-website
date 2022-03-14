@@ -131,6 +131,48 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
+
+
+        public IActionResult FurryMembers()
+        {
+            try
+            {
+                Pets petMembers = new Pets();
+
+                var path = Path.Combine(_hostingEnvironment.WebRootPath, "xml/team.xml");
+                //Load the XML file in XmlDocument.
+                XmlDocument doc = new XmlDocument();
+                doc.Load(path);
+
+                //Loop through the selected Nodes.
+                foreach (XmlNode node in doc.SelectNodes("/TeamMembers/Pet"))
+                {
+                    //Fetch the Node values and assign it to Model.
+                    petMembers.FurryMembers.Add(new Pet
+                    {
+                        ID = int.Parse(node["ID"].InnerText),
+                        Name = node["Name"].InnerText,
+                        Nickname = node["Nickname"].InnerText,
+                        HumanName = node["HumanName"].InnerText,
+                        ImagePath = node["ImagePath"].InnerText,
+                        Bio = node["Bio"].InnerText
+                    });
+                }
+
+                return View(petMembers);
+            }
+            catch (Exception e)
+            {
+                ErrorViewModel errorModel = new ErrorViewModel
+                {
+                    Message = e.Message
+                };
+                return View("Error", errorModel);
+            }
+        }
+
+
+
         /// <summary>
         /// Controller method for 'Tools' page.
         /// </summary>
@@ -152,6 +194,8 @@ namespace RytenLab_Web.Controllers
 
             return View();
         }
+
+
         /// <summary>
         /// Controller method for 'MemberInfo' page
         /// </summary>
@@ -265,6 +309,32 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
+
+
+
+        /// <summary>
+        /// Controller method for 'FurryMember' page
+        /// </summary>
+        /// <param name="pet">Pet Furry Member info</param>
+        /// <returns>'FurryMember' view</returns>
+        [HttpPost]
+        public IActionResult FurryMember(Pet pet)
+        {
+            try
+            {
+                return View(pet);
+            }
+            catch (Exception e)
+            {
+                ErrorViewModel errorModel = new ErrorViewModel
+                {
+                    Message = e.Message
+                };
+                return View("Error", errorModel);
+            }
+        }
+
+
         /// <summary>
         /// Controller method for 'Privacy' page
         /// </summary>
