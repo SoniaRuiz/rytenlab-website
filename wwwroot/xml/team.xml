@@ -286,6 +286,7 @@
 		<ResearchGate>Kylie-Montgomery-2</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
+	
 	<Pet>
 		<ID>18</ID>
 		<Name>Ted</Name>
@@ -296,4 +297,57 @@
 			Ted is a rehomed Newfie that loves chasing birds, demanding treats, and being the centre of attention. Ted specialises in using his big brown eyes and raising his expressive eyebrows to get his way.
 		</Bio>
 	</Pet>
+	<Pet>
+		<ID>19</ID>
+		<Name>Lola</Name>
+		<Nickname>Tita</Nickname>
+		<HumanName>Sonia</HumanName>
+		<ImagePath>tita.jpg</ImagePath>
+		<Bio>
+			Lola was a 15 years-old lady that unfortunately passed away at the beginning of 2022. She was really one of a kind; loyal, friendly and able to understand so many different Spanish words and human emotions that inevitably converted her into an irreplaceable member of our family.
+			Although she was completely deaf at the moment of her death, she enjoyed an impressive overall fitness throughout all her life. She also had such an amazing charisma that made all our (both human and four-leggy) neighbours wanted to know her more while enjoying with her presence.
+			She will be very much missed for the years to come and will always occupy a special place in our hearts. We'll always love you Tita and will never forget you!
+		</Bio>
+	</Pet>
+	<Pet>
+		<ID>20</ID>
+		<Name>Suka</Name>
+		<Nickname>Suki</Nickname>
+		<HumanName>Sonia</HumanName>
+		<ImagePath>suki.jpg</ImagePath>
+		<Bio>
+			Suki is an almost 5 years-old tiny black cat that was born with a bone developmental issue. 
+			Although she is completely fine now and enjoys a very happy life, her health issue provided her with a small stature and baby appearance that doesn't help Sonia to consider her like a proper grown and independent adult :).
+			She is a cuddly, kids-friendly, eager-to-please, loving and purrfect cat (although many members of Sonia's family may disagree with some of these adjectives) and she is very much loved in our family (we all agree on this).
+
+		</Bio>
+	</Pet>
+	<Pet>
+		<ID>21</ID>
+		<Name>Oliver and Pippi</Name>
+		<Nickname>Olly, The Pipster</Nickname>
+		<HumanName>Regina (and Laura)</HumanName>
+		<ImagePath>oliver.jpg</ImagePath>
+		<Bio>
+			Oliver (the fluffy one) and Pippi (the moustached one) started their lives as two feral cats on the streets of Tottenham. While they remain firm supporters of the Tottenham Spurs, they gave up their feral ways when they adopted their humans. Both love a good chin scratch, playing fetch, and challenging their humans’ pre-conceptions of what cats eat (olives are a particular favourite).
+		</Bio>
+	</Pet>
+	<Person>
+		<ID>22</ID>
+		<Name>Savita Nutan</Name>
+		<Title>MSc, DipRCPath</Title>
+		<Job>Research Fellow</Job>
+		<Email>s.nutan@ucl.ac.uk</Email>
+		<ResearchInterest>
+			Transcriptomics, Neurometabolic disease, Rare Disease, Genomics.
+		</ResearchInterest>
+		<Biography>
+			Savita is a research fellow working on improving the genetic diagnosis of patients with suspected neurometabolic disease through the application of transcriptomic technologies and interpretation of whole exome- and whole genome data. Savita is registered with the UK Health and Care Professions Council as a Clinical Scientist and has worked for Great Ormond Street hospital (2018-2022) where she helped deliver the return of 100,000 genomes project results and run the non-invasive prenatal diagnosis service. She is a Diplomate of the Royal College of Pathology. Prior to this she worked as a trainee healthcare scientist at Nottingham University Hospitals Trust where she obtained her MSc in Clinical Sciences (Clinical Genetics), and previously worked as a genetic technologist at Bristol Genetics Laboratory.
+			Savita obtained a Molecular Genetics BSc and a Biomedical and Molecular Sciences MSc from King’s College London.
+		</Biography>
+		<ImagePath>savita.jpg</ImagePath>
+		<GitHub>savitanutan</GitHub>
+		<ResearchGate>Savita-Nutan-2</ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
 </TeamMembers>
