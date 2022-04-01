@@ -367,4 +367,15 @@
 			I am quiet, kind, but I am a proud cockapoo and for good reason. I know many tricks like roll over, shake paw, hide and seek, naming toys, sniffing out hidden snacks, and even playing piano. I don't have an achilles heel, but some say I do have an achilles tummy. I just love bread, meat, smelly fish and cheese, and more than anything, peanut butter. If you leave some lying around, I apologise in advance, but I simply won't resist.
 		</Bio>
 	</Pet>
+	<Pet>
+		<ID>23</ID>
+		<Name>Maki and Nori</Name>
+		<Nickname>Maki and Nori</Nickname>
+		<HumanName>Aine</HumanName>
+		<ImagePath>maki.jpg</ImagePath>
+		<Bio>
+			Likes: each other, drinking water from a human’s water glass, avocado, banana, marmite, Amazon cardboard package strips, anything that’s not an expensive cat toy specially purchased for them.<br/>
+			Dislikes: The evil vacuum and even more evil blender.
+		</Bio>
+	</Pet>
 </TeamMembers>
