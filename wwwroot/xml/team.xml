@@ -278,6 +278,7 @@
 		<Biography>
 			Kylie studied biomedical science at Victoria University of Wellington, Te Herenga Waka, and has more recently completed her MSc at King’s College London. 
 			She has over 15 years of experience in molecular genetics, predominantly in prenatal diagnosis, and has attained HCPC registration as a clinical scientist in genetics. 
+			<br/>
 			Her research experience includes contributing to the 100,000 genomes project and working in translational genetics. She is particularly interested in the overlaps between neurodevelopmental and neurodegenerative diseases as well as the development of novel therapies for rare diseases. 
 			Kylie is currently a research assistant in the Ryten lab at UCL. Her focus is on long-read sequencing methods and analysis and will be starting a PhD exploring gene expression during neurodevelopment.
 		</Biography>
@@ -305,8 +306,8 @@
 		<ImagePath>tita.jpg</ImagePath>
 		<Bio>
 			Lola was a 15 years-old lady that unfortunately passed away at the beginning of 2022. She was really one of a kind; loyal, friendly and able to understand so many different Spanish words and human emotions that inevitably converted her into an irreplaceable member of our family.
-			Although she was completely deaf at the moment of her death, she enjoyed an impressive overall fitness throughout all her life. She also had such an amazing charisma that made all our (both human and four-leggy) neighbours wanted to know her more while enjoying with her presence.
-			She will be very much missed for the years to come and will always occupy a special place in our hearts. We'll always love you Tita and will never forget you!
+			Although she was completely deaf at the moment of her death, she enjoyed an impressive overall good health throughout all her life. She also had such an amazing charisma that made all our neighbours wanted to know her more while enjoying with her presence.
+			She will be very much missed for the years to come and will always occupy a special place in our hearts. We'll always love you, Tita, and will never forget you!
 		</Bio>
 	</Pet>
 	<Pet>
@@ -316,9 +317,9 @@
 		<HumanName>Sonia</HumanName>
 		<ImagePath>suki.jpg</ImagePath>
 		<Bio>
-			Suki is an almost 5 years-old tiny black cat that was born with a bone developmental issue. 
-			Although she is completely fine now and enjoys a very happy life, her health issue provided her with a small stature and baby appearance that doesn't help Sonia to consider her like a proper grown and independent adult :).
-			She is a cuddly, kids-friendly, eager-to-please, loving and purrfect cat (although many members of Sonia's family may disagree with some of these adjectives) and she is very much loved in our family (we all agree on this).
+			Suki is an almost 5 years-old tiny black cat that was born with a bone developmental issue.
+			Although she is completely fine now and enjoys a very happy life, her health issue provided her with a small stature and baby appearance that doesn't help Sonia at all to consider her like the proper grown and independent adult that she is :).
+			She is a cuddly, kids-friendly, eager-to-please, loving and purrfect cat (although many members of Sonia's family may disagree with the 'kids-friendly' and 'eager-to-please' adjectives) and she is very much loved in our family (we all agree on this).
 
 		</Bio>
 	</Pet>
@@ -350,4 +351,20 @@
 		<ResearchGate>Savita-Nutan-2</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
+	<Pet>
+		<ID>22</ID>
+		<Name>Rocky</Name>
+		<Nickname>Rocky</Nickname>
+		<HumanName>Mina</HumanName>
+		<ImagePath>rocky.jpg</ImagePath>
+		<Bio> 
+			My name is Rocky. I was born high in the Welsh hills. My father was Farmer Ray's poodle Boris. If you visited the farm, dad would greet you at the gates, and he would look you up and down to see if you were alright. He taught my brother Max and I everything you need to know about life in the country. Then I came to live with Mina and her family in Cambridge, and all in all I think life here is swell.
+			<br/>
+			I have lots of jobs around the house. I am the family guard, and if anyone comes to the door, I look them up and down just like I was taught.  If they're mean they better watch out. If they're kind, well, they can have snuggles. My big brother does not like to wash his face, so every morning I have to clean it with kisses. After breakfast I sit with my sister on the sofa during cello practice to count time for her. I have to attend lots of meetings with Mina; after all, I am her right hand man, and so I have a special seat beside her in the boardroom. Funny, she also sleeps there... 
+			<br/>
+			Every day, I patrol the floorboards for rats; if they're underneath I scare them out and I hunt them down. Once, I drowned a big one. I caught a crow last year, and we had to sprint home when its brothers started to dive bomb us. Then I learnt to track hare, they're fast but if you stick with them,  you can drive them into the hedgerow and finish them off. Where we live you can find muntjac. They're fun to chase, but I never mean them any harm. I once found a trapped one and I  helped save it. I like other sports too. Fetch is fun but I still can't catch a ball in my mouth, I've climbed a munro in Scotland, I'm happy to challenge a whippet to a sprint or an alsatian to spar. I don't usually win, but I've never once shamed my family name! 
+			<br/>
+			I am quiet, kind, but I am a proud cockapoo and for good reason. I know many tricks like roll over, shake paw, hide and seek, naming toys, sniffing out hidden snacks, and even playing piano. I don't have an achilles heel, but some say I do have an achilles tummy. I just love bread, meat, smelly fish and cheese, and more than anything, peanut butter. If you leave some lying around, I apologise in advance, but I simply won't resist.
+		</Bio>
+	</Pet>
 </TeamMembers>
