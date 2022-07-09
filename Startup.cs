@@ -14,6 +14,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using System.IO;
+using Microsoft.Extensions.Hosting;
 
 namespace RytenLab_Web
 {
@@ -38,7 +39,7 @@ namespace RytenLab_Web
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v2", new OpenApiInfo { 
@@ -61,7 +62,7 @@ namespace RytenLab_Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostEnvironment env)
         {
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
@@ -82,12 +83,21 @@ namespace RytenLab_Web
             app.UseStaticFiles();
             //app.UseCookiePolicy();
 
-            app.UseMvc(routes =>
+            app.UseRouting();
+
+            // The equivalent of 'app.UseMvcWithDefaultRoute()'
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=RytenLab}/{action=About}/{id?}");
+                endpoints.MapDefaultControllerRoute();
+                // Which is the same as the template
+                endpoints.MapControllerRoute("default", "{controller=RytenLab}/{action=About}/{id?}");
             });
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=RytenLab}/{action=About}/{id?}");
+            //});
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();

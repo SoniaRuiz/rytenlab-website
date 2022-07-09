@@ -10,6 +10,7 @@ using RytenLab_Web.Repositories;
 using System.Web;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Microsoft.Extensions.Hosting;
 
 namespace RytenLab_Web.Controllers
 {
@@ -18,9 +19,9 @@ namespace RytenLab_Web.Controllers
     /// </summary>
     public class RytenLabController : Controller
     {
-        private IHostingEnvironment _hostingEnvironment;
+        private IHostEnvironment _hostingEnvironment;
 
-        public RytenLabController(IHostingEnvironment environment)
+        public RytenLabController(IHostEnvironment environment)
         {
             _hostingEnvironment = environment;
         }
@@ -52,7 +53,7 @@ namespace RytenLab_Web.Controllers
             {
                 Team teamMembers = new Team();
 
-                var path = Path.Combine(_hostingEnvironment.WebRootPath, "xml/team.xml");
+                var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
                 //Load the XML file in XmlDocument.
                 XmlDocument doc = new XmlDocument();
                 doc.Load(path);
@@ -95,7 +96,7 @@ namespace RytenLab_Web.Controllers
             {
                 Team pastMembers = new Team();
 
-                var path = Path.Combine(_hostingEnvironment.WebRootPath, "xml/team.xml");
+                var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
                 //Load the XML file in XmlDocument.
                 XmlDocument doc = new XmlDocument();
                 doc.Load(path);
@@ -139,7 +140,7 @@ namespace RytenLab_Web.Controllers
             {
                 Pets petMembers = new Pets();
 
-                var path = Path.Combine(_hostingEnvironment.WebRootPath, "xml/team.xml");
+                var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
                 //Load the XML file in XmlDocument.
                 XmlDocument doc = new XmlDocument();
                 doc.Load(path);
@@ -275,7 +276,7 @@ namespace RytenLab_Web.Controllers
                     //    break;
                 };
 
-                var path = Path.Combine(_hostingEnvironment.WebRootPath, "xml/team.xml");
+                var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
                 //Load the XML file in XmlDocument.
                 XmlDocument doc = new XmlDocument();
                 doc.Load(path);
