@@ -60,7 +60,7 @@
 		<ImagePath>kd.png</ImagePath>
 		<GitHub></GitHub>
 		<ResearchGate></ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Person>
 		<ID>4</ID>
@@ -107,7 +107,7 @@
 		<ImagePath>david.jpg</ImagePath>
 		<GitHub>dzhang32</GitHub>
 		<ResearchGate>David_Zhang98</ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Person>
 		<ID>7</ID>
@@ -156,7 +156,7 @@
 		<ImagePath>sethi.png</ImagePath>
 		<GitHub>sid-sethi</GitHub>
 		<ResearchGate></ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Person>
 		<ID>10</ID>
@@ -349,7 +349,7 @@
 		<ImagePath>savita.jpg</ImagePath>
 		<GitHub>savitanutan</GitHub>
 		<ResearchGate>Savita-Nutan-2</ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Pet>
 		<ID>22</ID>
@@ -378,4 +378,50 @@
 			Dislikes: The evil vacuum and even more evil blender.
 		</Bio>
 	</Pet>
+  <Pet>
+    <ID>24</ID>
+    <Name>Pumpkin</Name>
+    <Nickname>Pancake, Punkeg, Kitty</Nickname>
+    <HumanName>Amy (and Adam)</HumanName>
+    <ImagePath>pumpkin.png</ImagePath>
+    <Bio>
+      Pumpkin was rescued as a young pregnant stray and brought to live with a fosterer in Barnet along with 4 other cats (+ another four once her kittens were born), several guinea pigs, rats and a bearded dragon. She was keen to get away from the zoo house and once she found a forever home just next door, she settled into regular zoomies, destroying spider plants and waking her humans up at 5am. One day she hopes to finally catch her tail, she’s getting closer every day.
+    </Bio>
+  </Pet>
+	<Person>
+		<ID>25</ID>
+		<Name>Melissa Grant-Peters</Name>
+		<Title>DPhil</Title>
+		<Job>Postdoctoral Research Fellow</Job>
+		<Email>m.grant-peters@ucl.ac.uk</Email>
+		<ResearchInterest>
+			Neurodegenerative disorders; molecular neuroscience; high resolution and high throughput molecular profiling methods; interdisciplinary approaches to neuroscience; cross-modality and cross-disease integrative analysis
+		</ResearchInterest>
+		<Biography>
+			Melissa is currently a postdoctoral research fellow in the Ryten lab at University College London. Her current project focuses on understanding the changes to cellular architecture in the context of Parkinson’s disease by using a combination of single cell and spatially resolved transcriptomic data.
+      Her scientific background is quite broad, having studied a BSc in interdisciplinary science and technology (Federal University of São Paulo) and subsequently specialising in neuroscience with an MSc (University College Cork). She returned to her interdisciplinary interests for her doctoral studies in the Dendrou lab (University of Oxford), where she used an integrative approach to profile the spatially resolved molecular landscape of the human central nervous system.
+		</Biography>
+		<ImagePath>melissa.png</ImagePath>
+		<GitHub>mgrantpeters</GitHub>
+		<ResearchGate>Melissa-Grant-Peters</ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
+  <Person>
+		<ID>26</ID>
+		<Name>Rhys Dore</Name>
+		<Title>Dr [BA BMBCh MRCPCH]</Title>
+		<Job>Academic Clinical Fellow</Job>
+		<Email>rhys.dore.20@ucl.ac.uk</Email>
+		<ResearchInterest>
+			Research Interests: Clinical Genetics, Clinical Paediatrics, Bioinformatics, Rare Disease
+		</ResearchInterest>
+		<Biography>
+			Rhys is a paediatric trainee and an NIHR Academic Clinical Fellow at UCL. He completed his intercalated degree (2015) and clinical training (2018) at the University of Oxford. He undertook the Academic Foundation Programme in Brighton before moving to London to start paediatric training. He is also completing a part-time MSc in Advanced Paediatrics (2022) with UCL.
+		</Biography>
+		<ImagePath>rhys.png</ImagePath>
+		<GitHub>rhysdore</GitHub>
+		<ResearchGate>Rhys-Dore-2</ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
+
 </TeamMembers>
