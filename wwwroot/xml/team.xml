@@ -92,7 +92,7 @@
 		<ImagePath>regina.jpg</ImagePath>
 		<GitHub>RHReynolds</GitHub>
 		<ResearchGate>Regina_Reynolds</ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Person>
 		<ID>6</ID>
@@ -189,7 +189,7 @@
 		<ImagePath>analuisa.png</ImagePath>
 		<GitHub></GitHub>
 		<ResearchGate>Ana_Luisa_Gil_Martinez</ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Person>
 		<ID>12</ID>
@@ -409,15 +409,15 @@
   <Person>
 		<ID>26</ID>
 		<Name>Rhys Dore</Name>
-		<Title>Dr [BA BMBCh MRCPCH]</Title>
+		<Title>Dr [BA BMBCh MSc MRCPCH]</Title>
 		<Job>Academic Clinical Fellow</Job>
 		<Email>rhys.dore.20@ucl.ac.uk</Email>
 		<ResearchInterest>
 			Research Interests: Clinical Genetics, Clinical Paediatrics, Bioinformatics, Rare Disease
 		</ResearchInterest>
 		<Biography>
-			Rhys is a paediatric trainee and an NIHR Academic Clinical Fellow at UCL. He completed his intercalated degree (2015) and clinical training (2018) at the University of Oxford. He undertook the Academic Foundation Programme in Brighton before moving to London to start paediatric training. He is also completing a part-time MSc in Advanced Paediatrics (2022) with UCL.
-		</Biography>
+      Rhys is a paediatric trainee, an NIHR Academic Clinical Fellow at UCL, and an aspiring academic clinical geneticist. He completed his intercalated degree (2015) and clinical training (2018) at the University of Oxford, and an MSc in Paediatrics and Child Health at UCL (2022). He undertook the Academic Foundation Programme in Brighton before moving to London to start paediatric training.
+    </Biography>
 		<ImagePath>rhys.png</ImagePath>
 		<GitHub>rhysdore</GitHub>
 		<ResearchGate>Rhys-Dore-2</ResearchGate>
