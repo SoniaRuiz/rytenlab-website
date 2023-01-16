@@ -1,3 +1,6 @@
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
+
 # RytenLab_MVC
 Website project created following a Model–View–Controller (MVC) software design pattern in .NET Core framework. The output of this project contains the website for the [Ryten Laboratory](http://www.rytenlab.com/) team. It also contains the specification for the RytenLab .NET Core [REST API](http://www.rytenlab.com/swagger/index.html).
 
