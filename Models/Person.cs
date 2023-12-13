@@ -48,6 +48,7 @@ namespace RytenLab_Web.Models
         /// Team member's GitHub URL
         /// </summary>
         public string GitHub { get; set; }
+        public string GoogleScholar { get; set; }
         public string ResearchGate { get; set; }
         public string CurrentMember { get; set; }
         /// <summary>

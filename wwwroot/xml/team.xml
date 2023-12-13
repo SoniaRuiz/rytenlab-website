@@ -12,6 +12,7 @@
 		</Biography>
 		<ImagePath>mina.jpg</ImagePath>
 		<GitHub></GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Mina_Ryten</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -27,6 +28,7 @@
 		</Biography>
 		<ImagePath>botia.jpg</ImagePath>
 		<GitHub>juanbot</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Juan_Botia</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -44,6 +46,7 @@
 		</Biography>
 		<ImagePath>sanchez.jpg</ImagePath>
 		<GitHub>drlaguna</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Juan_Sanchez23</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -59,8 +62,9 @@
 		</Biography>
 		<ImagePath>kd.png</ImagePath>
 		<GitHub></GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate></ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Person>
 		<ID>4</ID>
@@ -74,6 +78,7 @@
 		</Biography>
 		<ImagePath>seb.jpg</ImagePath>
 		<GitHub>SebGuelfi</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Sebastian_Guelfi</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -91,6 +96,7 @@
 		</Biography>
 		<ImagePath>regina.jpg</ImagePath>
 		<GitHub>RHReynolds</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Regina_Reynolds</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -106,40 +112,41 @@
 		</Biography>
 		<ImagePath>david.jpg</ImagePath>
 		<GitHub>dzhang32</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>David_Zhang98</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Person>
 		<ID>7</ID>
 		<Name>Sonia García Ruiz</Name>
-		<Title>MSc</Title>
-		<Job>PhD Student/Research Assistant</Job>
+		<Title>PhD</Title>
+		<Job>Postdoctoral Research Fellow</Job>
 		<Email>s.ruiz@ucl.ac.uk</Email>
-		<ResearchInterest>RNA Splicing; Transcriptomics; Novel transcription; Web Development; Artificial Intelligence; Machine Learning; Software Development.</ResearchInterest>
+		<ResearchInterest>RNA Splicing; Transcriptomics; Short-Read RNA sequencing data; Long-Read RNA sequencing data; Novel transcription; Web Development; Software Development.</ResearchInterest>
 		<Biography>
-			Sonia García Ruiz is a PhD student and software developer at UCL. She completed her Bachelor’s in Computer Science at the University of Miguel Hernández (Spain) in 2014. After that, she accumulated 2 years of experience as a software and web developer, working with clients such as Microsoft and Deloitte. Nevertheless, in 2017 she decided to return to university and completed her master’s degree in Artificial Intelligence at the University of Murcia in 2018.
-			<br/>
-			In the Ryten lab, she is focused on finding the mechanisms underlying the alternative splicing in human cells, and how those different products may interfiere in human health. Additionally, she uses her knowledge of web development to help build analysis and visualisation tools for easier data interpretation.
-		</Biography>
+      Sonia García Ruiz is a Postdoctoral Research Fellow working in the Ryten Lab at University College London . She completed her BSc in Computer Science at the University of Miguel Hernández (Spain) in 2014 with a first class degree, after which she became a software and web developer, accumulating over 2 years of experience working with international clients such as Microsoft and Deloitte across multiple countries. In 2017, she decided to return to academia and completed her MSc in Artificial Intelligence at the University of Murcia (with distinction). The exposure to genomic medicine over the course of her MSc led her  to move to London in 2018 to work in the Ryten Lab as a Research Assistant, and her decision a year later to embark on a part-time PhD. Sonia completed her PhD on splicing accuracy across human introns, tissues and ageing in 2023.
+      <br/>
+      Currently, Sonia is interested in combining short- and long-read RNA-sequencing data to understand transcriptional accuracy in dementia across cell types.
+    </Biography>
 		<ImagePath>sonia.jpg</ImagePath>
 		<GitHub>SoniaRuiz</GitHub>
+    <GoogleScholar>soniagruiz</GoogleScholar>
 		<ResearchGate>Sonia_Garcia_Ruiz</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
 	<Person>
 		<ID>8</ID>
 		<Name>Zhongbo Chen</Name>
-		<Title>MA BMBCh MRCP</Title>
-		<Job>PhD Student/Clinical Research Fellow</Job>
+		<Title>MA BMBCh MRCP PhD</Title>
+		<Job>Crick Postdoctoral Clinical Research Fellow / Neurology Registrar</Job>
 		<Email>zhongbo.chen@ucl.ac.uk</Email>
 		<ResearchInterest>Genetics; Neurodegenerative diseases; Clinical Neurology; Bioinformatics.</ResearchInterest>
 		<Biography>
-			Zhongbo is a neurology registrar and PhD student on the UCL Leonard Wolfson Programme. Her project uses bioinformatic and machine learning techniques to study the genetics of neurodegenerative diseases. Alongside the PhD, she also practises in the Queen Square Neurogenetics clinic, developing specialist clinical experience in this field.
-			<br/>
-			Zhongbo's research interests started during her undergraduate degree in Physiology and Neuroscience at the University of Cambridge, where she studied the electrophysiology of skeletal muscle using microelectrodes for her final year project. She then completed her clinical training, qualifying as a doctor in 2010 from the University of Oxford. Before embarking on the PhD, she was a specialist registrar at the National Hospital for Neurology and Neurosurgery and NIHR Neurology academic clinical fellow at King's College London.
-		</Biography>
+      I am a research fellow on the Crick clinical postdoctoral programme. My research focuses on using transcriptomics to improve understanding of neurogenetic and neurodegenerative diseases. Currently, I am based in the labs of Professor Mina Ryten and Professor Sonia Gandhi, using longitudinal RNA-sequencing data to understand progression and post-transcriptional mechanisms in neurodegenerative diseases, namely in Parkinson's disease and hereditary ataxia. I am also a neurology registrar at the National Hospital for Neurology and Neurosurgery. I completed my PhD on the Leonard Wolfson Programme for Neurodegeneration at UCL. My project used bioinformatic and machine learning techniques to study the genetics of neurodegenerative diseases through functional genomic annotation and RNA-sequencing. My research interests started during my intercalated undergraduate degree in Physiology and Neuroscience at the University of Cambridge, where I studied the electrophysiology of skeletal muscle using microelectrodes. I then completed clinical training at the University of Oxford. Following this, I was an academic medicine foundation doctor at Imperial College London. Before embarking on the PhD, I was a specialist registrar and NIHR Neurology academic clinical fellow at King's College London.
+    </Biography>
 		<ImagePath>zhongbo.jpg</ImagePath>
 		<GitHub>ZhongboUCL</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Zhongbo_Chen</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -155,6 +162,7 @@
 		</Biography>
 		<ImagePath>sethi.png</ImagePath>
 		<GitHub>sid-sethi</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate></ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -170,6 +178,7 @@
 		</Biography>
 		<ImagePath>aine.png</ImagePath>
 		<GitHub>ainefairbrother</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate></ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -188,6 +197,7 @@
 		</Biography>
 		<ImagePath>analuisa.png</ImagePath>
 		<GitHub></GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Ana_Luisa_Gil_Martinez</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -202,7 +212,8 @@
 			Emil is a Postdoctoral Research Fellow in the Ryten lab at University College London. Emil completed his BSc and MSc in molecular genetics at Uppsala University. During this time, he worked on the influence of mtDNA variability on behaviour as well as the role of genetic variability of a vesicular monoaminergic associated transporter in addiction. For his PhD training Emil moved to Canada (University of British Columbia) to work on the molecular genetics of Parkinson’s and neurological diseases. His work mainly related to the identification of genes and how genetic variability influences the penetrance and progression of disease. Emil joined the Ryten lab in early 2020 and his aims to investigate the role of recursive splicing on previously identified novel expressed regions and using long-read sequencing techniques to define the expression of novel transcripts of genes involved in neurological disease.
 		</Biography>
 		<ImagePath>emil.png</ImagePath>
-		<GitHub></GitHub>
+		<GitHub>egustavsson</GitHub>
+    <GoogleScholar>emilkgustavsson</GoogleScholar>
 		<ResearchGate>Emil_Gustavsson</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -218,6 +229,7 @@
 		</Biography>
 		<ImagePath>fran.png</ImagePath>
 		<GitHub>FranKiernan</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Fran_Kiernan</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -233,6 +245,7 @@
 		</Biography>
 		<ImagePath>amy.png</ImagePath>
 		<GitHub>amyrosehicks</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Amy_Hicks7</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -248,6 +261,7 @@
 		</Biography>
 		<ImagePath>federica.png</ImagePath>
 		<GitHub></GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Federica-Merella</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -263,6 +277,7 @@
 		</Biography>
 		<ImagePath>aaron.png</ImagePath>
 		<GitHub>aaronwagen</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Aaron-Wagen</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -284,6 +299,7 @@
 		</Biography>
 		<ImagePath>kylie.png</ImagePath>
 		<GitHub>KylieMontgomery</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Kylie-Montgomery-2</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -348,6 +364,7 @@
 		</Biography>
 		<ImagePath>savita.jpg</ImagePath>
 		<GitHub>savitanutan</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Savita-Nutan-2</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -403,6 +420,7 @@
 		</Biography>
 		<ImagePath>melissa.png</ImagePath>
 		<GitHub>mgrantpeters</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Melissa-Grant-Peters</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -416,12 +434,129 @@
 			Research Interests: Clinical Genetics, Clinical Paediatrics, Bioinformatics, Rare Disease
 		</ResearchInterest>
 		<Biography>
-      Rhys is a paediatric trainee, an NIHR Academic Clinical Fellow at UCL, and an aspiring academic clinical geneticist. He completed his intercalated degree (2015) and clinical training (2018) at the University of Oxford, and an MSc in Paediatrics and Child Health at UCL (2022). He undertook the Academic Foundation Programme in Brighton before moving to London to start paediatric training.
+      Rhys is a clinical genetics registrar and an NIHR Academic Clinical Fellow (Clinical Genetics) at the Maurice Wohl Clinical Neuroscience Institute, King’s College London with the Ule lab (UK DRI). He completed his intercalated degree (major: neuroscience, 2015) and clinical training (2018) at the University of Oxford, and an MSc in Paediatrics and Child Health at UCL (2022). He undertook the Academic Foundation Programme in Brighton before completing junior paediatric training in London and an NIHR Academic Clinical Fellowship (Paediatrics) with the Ryten lab.
     </Biography>
 		<ImagePath>rhys.png</ImagePath>
 		<GitHub>rhysdore</GitHub>
+    <GoogleScholar></GoogleScholar>
 		<ResearchGate>Rhys-Dore-2</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
-
+  <Person>
+    <ID>27</ID>
+    <Name>Ramy Saad</Name>
+    <Title>Dr</Title>
+    <Job>Academic Clinical Fellow</Job>
+    <Email>ramy.saad.10@ucl.ac.uk</Email>
+    <ResearchInterest>
+      Research Interests: Epigenomics, Nutrition, Rare Diseases
+    </ResearchInterest>
+    <Biography>
+      Ramy is an Academic Clinical Fellow in Genetics at GOSH, with a clinical interest in rare diseases and nutrition. His research interest is the epigenetic interface between nutrients and genome-wide methylation. He is currently exploring nutrient-methylation interactions by EWAS to identify potential therapeutics or personalised diets for managing individual rare diseases.
+    </Biography>
+    <ImagePath>ramy.png</ImagePath>
+    <GitHub></GitHub>
+    <GoogleScholar>ramysaad</GoogleScholar>
+    <ResearchGate></ResearchGate>
+    <CurrentMember>Y</CurrentMember>
+  </Person>
+  <Person>
+    <ID>28</ID>
+    <Name>Pilar Álvarez Jerez</Name>
+    <Title>BSc</Title>
+    <Job>PhD Student</Job>
+    <Email>pilar.jerez.22@ucl.ac.uk</Email>
+    <ResearchInterest>
+      Long-read sequencing, neurodegenerative disease, genomics
+    </ResearchInterest>
+    <Biography>
+      Pilar Alvarez Jerez is a PhD student within the long-read team at the Center for Alzheimer’s and Related Dementias (CARD), NIH and the Ryten Lab at UCL. Her current work focuses on using long read technologies to identify the role of structural variants on gene expression and methylation within neurodegenerative diseases, most notably Parkinson’s disease and Alzheimer’s disease. Before coming to NIH, Pilar got her BSc in Applied Physiology and Kinesiology from the University of Florida.
+    </Biography>
+    <ImagePath>pilar.png</ImagePath>
+    <GitHub>pilaralv</GitHub>
+    <GoogleScholar></GoogleScholar>
+    <ResearchGate></ResearchGate>
+    <CurrentMember>Y</CurrentMember>
+  </Person>
+  <Person>
+    <ID>29</ID>
+    <Name>Claire Anderson</Name>
+    <Title>Dr</Title>
+    <Job>Research Assistant</Job>
+    <Email>claire.anderson@ucl.ac.uk</Email>
+    <ResearchInterest>
+      Genomics, transcriptomics, gene expression, neurodegeneration, Parkinson’s Disease, developmental neurobiology
+    </ResearchInterest>
+    <Biography>
+      Claire is a research assistant in the Ryten lab funded by The Michael J. Fox Foundation for Parkinson’s Research and Aligning Science Across Parkinson’s (ASAP) Collaborative Research Network initiative. Claire uses long read sequencing technologies to understand the pathological mechanisms of Parkinson’s Disease.
+      <br/>
+      Claire did her undergraduate degree in biomedical science specialising in developmental biology in her postgraduate studies at The University of Sheffield. She then went on to work as a post-doctoral researcher at University College London.
+    </Biography>
+    <ImagePath>claire.png</ImagePath>
+    <GitHub></GitHub>
+    <GoogleScholar></GoogleScholar>
+    <ResearchGate>Claire-Anderson-10</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
+  </Person>
+  <Pet>
+    <ID>30</ID>
+    <Name>Nuptse and Nilo</Name>
+    <Nickname>NupNup, Nups and Nilo-baby</Nickname>
+    <HumanName>Claire (Nick, Iris and Otis)</HumanName>
+    <ImagePath>claire_cats.png</ImagePath>
+    <Bio>
+      Nilo and Nuptse are brother and sister and have fallen out with each other, very much like brothers and sisters do. Nuptse loves to be around people, except when she doesn’t. Nilo loves a warm lap, radiators and the fireplace, he also loves to eat Claire’s plants. Both are fair-weather cats and only really go outside when it’s baking hot.
+    </Bio>
+  </Pet>
+  <Person>
+    <ID>31</ID>
+    <Name>Hannah Macpherson</Name>
+    <Title>MSc</Title>
+    <Job>Phd Student</Job>
+    <Email>hannah.macpherson.14@ucl.ac.uk</Email>
+    <ResearchInterest>
+      Genomics, transcriptomics, gene expression, neurodegeneration, Parkinson’s Disease, developmental neurobiology
+    </ResearchInterest>
+    <Biography>
+      Hannah completed her MSci at UCL, where her Master’s project investigated proteostasis in aging C. elegans at the Institute of Healthy Aging. She has five years of experience in Long Read Sequencing, which she initially started at the Anthony Nolan Research Institute where she worked as a Research Assistant for two years. There, she did PacBio sequencing of HLA class I and class II genes with the aim to improve stem cell transplant outcomes and matching.
+      <br/>
+      In 2021 she moved back to UCL as a Senior Research Technician, where she lead the UCL Long Read Sequencing Service. She has worked on a wide range of projects, from de novo genomes to targeted transcriptomics, and utilising both Oxford Nanopore and PacBio technologies.
+      <br/>
+      In 2023 she joined the Ryten lab as a PhD student, where she will apply her knowledge of Long Read Sequencing to Parkinson’s Disease Transcriptomics.
+    </Biography>
+    <ImagePath>hannah.png</ImagePath>
+    <GitHub>MacphersonHannah</GitHub>
+    <GoogleScholar></GoogleScholar>
+    <ResearchGate>Hannah-Macpherson-3</ResearchGate>
+    <CurrentMember>Y</CurrentMember>
+  </Person>
+  <Pet>
+    <ID>32</ID>
+    <Name>Terry</Name>
+    <Nickname>Tesla, Tez</Nickname>
+    <HumanName>Hannah</HumanName>
+    <ImagePath>terry.png</ImagePath>
+    <Bio>
+      Terry is a cheeky orange cat, who is extremely curious about the world but sometimes lacks basic survival skills. He is a CIS (Cat In Stem) and has previously attended the 2021 online Nanopore conference, which he fondly refers to as ‘Nanopaw’. In his spare time, he enjoys staring menacingly at squirrels, stealing pieces of uncooked spaghetti, and hiding grapes under the sofa.
+    </Bio>
+  </Pet>
+  <Person>
+    <ID>33</ID>
+    <Name>Jonathan Brenton</Name>
+    <Title>PhD</Title>
+    <Job>Postdoctoral Research Fellow</Job>
+    <Email>jonathan.brenton.14@ucl.ac.uk</Email>
+    <ResearchInterest>
+      Neurodegeneration; Bioinformatics; Ageing; Transcriptomics
+    </ResearchInterest>
+    <Biography>
+      Jon is a a postdoctoral research fellow in the Ryten lab at University College London. He received a BSc in Psychology from the University of Birmingham and an MSc in Neuroscience from University College London. He also completed his PhD at University College London funded by the BBSRC LIDo PhD programme.
+      The project involved the electrophysiological and transcriptomic analysis of ageing in an obesity model. His current work involves the analysis of splicing and gene expression in Parkinson’s disease patients.
+    </Biography>
+    <ImagePath>jon.png</ImagePath>
+    <GitHub>Jbrenton191</GitHub>
+    <GoogleScholar></GoogleScholar>
+    <ResearchGate></ResearchGate>
+    <CurrentMember>Y</CurrentMember>
+  </Person>
 </TeamMembers>
