@@ -53,6 +53,7 @@
                                             @Html.HiddenFor(p => person.NCBIPublicationsID)
                                             @Html.HiddenFor(p => person.ResearchInterest)
                                             @Html.HiddenFor(p => person.GitHub)
+                                            @Html.HiddenFor(p => person.GoogleScholar)
                                             @Html.HiddenFor(p => person.ResearchGate)
                                             @Html.HiddenFor(p => person.Biography)
                                         </div>
@@ -67,6 +68,7 @@
 
             <br />
             <div class="row ">
+                
                 @foreach (var person in Model.TeamMembers)
                 {
                     @if (person.CurrentMember == "Y" && person.Name != "Mina Ryten")
@@ -95,6 +97,7 @@
                                         @Html.HiddenFor(p => person.NCBIPublicationsID)
                                         @Html.HiddenFor(p => person.ResearchInterest)
                                         @Html.HiddenFor(p => person.GitHub)
+                                        @Html.HiddenFor(p => person.GoogleScholar)
                                         @Html.HiddenFor(p => person.ResearchGate)
                                         @Html.HiddenFor(p => person.Biography)
                                     </div>

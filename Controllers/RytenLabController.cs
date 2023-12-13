@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Xml;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +11,7 @@ using System.Web;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using Microsoft.Extensions.Hosting;
+
 
 namespace RytenLab_Web.Controllers
 {
@@ -52,6 +53,7 @@ namespace RytenLab_Web.Controllers
             try
             {
                 Team teamMembers = new Team();
+                List<Person> personList = new List<Person>();
 
                 var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
                 //Load the XML file in XmlDocument.
@@ -62,7 +64,7 @@ namespace RytenLab_Web.Controllers
                 foreach (XmlNode node in doc.SelectNodes("/TeamMembers/Person"))
                 {
                     //Fetch the Node values and assign it to Model.
-                    teamMembers.TeamMembers.Add(new Person
+                    personList.Add(new Person
                     {
                         ID = int.Parse(node["ID"].InnerText),
                         Name = node["Name"].InnerText,
@@ -73,10 +75,13 @@ namespace RytenLab_Web.Controllers
                         Biography = node["Biography"].InnerText,
                         ImagePath = node["ImagePath"].InnerText,
                         GitHub = node["GitHub"].InnerText,
+                        GoogleScholar = node["GoogleScholar"].InnerText,
                         ResearchGate = node["ResearchGate"].InnerText,
                         CurrentMember = node["CurrentMember"].InnerText
                     });
                 }
+                
+                teamMembers.TeamMembers = personList.OrderBy(o => o.Name).ToList();
 
                 return View(teamMembers);
             }
@@ -116,11 +121,12 @@ namespace RytenLab_Web.Controllers
                         Biography = node["Biography"].InnerText,
                         ImagePath = node["ImagePath"].InnerText,
                         GitHub = node["GitHub"].InnerText,
+                        GoogleScholar = node["GoogleScholar"].InnerText,
                         ResearchGate = node["ResearchGate"].InnerText,
                         CurrentMember = node["CurrentMember"].InnerText
                     });
                 }
-
+                pastMembers.TeamMembers = pastMembers.TeamMembers.OrderBy(o => o.Name).ToList();
                 return View(pastMembers);
             }
             catch (Exception e)
@@ -160,6 +166,7 @@ namespace RytenLab_Web.Controllers
                     });
                 }
 
+                petMembers.FurryMembers = petMembers.FurryMembers.OrderBy(o => o.Name).ToList();
                 return View(petMembers);
             }
             catch (Exception e)
