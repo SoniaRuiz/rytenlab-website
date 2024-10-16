@@ -36,29 +36,51 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rytenlab_menu">
+@*                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rytenlab_menu">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="RytenLab" asp-action="About" class="navbar-brand" style="color:white;">Ryten Lab</a>
+                </button> *@
+                <a asp-area="" asp-controller="RytenLab" asp-action="About" class="navbar-brand" style="font-size:24px !important;">Ryten Lab</a>
             </div>
+
             <div class="navbar-collapse collapse" id="rytenlab_menu">
+
                 <ul class="nav navbar-nav">
-                    <li id="tab_about"><a asp-area="" asp-controller="RytenLab" asp-action="About">About</a></li>
+
+                    <li id="tab_about"><a asp-area="" asp-controller="RytenLab" asp-action="About">About us</a></li>
+                    
+                    @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Data">Data</a></li>*@
+                    
+                    @* <li><a asp-area="" asp-controller="RytenLab" asp-action="#">Funding</a></li> *@
+
+                    <li id="tab_science" class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> 
+                            <span class="nav-label">Science</span> <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li id="tab_research"><a asp-area="" asp-controller="RytenLab" asp-action="Research">Research</a></li>
+                            <li id="tab_publications"><a asp-area="" asp-controller="RytenLab" asp-action="Publications">Publications</a></li>
+                            <li id="tab_tools"><a asp-area="" asp-controller="RytenLab" asp-action="Tools">Tools</a></li>
+                        </ul>
+                    </li>
+
                     <li id="tab_team" class="nav-item dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Team</span> <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> 
+                            <span class="nav-label">Team</span> <span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu">
                             <li id="tab_current_members"><a asp-area="" asp-controller="RytenLab" asp-action="Team">Current Members</a></li>
-                            <li id="tab_past_members"><a asp-area="" asp-controller="RytenLab" asp-action="PastMembers">Former Members</a></li>
+                            <li id="tab_alumni"><a asp-area="" asp-controller="RytenLab" asp-action="FormerMembers">Former Members</a></li>
                             <li id="tab_furry_members"><a asp-area="" asp-controller="RytenLab" asp-action="FurryMembers">Furry Members</a></li>
                         </ul>
                     </li>
-                    @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Data">Data</a></li>*@
-                    <li id="tab_tools"><a asp-area="" asp-controller="RytenLab" asp-action="Tools">Tools</a></li>
-                    @*<li><a asp-area="" asp-controller="RytenLab" asp-action="Publications">Publications</a></li>*@
-                    <li id="tab_contact"><a asp-area="" asp-controller="RytenLab" asp-action="Contact">Contact</a></li>
+
+
+                    
+                    
+                    <li id="tab_contact"><a asp-area="" asp-controller="RytenLab" asp-action="Contact">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -69,11 +91,10 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-
     </div>
     <footer>
         <div id="footer" class="text-right">
-            <small>&copy; 2023 - RytenLab</small>
+            <small>&copy; 2024 - RytenLab</small>
             <span id="siteseal">
                 <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=fi4LZ7KfKJo57dque6gyQdEgdBKpwzuR1XOaKPrk4PuTdyfiITsIioOF8Vgz"></script>
             </span>
