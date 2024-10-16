@@ -32,6 +32,7 @@ namespace RytenLab_Web.Controllers
         {
             return View();
         }
+
         /// <summary>
         /// Controller method for the main page
         /// </summary>
@@ -40,6 +41,7 @@ namespace RytenLab_Web.Controllers
         {
             return View();
         }
+
         /// <summary>
         /// Controller method for 'Team' Page
         /// It takes the data from an xml file called team.xml.
@@ -95,11 +97,11 @@ namespace RytenLab_Web.Controllers
             }
         }
 
-        public IActionResult PastMembers()
+        public IActionResult FormerMembers()
         {
             try
             {
-                Team pastMembers = new Team();
+                Team alumni = new Team();
 
                 var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
                 //Load the XML file in XmlDocument.
@@ -110,7 +112,7 @@ namespace RytenLab_Web.Controllers
                 foreach (XmlNode node in doc.SelectNodes("/TeamMembers/Person"))
                 {
                     //Fetch the Node values and assign it to Model.
-                    pastMembers.TeamMembers.Add(new Person
+                    alumni.TeamMembers.Add(new Person
                     {
                         ID = int.Parse(node["ID"].InnerText),
                         Name = node["Name"].InnerText,
@@ -126,8 +128,8 @@ namespace RytenLab_Web.Controllers
                         CurrentMember = node["CurrentMember"].InnerText
                     });
                 }
-                pastMembers.TeamMembers = pastMembers.TeamMembers.OrderBy(o => o.Name).ToList();
-                return View(pastMembers);
+                alumni.TeamMembers = alumni.TeamMembers.OrderBy(o => o.Name).ToList();
+                return View(alumni);
             }
             catch (Exception e)
             {
@@ -138,7 +140,6 @@ namespace RytenLab_Web.Controllers
                 return View("Error", errorModel);
             }
         }
-
 
         public IActionResult FurryMembers()
         {
@@ -190,6 +191,55 @@ namespace RytenLab_Web.Controllers
             ViewData["Message"] = "Your application description page.";
 
             return View();
+        }
+
+        public IActionResult Research()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+
+        /// <summary>
+        /// Controller method for 'Publications' page.
+        /// </summary>
+        /// <returns>Returns 'Publications' view.</returns>
+        public IActionResult Publications()
+        {
+            Publications papers = new Publications();
+            //Load the XML file in XmlDocument.
+
+            var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/publications.xml");
+            XmlDocument doc = new XmlDocument();
+            doc.Load(path);
+
+            //Loop through the selected Nodes.
+            foreach (XmlNode node in doc.SelectNodes("/Publications/Publication"))
+            {
+                string title_text = node["Title"] != null ? node["Title"].InnerText : string.Empty;
+                string abstract_text = node["Abstract"] != null ? node["Abstract"].InnerText : string.Empty;
+                string DOI_text = node["DOI"] != null ? node["DOI"].InnerText : string.Empty;
+                string journal_text = node["JournalInfo"] != null ? node["JournalInfo"].InnerText : string.Empty;
+                string authors_text = node["Authors"] != null ? node["Authors"].InnerText : string.Empty;
+
+                string year_text = node["Year"] != null ? node["Year"].InnerText : string.Empty;
+
+                papers.Manuscripts.Add(new Publication
+                {
+                    Title = title_text,
+                    Abstract = abstract_text,
+                    DOI = DOI_text,
+                    JournalInfo = journal_text,
+                    Authors = authors_text,
+                    Year = year_text
+                });
+            }
+
+            papers.Manuscripts =  papers.Manuscripts.OrderByDescending(o => o.Year).ToList();
+
+        
+
+            return View(papers);
         }
 
         /// <summary>

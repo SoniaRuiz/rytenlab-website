@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Publications>
+	<Publication>
+		<ID>0</ID>
+		<Title>Characterizing a complex CT-rich haplotype in intron 4 of SNCA using large-scale targeted amplicon long-read sequencing</Title>
+		<Authors>Pilar Alvarez Jerez, Kensuke Daida, Francis P. Grenn, Laksh Malik, Abigail Miano-Burkhardt, Mary B. Makarious, Jinhui Ding, J. Raphael Gibbs, Anni Moore, Xylena Reed, Mike A. Nalls, Syed Shah, Medhat Mahmoud, Fritz J. Sedlazeck, Egor Dolzhenko, Morgan Park, Hirotaka Iwaki, Bradford Casey, Mina Ryten, Cornelis Blauwendraat, Andrew B. Singleton  &amp; Kimberley J. Billingsley.</Authors>
+		<JournalInfo>npj Parkinson's Disease volume 10, Article number: 136 (2024) </JournalInfo>
+		<DOI>https://doi.org/10.1038/s41531-024-00749-4</DOI>
+		<Abstract> Parkinson’s disease (PD) is a common neurodegenerative disorder with a significant risk proportion driven by genetics. While much progress has been made, most of the heritability remains unknown. This is in-part because previous genetic studies have focused on the contribution of single nucleotide variants. More complex forms of variation, such as structural variants and tandem repeats, are already associated with several synucleinopathies. However, because more sophisticated sequencing methods are usually required to detect these regions, little is understood regarding their contribution to PD. One example is a polymorphic CT-rich region in intron 4 of the SNCA gene. This haplotype has been suggested to be associated with risk of Lewy Body (LB) pathology in Alzheimer’s Disease and SNCA gene expression, but is yet to be investigated in PD. Here, we attempt to resolve this CT-rich haplotype and investigate its role in PD. We performed targeted PacBio HiFi sequencing of the region in 1375 PD cases and 959 controls. We replicate the previously reported associations and a novel association between two PD risk SNVs (rs356182 and rs5019538) and haplotype 4, the largest haplotype. Through quantitative trait locus analyzes we identify a significant haplotype 4 association with alternative CAGE transcriptional start site usage, not leading to significant differential SNCA gene expression in post-mortem frontal cortex brain tissue. Therefore, disease association in this locus might not be biologically driven by this CT-rich repeat region. Our data demonstrates the complexity of this SNCA region and highlights that further follow up functional studies are warranted. </Abstract>
+		<Year>2024</Year>
+		<Display>Y</Display>
+	</Publication>
+	<Publication>
+		<ID>1</ID>
+		<Title>Network nature of ligand-receptor interactions underlies disease comorbidity in the brain</Title>
+		<Authors>
+			Melissa Grant-Peters, Aine Fairbrother-Browne, Amy Hicks, Boyi Guo, Regina H. Reynolds, Louise Huuki-Myers, Nick Eagles, Jonathan Brenton, Sonia Garcia-Ruiz, Nicholas Wood, Sonia Gandhi, Kristen Maynard, Leonardo Collado-Torres, Mina Ryten
+		</Authors>
+		<JournalInfo>bioRxiv 2024.06.15.599140;</JournalInfo>
+		<DOI>https://doi.org/10.1101/2024.06.15.599140</DOI>
+		<Abstract>
+			Neurodegenerative disorders have overlapping symptoms and have high comorbidity rates, but this is not reflected in overlaps of risk genes. We have investigated whether ligand-receptor interactions (LRIs) are a mechanism by which distinct genes associated with disease risk can impact overlapping outcomes. We found that LRIs are likely disrupted in neurological disease and that the ligand-receptor networks associated with neurological diseases have substantial overlaps. Specifically, 96.8% of LRIs associated with disease risk are interconnected in a single LR network. These ligands and receptors are enriched for roles in inflammatory pathways and highlight the role of glia in cross-disease risk. Disruption to this LR network due to disease-associated processes (e.g. differential transcript use, protein misfolding) is likely to contribute to disease progression and risk of comorbidity. Our findings have implications for drug development, as they highlight the potential benefits and risks of pursuing cross-disease drug targets.
+		</Abstract>
+		<Year>2024</Year>
+		<Display>Y</Display>
+	</Publication>
+	<Publication>
+		<ID>3</ID>
+		<Title>The diversity of SNCA transcripts in neurons, and its impact on antisense oligonucleotide therapeutics</Title>
+		<Authors>
+			James R. Evans, Emil K. Gustavsson, Ivan Doykov, David Murphy, Gurvir S. Virdi, Joanne Lachica, Alexander Röntgen, Mhd Hussein Murtada, Chun Wei Pang, Hannah Macpherson, Anna I. Wernick, Christina E. Toomey, Dilan Athauda, Minee L. Choi, John Hardy, Nicholas W. Wood, Michele Vendruscolo, Kevin Mills, Wendy Heywood, Mina Ryten, Sonia Gandhi
+		</Authors>
+		<JournalInfo>bioRxiv 2024.05.30.596437;</JournalInfo>
+		<DOI>https://doi.org/10.1101/2024.05.30.596437</DOI>
+		<Abstract>
+			The role of the SNCA gene locus in driving Parkinson’s disease (PD) through rare and common genetic variation is well-recognized, but the transcriptional diversity of SNCA in vulnerable cell types remains unclear. We performed SNCA long-read RNA sequencing in human dopaminergic neurons and show that annotated SNCA transcripts account for only 5% of expression. Rather, the majority of expression (75%) at the SNCA locus originates from transcripts with alternative 5’ and 3’ untranslated regions. Importantly, 10% originates from transcripts encoding open reading frames not previously annotated, which are translated and detectable in human postmortem brain. Defining the 3’ untranslated regions enabled the rational design of antisense oligonucleotides targeting the majority of SNCA transcripts, leading to the effective reversal of PD pathology, including protein aggregation, mitochondrial dysfunction, and toxicity. Resolving the complexity of the SNCA transcriptional landscape impacts RNA therapies and highlights differences in protein isoforms and their contribution to disease.
+		</Abstract>
+		<Year>2024</Year>
+		<Display>Y</Display>
+	</Publication>
+	<Publication>
+		<ID>4</ID>
+		<Title>The annotation of GBA1 has been concealed by its protein-coding pseudogene GBAP1</Title>
+		<Authors>
+			Emil K. Gustavsson, Siddharth Sethi, Yujing Gao, Jonathan W. Brenton, Sonia García-Ruiz, David Zhang, Raquel Garza, Regina H. Reynolds, James R. Evans, Zhongbo Chen, Melissa Grant-Peters, Hannah Macpherson, Kylie Montgomery, Rhys Dore, Anna I. Wernick, Charles Arber, Selina Wray, Sonia Gandhi, Julian Esselborn, Cornelis Blauwendraat, Christopher H. Douse, Anita Adami, Diahann A.M. Atacho, Antonina Kouli, Annelies Quaegebeur, Roger A. Barker, Elisabet Englund, Frances Platt, Johan Jakobsson, Nicholas W. Wood, Henry Houlden, Harpreet Saini, Carla F. Bento, John Hardy, Mina Ryten
+		</Authors>
+		<JournalInfo>
+			Science Advances; 26 Jun 2024; Vol 10, Issue 26
+		</JournalInfo>
+		<DOI>https://www.science.org/doi/10.1126/sciadv.adk1296</DOI>
+		<Abstract>
+			Mutations in GBA1 cause Gaucher disease and are the most important genetic risk factor for Parkinson’s disease. However, analysis of transcription at this locus is complicated by its highly homologous pseudogene, GBAP1. We show that >50% of short RNA-sequencing reads mapping to GBA1 also map to GBAP1. Thus, we used long-read RNA sequencing in the human brain, which allowed us to accurately quantify expression from both GBA1 and GBAP1. We discovered significant differences in expression compared to short-read data and identify currently unannotated transcripts of both GBA1 and GBAP1. These included protein-coding transcripts from both genes that were translated in human brain, but without the known lysosomal function—yet accounting for almost a third of transcription. Analyzing brain-specific cell types using long-read and single-nucleus RNA sequencing revealed region-specific variations in transcript expression. Overall, these findings suggest nonlysosomal roles for GBA1 and GBAP1 with implications for our understanding of the role of GBA1 in health and disease.
+		</Abstract>
+		<Year>2024</Year>
+		<Display>Y</Display>
+	</Publication>
+	<Publication>
+		<ID>5</ID>
+		<Title>The non-specific lethal complex regulates genes and pathways genetically linked to Parkinson’s disease</Title>
+		<Authors>
+			Amy R Hicks, Regina H Reynolds, Benjamin O’Callaghan, Sonia García-Ruiz, Ana Luisa Gil-Martínez, Juan Botía, Hélène Plun-Favreau, Mina Ryten
+		</Authors>
+		<JournalInfo>
+			Brain, Volume 146, Issue 12, December 2023, Pages 4974–4987,
+		</JournalInfo>
+		<DOI>https://doi.org/10.1093/brain/awad246</DOI>
+		<Abstract>
+			Genetic variants conferring risks for Parkinson’s disease have been highlighted through genome-wide association studies, yet exploration of their specific disease mechanisms is lacking. Two Parkinson’s disease candidate genes, KAT8 and KANSL1, identified through genome-wide studies and a PINK1-mitophagy screen, encode part of the histone acetylating non-specific lethal complex. This complex localizes to the nucleus, where it plays a role in transcriptional activation, and to mitochondria, where it has been suggested to have a role in mitochondrial transcription. In this study, we sought to identify whether the non-specific lethal complex has potential regulatory relationships with other genes associated with Parkinson’s disease in human brain. Correlation in the expression of non-specific lethal genes and Parkinson’s disease-associated genes was investigated in primary gene co-expression networks using publicly-available transcriptomic data from multiple brain regions (provided by the Genotype-Tissue Expression Consortium and UK Brain Expression Consortium), whilst secondary networks were used to examine cell type specificity. Reverse engineering of gene regulatory networks generated regulons of the complex, which were tested for heritability using stratified linkage disequilibrium score regression [...]
+		</Abstract>
+		<Year>2023</Year>
+		<Display>Y</Display>
+	</Publication>
+	<Publication>
+		<ID>6</ID>
+		<Title>Functional genomics provide key insights to improve the diagnostic yield of hereditary ataxia</Title>
+		<Authors>
+			Zhongbo Chen, Arianna Tucci, Valentina Cipriani, Emil K Gustavsson, Kristina Ibañez, Regina H Reynolds, David Zhang, Letizia Vestito, Alejandro Cisterna García, Siddharth Sethi, Jonathan W Brenton, Sonia García-Ruiz, Aine Fairbrother-Browne, Ana-Luisa Gil-Martinez, Genomics England Research Consortium, Nick Wood, John A Hardy, Damian Smedley, Henry Houlden, Juan Botía, Mina Ryten
+		</Authors>
+		<JournalInfo>
+			Brain, Volume 146, Issue 7, July 2023, Pages 2869–2884,
+		</JournalInfo>
+		<DOI>https://doi.org/10.1093/brain/awad009</DOI>
+		<Abstract>
+			Improvements in functional genomic annotation have led to a critical mass of neurogenetic discoveries. This is exemplified in hereditary ataxia, a heterogeneous group of disorders characterised by incoordination from cerebellar dysfunction. Associated pathogenic variants in more than 300 genes have been described, leading to a detailed genetic classification partitioned by age-of-onset. Despite these advances, up to 75% of patients with ataxia remain molecularly undiagnosed even following whole genome sequencing, as exemplified in the 100 000 Genomes Project.
+
+			This study aimed to understand whether we can improve our knowledge of the genetic architecture of hereditary ataxia by leveraging functional genomic annotations, and as a result, generate insights and strategies that raise the diagnostic yield. [...]
+		</Abstract>
+		<Year>2023</Year>
+		<Display>Y</Display>
+	</Publication>
+
+	<Publication>
+		<ID>7</ID>
+		<Title>IntroVerse: a comprehensive database of introns across human tissues</Title>
+		<Authors>
+			Sonia García-Ruiz, Emil K Gustavsson, David Zhang, Regina H Reynolds, Zhongbo Chen, Aine Fairbrother-Browne, Ana Luisa Gil-Martínez, Juan A Botia, Leonardo Collado-Torres, Mina Ryten
+		</Authors>
+		<JournalInfo>
+			Nucleic Acids Research, Volume 51, Issue D1, 6 January 2023, Pages D167–D178,
+		</JournalInfo>
+		<DOI>https://doi.org/10.1093/nar/gkac1056</DOI>
+		<Abstract>
+			Dysregulation of RNA splicing contributes to both rare and complex diseases. RNA-sequencing data from human tissues has shown that this process can be inaccurate, resulting in the presence of novel introns detected at low frequency across samples and within an individual. To enable the full spectrum of intron use to be explored, we have developed IntroVerse, which offers an extensive catalogue on the splicing of 332,571 annotated introns and a linked set of 4,679,474 novel junctions covering 32,669 different genes. This dataset has been generated through the analysis of 17,510 human control RNA samples from 54 tissues provided by the Genotype-Tissue Expression Consortium. IntroVerse has two unique features: (i) it provides a complete catalogue of novel junctions and (ii) each novel junction has been assigned to a specific annotated intron. This unique, hierarchical structure offers multiple uses, including the identification of novel transcripts from known genes and their tissue-specific usage, and the assessment of background splicing noise for introns thought to be mis-spliced in disease states. IntroVerse provides a user-friendly web interface and is freely available at https://rytenlab.com/browser/app/introverse.
+		</Abstract>
+		<Year>2023</Year>
+		<Display>Y</Display>
+	</Publication>
+
+	<Publication>
+		<ID>8</ID>
+		<Title>ggtranscript: an R package for the visualization and interpretation of transcript isoforms using ggplot2</Title>
+		<Authors>
+			Emil K Gustavsson, David Zhang, Regina H Reynolds, Sonia Garcia-Ruiz, Mina Ryten
+		</Authors>
+		<JournalInfo>
+			Bioinformatics, Volume 38, Issue 15, August 2022, Pages 3844–3846,
+		</JournalInfo>
+		<DOI>https://doi.org/10.1093/bioinformatics/btac409</DOI>
+		<Abstract>
+			The advent of long-read sequencing technologies has increased demand for the visualization and interpretation of transcripts. However, tools that perform such visualizations remain inflexible and lack the ability to easily identify differences between transcript structures. Here, we introduce ggtranscript, an R package that provides a fast and flexible method to visualize and compare transcripts. As a ggplot2 extension, ggtranscript inherits the functionality and familiarity of ggplot2 making it easy to use.
+		</Abstract>
+		<Year>2022</Year>
+		<Display>Y</Display>
+	</Publication>
+
+
+	<Publication>
+		<ID>9</ID>
+		<Title>Leveraging omic features with F3UTER enables identification of unannotated 3’UTRs for synaptic genes</Title>
+		<Authors>
+			Siddharth Sethi, David Zhang, Sebastian Guelfi, Zhongbo Chen, Sonia Garcia-Ruiz, Emmanuel O. Olagbaju, Mina Ryten, Harpreet Saini  &amp; Juan A. Botia
+		</Authors>
+		<JournalInfo>
+			Nature Communications volume 13, Article number: 2270 (2022)
+		</JournalInfo>
+		<DOI>https://doi.org/10.1093/bioinformatics/btac409</DOI>
+		<Abstract>
+			There is growing evidence for the importance of 3’ untranslated region (3’UTR) dependent regulatory processes. However, our current human 3’UTR catalogue is incomplete. Here, we develop a machine learning-based framework, leveraging both genomic and tissue-specific transcriptomic features to predict previously unannotated 3’UTRs. We identify unannotated 3’UTRs associated with 1,563 genes across 39 human tissues, with the greatest abundance found in the brain. These unannotated 3’UTRs are significantly enriched for RNA binding protein (RBP) motifs and exhibit high human lineage-specificity. We find that brain-specific unannotated 3’UTRs are enriched for the binding motifs of important neuronal RBPs such as TARDBP and RBFOX1, and their associated genes are involved in synaptic function. Our data is shared through an online resource F3UTER (https://astx.shinyapps.io/F3UTER/). Overall, our data improves 3’UTR annotation and provides additional insights into the mRNA-RBP interactome in the human brain, with implications for our understanding of neurological and neurodevelopmental diseases.
+		</Abstract>
+		<Year>2022</Year>
+		<Display>Y</Display>
+	</Publication>
+
+
+	<Publication>
+		<ID>10</ID>
+		<Title>Mitochondrial-nuclear cross-talk in the human brain is modulated by cell type and perturbed in neurodegenerative disease</Title>
+		<Authors>
+			Aine Fairbrother-Browne, Aminah T. Ali, Regina H. Reynolds, Sonia Garcia-Ruiz, David Zhang, Zhongbo Chen, Mina Ryten &amp; Alan Hodgkinson
+		</Authors>
+		<JournalInfo>
+			Communications Biology volume 4, Article number: 1262 (2021)
+		</JournalInfo>
+		<DOI>https://doi.org/10.1038/s42003-021-02792-w</DOI>
+		<Abstract>
+			Mitochondrial dysfunction contributes to the pathogenesis of many neurodegenerative diseases. The mitochondrial genome encodes core respiratory chain proteins, but the vast majority of mitochondrial proteins are nuclear-encoded, making interactions between the two genomes vital for cell function. Here, we examine these relationships by comparing mitochondrial and nuclear gene expression across different regions of the human brain in healthy and disease cohorts. We find strong regional patterns that are modulated by cell-type and reflect functional specialisation. Nuclear genes causally implicated in sporadic Parkinson’s and Alzheimer’s disease (AD) show much stronger relationships with the mitochondrial genome than expected by chance, and mitochondrial-nuclear relationships are highly perturbed in AD cases, particularly through synaptic and lysosomal pathways, potentially implicating the regulation of energy balance and removal of dysfunction mitochondria in the etiology or progression of the disease. Finally, we present MitoNuclearCOEXPlorer, a tool to interrogate key mitochondria-nuclear relationships in multi-dimensional brain data.
+		</Abstract>
+		<Year>2021</Year>
+		<Display>Y</Display>
+	</Publication>
+
+	<Publication>
+		<ID>10</ID>
+		<Title>Splicing accuracy varies across human introns, tissues and age</Title>
+		<Authors>
+			S García-Ruiz, D Zhang, E K Gustavsson, G Rocamora-Perez, M Grant-Peters, A Fairbrother-Browne, R H Reynolds, J W Brenton, A L Gil-Martínez, Z Chen, D C Rio, J A Botia, S Guelfi, L Collado-Torres, M Ryten
+		</Authors>
+		<JournalInfo>
+			bioRxiv 2023.03.29.534370;
+		</JournalInfo>
+		<DOI>https://doi.org/10.1101/2023.03.29.534370</DOI>
+		<Abstract>
+			Alternative splicing impacts most multi-exonic human genes. Inaccuracies during this process may have an important role in ageing and disease. Here, we investigated mis-splicing using RNA-sequencing data from ~14K control samples and 42 human body sites, focusing on split reads partially mapping to known transcripts in annotation. We show that mis-splicing occurs at different rates across introns and tissues and that these splicing inaccuracies are primarily affected by the abundance of core components of the spliceosome assembly and its regulators. Using publicly available data on short-hairpin RNA-knockdowns of numerous spliceosomal components and related regulators, we found support for the importance of RNA-binding proteins in mis-splicing. We also demonstrated that age is positively correlated with mis-splicing, and it affects genes implicated in neurodegenerative diseases. This in-depth characterisation of mis-splicing can have important implications for our understanding of the role of splicing inaccuracies in human disease and the interpretation of long-read RNA-sequencing data.
+		</Abstract>
+		<Year>2023</Year>
+		<Display>Y</Display>
+	</Publication>
+
+
+	<Publication>
+		<ID>11</ID>
+		<Title>Human-lineage-specific genomic elements are associated with neurodegenerative disease and APOE transcript usage</Title>
+		<Authors>
+			Zhongbo Chen, David Zhang, Regina H. Reynolds, Emil K. Gustavsson, Sonia García-Ruiz, Karishma D’Sa, Aine Fairbrother-Browne, Jana Vandrovcova, International Parkinson’s Disease Genomics Consortium (IPDGC), John Hardy, Henry Houlden, Sarah A. Gagliano Taliun, Juan Botía &amp; Mina Ryten
+		</Authors>
+		<JournalInfo>
+			Nature Communications volume 12, Article number: 2076 (2021)
+		</JournalInfo>
+		<DOI>https://doi.org/10.1038/s41467-021-22262-5</DOI>
+		<Abstract>
+			Knowledge of genomic features specific to the human lineage may provide insights into brain-related diseases. We leverage high-depth whole genome sequencing data to generate a combined annotation identifying regions simultaneously depleted for genetic variation (constrained regions) and poorly conserved across primates. We propose that these constrained, non-conserved regions (CNCRs) have been subject to human-specific purifying selection and are enriched for brain-specific elements. We find that CNCRs are depleted from protein-coding genes but enriched within lncRNAs. We demonstrate that per-SNP heritability of a range of brain-relevant phenotypes are enriched within CNCRs. We find that genes implicated in neurological diseases have high CNCR density, including APOE, highlighting an unannotated intron-3 retention event. Using human brain RNA-sequencing data, we show the intron-3-retaining transcript to be more abundant in Alzheimer’s disease with more severe tau and amyloid pathological burden. Thus, we demonstrate potential association of human-lineage-specific sequences in brain development and neurological disease.
+		</Abstract>
+		<Year>2021</Year>
+		<Display>Y</Display>
+	</Publication>
+
+
+	<Publication>
+		<ID>12</ID>
+		<Title>Detection of pathogenic splicing events from RNA-sequencing data using dasper</Title>
+		<Authors>
+			David Zhang, Regina H. Reynolds, Sonia Garcia-Ruiz, Emil K Gustavsson, Sid Sethi, Sara Aguti, Ines A. Barbosa, Jack J. Collier, Henry Houlden, Robert McFarland, Francesco Muntoni, Monika Oláhová, Joanna Poulton, Michael Simpson, Robert D.S. Pitceathly, Robert W. Taylor, Haiyan Zhou, Charu Deshpande, Juan A. Botia, Leonardo Collado-Torres, Mina Ryten
+		</Authors>
+		<JournalInfo>
+			bioRxiv 2021.03.29.437534;
+		</JournalInfo>
+		<DOI>https://doi.org/10.1101/2021.03.29.437534</DOI>
+		<Abstract>
+			Although next-generation sequencing technologies have accelerated the discovery of novel gene-to-disease associations, many patients with suspected Mendelian diseases still leave the clinic without a genetic diagnosis. An estimated one third of these patients will have disorders caused by mutations impacting splicing. RNA-sequencing has been shown to be a promising diagnostic tool, however few methods have been developed to integrate RNA-sequencing data into the diagnostic pipeline. Here, we introduce dasper, an R/Bioconductor package that improves upon existing tools for detecting aberrant splicing by using machine learning to incorporate disruptions in exon-exon junction counts as well as coverage. dasper is designed for diagnostics, providing a rank-based report of how aberrant each splicing event looks, as well as including visualization functionality to facilitate interpretation. We validate dasper using 16 patient-derived fibroblast cell lines harbouring pathogenic variants known to impact splicing. We find that dasper is able to detect pathogenic splicing events with greater accuracy than existing LeafCutterMD or z-score approaches. Furthermore, by only applying a broad OMIM gene filter (without any variant-level filters), dasper is able to detect pathogenic splicing events within the top 10 most aberrant identified for each patient. Since using publicly available control data minimises costs associated with incorporating RNA-sequencing into diagnostic pipelines, we also investigate the use of 504 GTEx fibroblast samples as controls. We find that dasper leverages publicly available data effectively, ranking pathogenic splicing events in the top 25. Thus, we believe dasper can increase diagnostic yield for a pathogenic splicing variants and enable the efficient implementation of RNA-sequencing for diagnostics in clinical laboratories.
+		</Abstract>
+		<Year>2021</Year>
+		<Display>Y</Display>
+	</Publication>
+
+	<Publication>
+		<ID>13</ID>
+		<Title>Incomplete annotation has a disproportionate impact on our understanding of Mendelian and complex neurogenetic disorders.</Title>
+		<Authors>
+			Zhang D, Guelfi S, Garcia-Ruiz S, Costa B, Reynolds RH, D'Sa K, Liu W, Courtin T, Peterson A, Jaffe AE, Hardy J, Botía JA, Collado-Torres L, Ryten M. 
+		</Authors>
+		<JournalInfo>
+			Science Advances; 10 Jun 2020; Vol 6, Issue 24
+		</JournalInfo>
+		<DOI>https://www.science.org/doi/10.1126/sciadv.aay8299</DOI>
+		<Abstract>
+			Growing evidence suggests that human gene annotation remains incomplete; however, it is unclear how this affects different tissues and our understanding of different disorders. Here, we detect previously unannotated transcription from Genotype-Tissue Expression RNA sequencing data across 41 human tissues. We connect this unannotated transcription to known genes, confirming that human gene annotation remains incomplete, even among well-studied genes including 63% of the Online Mendelian Inheritance in Man–morbid catalog and 317 neurodegeneration-associated genes. We find the greatest abundance of unannotated transcription in brain and genes highly expressed in brain are more likely to be reannotated. We explore examples of reannotated disease genes, such as SNCA, for which we experimentally validate a previously unidentified, brain-specific, potentially protein-coding exon. We release all tissue-specific transcriptomes through vizER: http://rytenlab.com/browser/app/vizER. We anticipate that this resource will facilitate more accurate genetic analysis, with the greatest impact on our understanding of Mendelian and complex neurogenetic disorders.
+		</Abstract>
+		<Year>2020</Year>
+		<Display>Y</Display>
+	</Publication>
+	
+</Publications>

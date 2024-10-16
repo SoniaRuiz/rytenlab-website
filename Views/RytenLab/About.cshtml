@@ -1,45 +1,43 @@
 ﻿@{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "About us";
 }
 <header class="header">
-    <h1>@ViewData["Title"]</h1>
-    <hr />
-</header>
-<article>
-    <p>The major focus of the Ryten Laboratory is the use of transcriptomic data as a functional read-out of the genome and how that read-out can inform our understanding of biological processes to improve human health. We work in neurogenetics, one of the most challenging disease areas and use transcriptomic data, primarily derived from human brain or brain relevant cell types, to build the resources required to improve the molecular understanding of complex and rare neurological diseases with a particular focus on neurodegenerative diseases.</p>
-    <p>We are highly collaborative and we are interested in making our work accessible and useful within the neuroscience research community, but also within clinical and diagnostic settings. As part of UCL Great Ormond Street Institute of Child Health (London), and in collaboration with UCL Queen Square Institute of Neurology and University of Murcia (Spain), our on-going work covers the genetic regulation of gene expression in human brain, gene co-expression networks, re-annotation of genes associated with neurological diseases and the use of transcriptomics to improve diagnostic yield. We have released many of the outputs of these projects through the development of different web tools.</p>
-    <p>To find out more about our work and the people behind it just take a look at our <a href="https://rytenlab.com/RytenLab/Team" title="Visit our 'Team' page">Team</a> page.</p>
-    <br />
-    <div class="text-center">
-        <div class="key-words">
-            Transcriptomics and  Functional Genomics. <br />
-            Bioinformatics, Machine Learning and Statistical Modelling.<br />
-            Novel Transcription, Mitocondrial Genetics, UTRs and RNA splicing.<br />
-            Novel Transcript Discovery, RNA Binding Proteins and Ageing.<br />
-            Neurodegeneration and Genetics.
-        </div>
-        <br />
-        <i class="fab fa-github" style="font-size:24px"></i>
-        <a href="https://github.com/rytenlab" target="_blank">Ryten Lab</a>&nbsp;
-        <i class="fa fa-at" style="font-size:24px"></i>
-        <a href="mailto:mina.ryten@ucl.ac.uk">mina.ryten@ucl.ac.uk</a><br />
-    </div>
-    <br />
-    <div>
-        <img src="~/images/originals/group_photo.jpg" style="max-width:100%" title="Ryten Lab Group" />
-        <br />
-        <small>Some of us in London - March 2022</small>
-    </div>
 
+    <div class="text-center">
+        <br />
+        <h1>@ViewData["Title"]</h1><hr />
+        <br />
+    </div>
+</header>
+
+<article>
+    
+    <p class ="lead">
+        The <strong>major focus of the Ryten Laboratory</strong> is the use of transcriptomic data as a functional read-out of the genome to inform our understanding of biological processes to improve human health.
+        We work in neurogenetics, one of the most challenging disease areas, and use transcriptomic data, primarily derived from human brain or brain-relevant cell types, to build the resources required to improve the molecular understanding of complex and rare neurological diseases with a particular focus on <strong>neurodegenerative diseases</strong>.
+        <br /><br />
+        As part of the <strong>UK DRI Cambridge</strong>, and in collaboration with important institutions, such as UCL Great Ormond Street Institute of Child Health and Queen Square Institute of Neurology (London), our on-going work covers the <strong>use of short-read, long-read and single-nucleous RNA-sequencing data to understand genetic regulation of gene expression</strong> mostly in the human brain,  
+        re-annotation of genes associated with neurological diseases and the use of transcriptomics to improve diagnostic yield. Find out more about <a asp-area="" asp-controller="RytenLab" asp-action="Team">who we are</a> and <a asp-area="" asp-controller="RytenLab" asp-action="Research">what we do</a>.
+    </p>
+    @* <p>
+        We have released many of the outputs of these projects through different <a asp-area="" asp-controller="RytenLab" asp-action="Publications">publications</a> and <a asp-area="" asp-controller="RytenLab" asp-action="Tools">software tools</a>.
+    </p> *@
+    <br />
+    <div class="img-responsive">
+        <img src="~/images/originals/photo-collage.png.png" title="Ryten Lab Group" />
+        <br />
+        <small><strong>We are a highly collaborative team!</strong> <br />
+            If you are interested in <strong>collaborating or working with us</strong>, please <a asp-area="" asp-controller="RytenLab" asp-action="Contact">get in touch!</a></small>
+    </div>
 </article>
 
 @section Scripts{
-    <script type="text/javascript">
-        $(document).ready(function () {
-            // Turn active current menu's option
-            $(".nav-item").find(".active").removeClass("active");
-            $("#tab_about").addClass("active");
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Turn active current menu's option
+        $(".nav-item").find(".active").removeClass("active");
+        $("#tab_about").addClass("active");
 
-        });
-    </script>
+    });
+</script>
 }
