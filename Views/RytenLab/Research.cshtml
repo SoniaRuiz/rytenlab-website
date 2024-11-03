@@ -106,3 +106,14 @@
     </div>
    
 </article>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Turn active current menu's option
+            $(".nav-item").find(".active").removeClass("active");
+            $("#tab_science").addClass("active");
+
+        });
+    </script>
+}
