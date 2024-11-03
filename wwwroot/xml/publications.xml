@@ -1,15 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Publications>
-	<Publication>
-		<ID>0</ID>
-		<Title>Characterizing a complex CT-rich haplotype in intron 4 of SNCA using large-scale targeted amplicon long-read sequencing</Title>
-		<Authors>Pilar Alvarez Jerez, Kensuke Daida, Francis P. Grenn, Laksh Malik, Abigail Miano-Burkhardt, Mary B. Makarious, Jinhui Ding, J. Raphael Gibbs, Anni Moore, Xylena Reed, Mike A. Nalls, Syed Shah, Medhat Mahmoud, Fritz J. Sedlazeck, Egor Dolzhenko, Morgan Park, Hirotaka Iwaki, Bradford Casey, Mina Ryten, Cornelis Blauwendraat, Andrew B. Singleton  &amp; Kimberley J. Billingsley.</Authors>
-		<JournalInfo>npj Parkinson's Disease volume 10, Article number: 136 (2024) </JournalInfo>
-		<DOI>https://doi.org/10.1038/s41531-024-00749-4</DOI>
-		<Abstract> Parkinson’s disease (PD) is a common neurodegenerative disorder with a significant risk proportion driven by genetics. While much progress has been made, most of the heritability remains unknown. This is in-part because previous genetic studies have focused on the contribution of single nucleotide variants. More complex forms of variation, such as structural variants and tandem repeats, are already associated with several synucleinopathies. However, because more sophisticated sequencing methods are usually required to detect these regions, little is understood regarding their contribution to PD. One example is a polymorphic CT-rich region in intron 4 of the SNCA gene. This haplotype has been suggested to be associated with risk of Lewy Body (LB) pathology in Alzheimer’s Disease and SNCA gene expression, but is yet to be investigated in PD. Here, we attempt to resolve this CT-rich haplotype and investigate its role in PD. We performed targeted PacBio HiFi sequencing of the region in 1375 PD cases and 959 controls. We replicate the previously reported associations and a novel association between two PD risk SNVs (rs356182 and rs5019538) and haplotype 4, the largest haplotype. Through quantitative trait locus analyzes we identify a significant haplotype 4 association with alternative CAGE transcriptional start site usage, not leading to significant differential SNCA gene expression in post-mortem frontal cortex brain tissue. Therefore, disease association in this locus might not be biologically driven by this CT-rich repeat region. Our data demonstrates the complexity of this SNCA region and highlights that further follow up functional studies are warranted. </Abstract>
-		<Year>2024</Year>
-		<Display>Y</Display>
-	</Publication>
+
 	<Publication>
 		<ID>1</ID>
 		<Title>Network nature of ligand-receptor interactions underlies disease comorbidity in the brain</Title>
