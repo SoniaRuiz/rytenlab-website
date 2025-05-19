@@ -45,9 +45,9 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "getNetworkCategories";
             Uri uri = new Uri(_coexpURL);
             //Make the request
-            string response = _adapter.GETHttpRequestJSON(uri);
+            var response = _adapter.GETHttpRequestJSONAsync(uri);
             //Return the response
-            return response;  
+            return response.Result;  
         }
 
 
@@ -65,10 +65,10 @@ namespace RytenLab_Web.Repositories
             PostData = "{\"category\":\"" + whichone + "\"}";
 
             //Make the request
-            var finalResponse = _adapter.POSTHttpRequestJSON(uri, PostData);
+            var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
 
             //Return the response
-            return finalResponse;
+            return finalResponse.Result;
         }
 
         public string GetAvailableModules(string tissue, string whichone)
@@ -80,11 +80,11 @@ namespace RytenLab_Web.Repositories
                 "\",\"which.one\":\"" + whichone + "\"}";
 
             //Make the request
-            var finalResponse = _adapter.POSTHttpRequestJSON(uri, PostData);
+            var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
 
 
             //Return the response
-            return finalResponse;
+            return finalResponse.Result;
         }
 
         public string GetMM(string tissue, string whichone, string module)
@@ -99,10 +99,10 @@ namespace RytenLab_Web.Repositories
                 "\",\"module\":\"" + module + "\"}";
 
             //Make the request
-            var finalResponse = _adapter.POSTHttpRequestJSON(uri, PostData);
+            var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
 
             //Return the response
-            return finalResponse;
+            return finalResponse.Result;
         }
 
 
@@ -117,10 +117,10 @@ namespace RytenLab_Web.Repositories
                 "\",\"which.one\":\"" + whichone + "\"}";
 
             //Make the request
-            var finalResponse = _adapter.POSTHttpRequestJSON(uri, PostData);
+            var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
 
             //Return the response
-            return finalResponse;
+            return finalResponse.Result;
         }
 
 
@@ -133,10 +133,10 @@ namespace RytenLab_Web.Repositories
                 "\",\"which.one\":\"" + whichone + "\"}";
 
             //Make the request
-            var finalResponse = _adapter.POSTHttpRequestJSON(uri, PostData);
+            var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
 
             //Return the response
-            return finalResponse;
+            return finalResponse.Result;
         }
 
 
@@ -152,8 +152,8 @@ namespace RytenLab_Web.Repositories
 
             PostData = "{\"tissues\":\"" + tissues + "\",\"which.one\":\"" + whichone + "\",\"genes\":\"" + genes + "\"}";
             
-            var response = _adapter.POSTHttpRequestJSON(uri, PostData);
-            return response;
+            var response = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
+            return response.Result;
         }
 
         public string GlobalReportOnGenes(string categories, string networks, string genes)
@@ -164,9 +164,9 @@ namespace RytenLab_Web.Repositories
             PostData = "{\"categories\":\"" + categories + "\",\"tissues\":\"" + networks + "\",\"genes\":\"" + genes + "\"}";
 
             //Make the request
-            var response = _adapter.POSTHttpRequestJSON(uri, PostData);
+            var response = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
 
-            return response;
+            return response.Result;
         }
 
 
@@ -181,9 +181,9 @@ namespace RytenLab_Web.Repositories
                 "\",\"module\":\"" + module + "\",\"topgenes\":\"" + topgenes + "\"}";
 
             //Make the request
-            string response = _adapter.POSTHttpRequestJSON(uri, PostData);
+            var response = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
 
-            return response;
+            return response.Result;
 
         }
 
@@ -198,9 +198,9 @@ namespace RytenLab_Web.Repositories
                 "\",\"module\":\"" + module + "\"}";
 
             //Make the request
-            string response = _adapter.POSTHttpRequestJSON(uri, PostData);
+            var response = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
 
-            return response;
+            return response.Result;
 
         }
     }
