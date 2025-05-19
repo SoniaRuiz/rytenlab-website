@@ -343,6 +343,13 @@ namespace RytenLab_Web.Controllers
         }
 
 
+        public IActionResult Publications()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+
         /// <summary>
         /// Controller method for 'Privacy' page
         /// </summary>
