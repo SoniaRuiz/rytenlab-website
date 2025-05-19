@@ -3,20 +3,21 @@
 	<Person>
 		<ID>0</ID>
 		<Name>Mina Ryten</Name>
-		<Title>Dr (MBBS, PhD)</Title>
-		<Job>Professor of Clinical Genetics/Honorary Consultant in Clinical Genetics</Job>
-		<Email>mina.ryten@ucl.ac.uk</Email>
+		<Title>Prof (MBBS, PhD)</Title>
+		<Job>UK DRI Cambridge Centre Director/Professor of Clinical Genetics</Job>
+		<Email>mr2022@medschl.cam.ac.uk</Email>
 		<ResearchInterest>Transcriptomics; Data Analysis of High-throughput Techniques for complex neurological diseases; Data Analysis of High-throughput Techniques to improve the diagnostic yield for rare neurogenetic disorders</ResearchInterest>
 		<Biography>
-			<b>Mina Ryten </b>is Professor of Clinical Genetics at UCL Great Ormond Street Institute of Child Health and is an Honorary Consultant in Clinical Genetics at Great Ormond Street Hospital for Children and at Guy’s Hospital. She is a clinician scientist with experience in both clinical and research settings. In her clinical practice she cares for individuals and families with, or at risk of, a range of conditions which may have a genetic basis. As well as providing a diagnosis, the aim of her clinics is to help individuals affected by a genetic disorder live as normally as possible with their condition. Mina’s research lab focuses on the use of transcriptomics, primarily derived from human brain, to improve the molecular understanding of complex and rare neurological disorders.
+			Professor Mina Ryten is a clinician scientist with a long-standing interest in using human brain transcriptomics to understand neurological diseases. Mina began her medical training at Cambridge University and completed an MB PhD at UCL. While her PhD focused on purinergic signalling in skeletal muscle development, she subsequently trained in bioinformatics through an MRC Post-doctoral Fellowship in Systems Biology. This experience led her to become a Clinical Geneticist, shaped her research interests and formed the basis of her application for an MRC Clinician Scientist Fellowship. Since 2017 Mina has led her own research group at the UCL Institute of Neurology, and later the UCL Great Ormond Street Institute of Child Health. She also worked as an Honorary Consultant in Clinical Genetics at Great Ormond Street Hospital for Children and Guy’s Hospital. During her clinical practice, she cared for individuals and families with - or at risk of - a range of conditions with a potential genetic basis, helping them to get a diagnosis and to live their lives as normally as possible with their condition. In January 2024 Mina’s lab moved to Cambridge University, where she became the Director of the UK DRI at Cambridge. At the core of her group’s research is using human brain transcriptomic data as a genome-wide functional read-out of an individual’s DNA, which can inform our understanding of the genetic origins of neurodegenerative diseases. In the context of rare neurogenetic diseases, this has meant using correlations in transcriptomic data to identify hidden gene-to-gene relationships amongst Mendelian genes. In the context of complex neurological diseases, this has meant to generate and use regulatory data across the human brain to link disease risk positions to specific genes. Thus, over the last ten years, she has developed extensive expertise in generating and using human brain transcriptomic data with a specific focus on neurodegenerative diseases, particularly Lewy body disorders.
+
 		</Biography>
 		<ImagePath>mina.jpg</ImagePath>
 		<GitHub></GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Mina_Ryten</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
-	<Person>
+	<!--<Person>
 		<ID>1</ID>
 		<Name>Juan A. Botía</Name>
 		<Title>PhD</Title>
@@ -31,8 +32,8 @@
     <GoogleScholar></GoogleScholar>
 		<ResearchGate>Juan_Botia</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
-	</Person>
-	<Person>
+	</Person>-->
+	<!--<Person>
 		<ID>2</ID>
 		<Name>Juan A. Sanchez</Name>
 		<Title>PhD</Title>
@@ -49,12 +50,12 @@
     <GoogleScholar></GoogleScholar>
 		<ResearchGate>Juan_Sanchez23</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
-	</Person>
+	</Person>-->
 	<Person>
 		<ID>3</ID>
 		<Name>Karishma D'Sa</Name>
 		<Title>MSc</Title>
-		<Job>Research assistant/PhD student</Job>
+		<Job>Postdoctoral Research Fellow</Job>
 		<Email>k.d'sa@ucl.ac.uk</Email>
 		<ResearchInterest>Transcriptomics; Genetics; Neurodegeneration; Bioinformatics; Personalized medicine.</ResearchInterest>
 		<Biography>
@@ -62,7 +63,7 @@
 		</Biography>
 		<ImagePath>kd.png</ImagePath>
 		<GitHub></GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate></ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -78,7 +79,7 @@
 		</Biography>
 		<ImagePath>seb.jpg</ImagePath>
 		<GitHub>SebGuelfi</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Sebastian_Guelfi</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -118,7 +119,7 @@
 	</Person>
 	<Person>
 		<ID>7</ID>
-		<Name>Sonia García Ruiz</Name>
+		<Name>Sonia García-Ruiz</Name>
 		<Title>PhD</Title>
 		<Job>Postdoctoral Research Fellow</Job>
 		<Email>s.ruiz@ucl.ac.uk</Email>
@@ -169,12 +170,12 @@
 	<Person>
 		<ID>10</ID>
 		<Name>Aine Fairbrother-Browne</Name>
-		<Title>BSc, MSc</Title>
-		<Job>PhD student</Job>
+		<Title>PhD</Title>
+		<Job>Postdoctoral Research Fellow</Job>
 		<Email>aine.fairbrother-browne.18@ucl.ac.uk</Email>
 		<ResearchInterest>Neurodegenerative disease, medical genetics, bioinformatics.</ResearchInterest>
 		<Biography>
-			<b>Aine Fairbrother-Browne</b> is a BBSRC funded LIDo PhD student in both the Ryten lab at UCL and the Hodgkinson Medical and Molecular Genetics lab at King’s. She completed at BSc in Biology at Bristol University (2016), and then did an MSc in Bioinformatics and Systems Biology at Birkbeck (2017). In 2018 she started on the BBSRC funded LIDo PhD programme. Whilst working with Mina Ryten and Alan Hodgkinson, she is focused on nuclear regulation of the mitochondrial genome in brain and its role in age-related pathologies.
+			<b>Aine Fairbrother-Browne</b> completed her BBSRC funded LIDo PhD joined program at UCL and King's in 2023. She completed at BSc in Biology at Bristol University (2016), and then did an MSc in Bioinformatics and Systems Biology at Birkbeck (2017). In 2018 she started on the BBSRC funded LIDo PhD programme. Whilst working with Mina Ryten and Alan Hodgkinson, she is focused on nuclear regulation of the mitochondrial genome in brain and its role in age-related pathologies.
 		</Biography>
 		<ImagePath>aine.png</ImagePath>
 		<GitHub>ainefairbrother</GitHub>
@@ -236,12 +237,12 @@
 	<Person>
 		<ID>14</ID>
 		<Name>Amy Hicks</Name>
-		<Title>BSc</Title>
-		<Job>PhD Student</Job>
+		<Title>Dr</Title>
+		<Job>Postdoctoral Research Fellow</Job>
 		<Email>amy.hicks.19@ucl.ac.uk</Email>
-		<ResearchInterest>Parkinson’s disease, mitochondrial dysfunction, gene regulatory mechanisms.</ResearchInterest>
+		<ResearchInterest>Gene regulatory mechanisms in Parkinson’s disease.</ResearchInterest>
 		<Biography>
-			Amy is a first year PhD student at UCL. She completed her Bachelor’s in Neuroscience at the University of Leeds in 2019, during which she completed an industrial placement year at Eisai Ltd in Hatfield. In 2020 she began a joint PhD project between the Ryten and Plun-Favreau labs, examining the gene regulatory networks underlying mitophagy modulation and other Parkinson’s disease related pathways.
+			Amy studied Neuroscience at the University of Leeds before starting a Wolfson-Eisai PhD studentship in Neurodegeneration in 2019, co-supervised by Professors Mina Ryten and Helene Plun-Favreau at UCL. Amy is currently undertaking a postdoctoral research fellow position studying transcriptomic features in Parkinson’s disease patients.
 		</Biography>
 		<ImagePath>amy.png</ImagePath>
 		<GitHub>amyrosehicks</GitHub>
@@ -328,8 +329,8 @@
 	</Pet>
 	<Pet>
 		<ID>20</ID>
-		<Name>Suka</Name>
-		<Nickname>Suki</Nickname>
+		<Name>Suki</Name>
+		<Nickname>Sukiti</Nickname>
 		<HumanName>Sonia</HumanName>
 		<ImagePath>suki.jpg</ImagePath>
 		<Bio>
@@ -458,7 +459,7 @@
     <GitHub></GitHub>
     <GoogleScholar>ramysaad</GoogleScholar>
     <ResearchGate></ResearchGate>
-    <CurrentMember>Y</CurrentMember>
+    <CurrentMember>N</CurrentMember>
   </Person>
   <Person>
     <ID>28</ID>
@@ -496,7 +497,7 @@
     <GitHub></GitHub>
     <GoogleScholar></GoogleScholar>
     <ResearchGate>Claire-Anderson-10</ResearchGate>
-    <CurrentMember>Y</CurrentMember>
+    <CurrentMember>N</CurrentMember>
   </Person>
   <Pet>
     <ID>30</ID>
@@ -559,4 +560,26 @@
     <ResearchGate></ResearchGate>
     <CurrentMember>Y</CurrentMember>
   </Person>
+	<Pet>
+		<ID>34</ID>
+		<Name>Elbereth (Elbie) and Bilbo</Name>
+		<Nickname>Elbereth Gilthoniel and Bilbo Catkins</Nickname>
+		<HumanName>Zhongbo (the reluctant cat parent) and family</HumanName>
+		<ImagePath>elbereth.png</ImagePath>
+		<Bio>
+			In Zhongbo's house, two Siberian cats reign free,
+			Elbie and Bilbo, as proud as can be.
+
+			Elbie, named after an elven queen bright,
+			With fur pure white, she purrs through the night.
+			A bossy young feline, she's sharp and she's bold,
+			Ruling the house with a heart made of gold.
+
+			Bilbo, the adventurer, loves to explore,
+			Climbing up trees but getting stuck more!
+			With a heart full of courage and whiskers so neat,
+			He's always in search of a high-up retreat.
+
+		</Bio>
+	</Pet>
 </TeamMembers>

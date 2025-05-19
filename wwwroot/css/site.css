@@ -98,9 +98,16 @@ article {
     }
 }
 
+.container {
+    padding: 12px;
+    margin:auto;
+    font-size:18px;
+}
+
 .well {
     margin-right: 20px;
     margin-left: 20px;
+    background-color: #e6e6e6 !important;
 }
 
 .year-main {
@@ -156,7 +163,6 @@ footer {
 /**********************************************/
 /****************** ALBUM *********************/
 /**********************************************/
-
 
 html {
     box-sizing: border-box;
