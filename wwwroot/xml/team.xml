@@ -125,9 +125,9 @@
 		<Email>s.ruiz@ucl.ac.uk</Email>
 		<ResearchInterest>RNA Splicing; Transcriptomics; Short-Read RNA sequencing data; Long-Read RNA sequencing data; Novel transcription; Web Development; Software Development.</ResearchInterest>
 		<Biography>
-      Sonia García Ruiz is a Postdoctoral Research Fellow working in the Ryten Lab at University College London . She completed her BSc in Computer Science at the University of Miguel Hernández (Spain) in 2014 with a first class degree, after which she became a software and web developer, accumulating over 2 years of experience working with international clients such as Microsoft and Deloitte across multiple countries. In 2017, she decided to return to academia and completed her MSc in Artificial Intelligence at the University of Murcia (with distinction). The exposure to genomic medicine over the course of her MSc led her  to move to London in 2018 to work in the Ryten Lab as a Research Assistant, and her decision a year later to embark on a part-time PhD. Sonia completed her PhD on splicing accuracy across human introns, tissues and ageing in 2023.
+      Sonia García Ruiz is a Postdoctoral Research Associate working at the UK Dementia Research Institute Cambridge as part of the Ryten Lab. She is also a Postdoctoral Fellow at Clare Hall College Cambridge. Sonia completed her BSc in Computer Science at the University of Miguel Hernández (Spain) in 2014 with a first class degree, after which she became a software and web developer, accumulating over 2 years of experience working with international clients such as Microsoft and Deloitte across multiple countries. In 2017, she decided to return to academia and completed her MSc in Artificial Intelligence at the University of Murcia (with distinction). The exposure to genomic medicine over the course of her MSc led her  to move to London in 2018 to work in the Ryten Lab as a Research Assistant, and her decision a year later to embark on a part-time PhD. Sonia completed her PhD on splicing accuracy across human introns, tissues and ageing in 2023.
       <br/>
-      Currently, Sonia is interested in combining short- and long-read RNA-sequencing data to understand transcriptional accuracy in dementia across cell types.
+      Currently, Sonia is interested in combining bulk, single-nuclear and long-read RNA-sequencing data to understand transcriptional changes occuring in dementia across brain cell types.
     </Biography>
 		<ImagePath>sonia.jpg</ImagePath>
 		<GitHub>SoniaRuiz</GitHub>
@@ -181,7 +181,7 @@
 		<GitHub>ainefairbrother</GitHub>
     <GoogleScholar></GoogleScholar>
 		<ResearchGate></ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 
 	<Person>
