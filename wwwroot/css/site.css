@@ -141,19 +141,13 @@ article {
 }
 
 footer {
-    /*width: 100%;*/
-    background-color: #101010;
-    /*position: inherit;
-    bottom: 0;
-    z-index: 10;*/
+    background-color: #080808;
 }
 
-    footer small {
-        float: left;
-        margin: 10px 20px;
-        color: #9d9d9d;
-
-    }
+footer small {
+    float: left;
+    color: black;
+}
 
 .key-words {
     font-style: italic
@@ -219,14 +213,15 @@ html {
 
 .cardName {
     width: 100%;
+    font-size: 20px !important;
+    min-height: 60px !important;
 }
 
 .cardTitle {
     color: grey;
     width: 100%;
     font-size: 85%;
-    min-height: 40px;
-    /*height: 70px;*/
+    min-height: 50px;
 }
 
 .cardDescription {

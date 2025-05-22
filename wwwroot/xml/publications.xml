@@ -152,16 +152,16 @@
 
 	<Publication>
 		<ID>10</ID>
-		<Title>Splicing accuracy varies across human introns, tissues and age</Title>
+		<Title>Splicing accuracy varies across human introns, tissues, age and disease</Title>
 		<Authors>
 			S García-Ruiz, D Zhang, E K Gustavsson, G Rocamora-Perez, M Grant-Peters, A Fairbrother-Browne, R H Reynolds, J W Brenton, A L Gil-Martínez, Z Chen, D C Rio, J A Botia, S Guelfi, L Collado-Torres, M Ryten
 		</Authors>
 		<JournalInfo>
-			bioRxiv 2023.03.29.534370;
+			Nat Commun 16, 1068 (2025).
 		</JournalInfo>
-		<DOI>https://doi.org/10.1101/2023.03.29.534370</DOI>
+		<DOI>https://www.nature.com/articles/s41467-024-55607-x</DOI>
 		<Abstract>
-			Alternative splicing impacts most multi-exonic human genes. Inaccuracies during this process may have an important role in ageing and disease. Here, we investigated mis-splicing using RNA-sequencing data from ~14K control samples and 42 human body sites, focusing on split reads partially mapping to known transcripts in annotation. We show that mis-splicing occurs at different rates across introns and tissues and that these splicing inaccuracies are primarily affected by the abundance of core components of the spliceosome assembly and its regulators. Using publicly available data on short-hairpin RNA-knockdowns of numerous spliceosomal components and related regulators, we found support for the importance of RNA-binding proteins in mis-splicing. We also demonstrated that age is positively correlated with mis-splicing, and it affects genes implicated in neurodegenerative diseases. This in-depth characterisation of mis-splicing can have important implications for our understanding of the role of splicing inaccuracies in human disease and the interpretation of long-read RNA-sequencing data.
+			Alternative splicing impacts most multi-exonic human genes. Inaccuracies during this process may have an important role in ageing and disease. Here, we investigate splicing accuracy using RNA-sequencing data from >14k control samples and 40 human body sites, focusing on split reads partially mapping to known transcripts in annotation. We show that splicing inaccuracies occur at different rates across introns and tissues and are affected by the abundance of core components of the spliceosome assembly and its regulators. We find that age is positively correlated with a global decline in splicing fidelity, mostly affecting genes implicated in neurodegenerative diseases. We find support for the latter by observing a genome-wide increase in splicing inaccuracies in samples affected with Alzheimer’s disease as compared to neurologically normal individuals. In this work, we provide an in-depth characterisation of splicing accuracy, with implications for our understanding of the role of inaccuracies in ageing and neurodegenerative disorders.
 		</Abstract>
 		<Year>2023</Year>
 		<Display>Y</Display>

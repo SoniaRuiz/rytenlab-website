@@ -31,9 +31,9 @@
                                         </a>
                                     </figure>
                                     <div class="cardMember">
-                                        <h3 style="font-size: 21px !important;" class="cardName">@person.Name</h3>
+                                        <h3 class="cardName">@person.Name</h3>
                                         <p class="cardTitle">@Html.Raw(@person.Job)</p>
-                                        <p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>
+                                        <!--<p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>-->
                                         <p>
                                             <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
                                         </p>
