@@ -40,25 +40,26 @@ namespace RytenLab_Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddMvc();//.SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v2", new OpenApiInfo { 
-                    Title = "RytenLab API", 
-                    Version = "v1.0.1",
-                    Description = "This is an ASP.NET Core Web API, built to request different methods of the family of CoExpNets R packages. Property of the RytenLab Team.",
-                    Contact = new OpenApiContact
-                    {
-                        Name = "The RytenLab team",
-                        Email = "mina.ryten@ucl.ac.uk",
-                        Url = new Uri("https://rytenlab.com/"),
-                    }
-                });
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v2", new OpenApiInfo
+            //    {
+            //        Title = "RytenLab API",
+            //        Version = "v1.0.1",
+            //        Description = "This is an ASP.NET Core Web API, built to request different methods of the family of CoExpNets R packages. Property of the RytenLab Team.",
+            //        Contact = new OpenApiContact
+            //        {
+            //            Name = "The RytenLab team",
+            //            Email = "mina.ryten@ucl.ac.uk",
+            //            Url = new Uri("https://rytenlab.com/"),
+            //        }
+            //    });
 
-                // Set the comments path for the Swagger JSON and UI.
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
-            });
+            //    // Set the comments path for the Swagger JSON and UI.
+            //    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            //    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+            //    c.IncludeXmlComments(xmlPath);
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
