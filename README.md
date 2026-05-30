@@ -2,7 +2,8 @@
 [![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
 
 # RytenLab Website
-Website project created following a Model–View–Controller (MVC) software design pattern in .NET Core framework. The output of this project contains the website for the [Ryten Laboratory](https://rytenlab.com/) team. It also contains the specification for the RytenLab .NET Core [REST API](https://rytenlab.com/swagger/index.html).
+Website project created following a Model–View–Controller (MVC) software design pattern in .NET Core framework. The output of this project contains the website for the [Ryten Laboratory](https://rytenlab.com/) team. 
+
 
 ## Ryten Lab - About us
 The major focus of the Ryten Laboratory is the use of transcriptomic data as a functional read-out of the genome and how that read-out can inform our understanding of biological processes to improve human health. We work in neurogenetics, one of the most challenging disease areas and use transcriptomic data, primarily derived from human brain or brain relevant cell types, to build the resources required to improve the molecular understanding of complex and rare neurological diseases with a particular focus on neurodegenerative diseases.

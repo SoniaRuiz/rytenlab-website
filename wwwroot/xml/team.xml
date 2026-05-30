@@ -17,7 +17,7 @@
 		<ResearchGate>Mina_Ryten</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
-	<!--<Person>
+	<Person>
 		<ID>1</ID>
 		<Name>Juan A. Botía</Name>
 		<Title>PhD</Title>
@@ -29,11 +29,11 @@
 		</Biography>
 		<ImagePath>botia.jpg</ImagePath>
 		<GitHub>juanbot</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Juan_Botia</ResearchGate>
-		<CurrentMember>Y</CurrentMember>
-	</Person>-->
-	<!--<Person>
+		<CurrentMember>N</CurrentMember>
+	</Person>
+	<Person>
 		<ID>2</ID>
 		<Name>Juan A. Sanchez</Name>
 		<Title>PhD</Title>
@@ -49,8 +49,8 @@
 		<GitHub>drlaguna</GitHub>
     <GoogleScholar></GoogleScholar>
 		<ResearchGate>Juan_Sanchez23</ResearchGate>
-		<CurrentMember>Y</CurrentMember>
-	</Person>-->
+		<CurrentMember>N</CurrentMember>
+	</Person>
 	<Person>
 		<ID>3</ID>
 		<Name>Karishma D'Sa</Name>
@@ -280,7 +280,7 @@
 		<GitHub>aaronwagen</GitHub>
     <GoogleScholar></GoogleScholar>
 		<ResearchGate>Aaron-Wagen</ResearchGate>
-		<CurrentMember>Y</CurrentMember>
+		<CurrentMember>N</CurrentMember>
 	</Person>
 	<Person>
 		<ID>17</ID>
