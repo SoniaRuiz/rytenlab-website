@@ -198,7 +198,7 @@
 		</Biography>
 		<ImagePath>analuisa.png</ImagePath>
 		<GitHub></GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Ana_Luisa_Gil_Martinez</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -214,7 +214,7 @@
 		</Biography>
 		<ImagePath>emil.png</ImagePath>
 		<GitHub>egustavsson</GitHub>
-    <GoogleScholar>emilkgustavsson</GoogleScholar>
+		<GoogleScholar>emilkgustavsson</GoogleScholar>
 		<ResearchGate>Emil_Gustavsson</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -230,7 +230,7 @@
 		</Biography>
 		<ImagePath>fran.png</ImagePath>
 		<GitHub>FranKiernan</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Fran_Kiernan</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -246,7 +246,7 @@
 		</Biography>
 		<ImagePath>amy.png</ImagePath>
 		<GitHub>amyrosehicks</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Amy_Hicks7</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -262,7 +262,7 @@
 		</Biography>
 		<ImagePath>federica.png</ImagePath>
 		<GitHub></GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Federica-Merella</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -278,7 +278,7 @@
 		</Biography>
 		<ImagePath>aaron.png</ImagePath>
 		<GitHub>aaronwagen</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Aaron-Wagen</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -300,7 +300,7 @@
 		</Biography>
 		<ImagePath>kylie.png</ImagePath>
 		<GitHub>KylieMontgomery</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Kylie-Montgomery-2</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
@@ -365,7 +365,7 @@
 		</Biography>
 		<ImagePath>savita.jpg</ImagePath>
 		<GitHub>savitanutan</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Savita-Nutan-2</ResearchGate>
 		<CurrentMember>N</CurrentMember>
 	</Person>
@@ -396,16 +396,16 @@
 			Dislikes: The evil vacuum and even more evil blender.
 		</Bio>
 	</Pet>
-  <Pet>
-    <ID>24</ID>
-    <Name>Pumpkin</Name>
-    <Nickname>Pancake, Punkeg, Kitty</Nickname>
-    <HumanName>Amy (and Adam)</HumanName>
-    <ImagePath>pumpkin.png</ImagePath>
-    <Bio>
-      Pumpkin was rescued as a young pregnant stray and brought to live with a fosterer in Barnet along with 4 other cats (+ another four once her kittens were born), several guinea pigs, rats and a bearded dragon. She was keen to get away from the zoo house and once she found a forever home just next door, she settled into regular zoomies, destroying spider plants and waking her humans up at 5am. One day she hopes to finally catch her tail, she’s getting closer every day.
-    </Bio>
-  </Pet>
+	<Pet>
+		<ID>24</ID>
+		<Name>Pumpkin</Name>
+		<Nickname>Pancake, Punkeg, Kitty</Nickname>
+		<HumanName>Amy (and Adam)</HumanName>
+		<ImagePath>pumpkin.png</ImagePath>
+		<Bio>
+		  Pumpkin was rescued as a young pregnant stray and brought to live with a fosterer in Barnet along with 4 other cats (+ another four once her kittens were born), several guinea pigs, rats and a bearded dragon. She was keen to get away from the zoo house and once she found a forever home just next door, she settled into regular zoomies, destroying spider plants and waking her humans up at 5am. One day she hopes to finally catch her tail, she’s getting closer every day.
+		</Bio>
+	</Pet>
 	<Person>
 		<ID>25</ID>
 		<Name>Melissa Grant-Peters</Name>
@@ -421,11 +421,11 @@
 		</Biography>
 		<ImagePath>melissa.png</ImagePath>
 		<GitHub>mgrantpeters</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Melissa-Grant-Peters</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
-  <Person>
+	<Person>
 		<ID>26</ID>
 		<Name>Rhys Dore</Name>
 		<Title>Dr [BA BMBCh MSc MRCPCH]</Title>
@@ -435,131 +435,132 @@
 			Research Interests: Clinical Genetics, Clinical Paediatrics, Bioinformatics, Rare Disease
 		</ResearchInterest>
 		<Biography>
-      Rhys is a clinical genetics registrar and an NIHR Academic Clinical Fellow (Clinical Genetics) at the Maurice Wohl Clinical Neuroscience Institute, King’s College London with the Ule lab (UK DRI). He completed his intercalated degree (major: neuroscience, 2015) and clinical training (2018) at the University of Oxford, and an MSc in Paediatrics and Child Health at UCL (2022). He undertook the Academic Foundation Programme in Brighton before completing junior paediatric training in London and an NIHR Academic Clinical Fellowship (Paediatrics) with the Ryten lab.
-    </Biography>
+			Rhys is a clinical genetics registrar and an NIHR Academic Clinical Fellow (Clinical Genetics) at the Maurice Wohl Clinical Neuroscience Institute, King’s College London with the Ule lab (UK DRI). He completed his intercalated degree (major: neuroscience, 2015) and clinical training (2018) at the University of Oxford, and an MSc in Paediatrics and Child Health at UCL (2022). He undertook the Academic Foundation Programme in Brighton before completing junior paediatric training in London and an NIHR Academic Clinical Fellowship (Paediatrics) with the Ryten lab.
+		</Biography>
 		<ImagePath>rhys.png</ImagePath>
 		<GitHub>rhysdore</GitHub>
-    <GoogleScholar></GoogleScholar>
+		<GoogleScholar></GoogleScholar>
 		<ResearchGate>Rhys-Dore-2</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
-  <Person>
-    <ID>27</ID>
-    <Name>Ramy Saad</Name>
-    <Title>Dr</Title>
-    <Job>Academic Clinical Fellow</Job>
-    <Email>ramy.saad.10@ucl.ac.uk</Email>
-    <ResearchInterest>
-      Research Interests: Epigenomics, Nutrition, Rare Diseases
-    </ResearchInterest>
-    <Biography>
-      Ramy is an Academic Clinical Fellow in Genetics at GOSH, with a clinical interest in rare diseases and nutrition. His research interest is the epigenetic interface between nutrients and genome-wide methylation. He is currently exploring nutrient-methylation interactions by EWAS to identify potential therapeutics or personalised diets for managing individual rare diseases.
-    </Biography>
-    <ImagePath>ramy.png</ImagePath>
-    <GitHub></GitHub>
-    <GoogleScholar>ramysaad</GoogleScholar>
-    <ResearchGate></ResearchGate>
-    <CurrentMember>N</CurrentMember>
-  </Person>
-  <Person>
-    <ID>28</ID>
-    <Name>Pilar Álvarez Jerez</Name>
-    <Title>BSc</Title>
-    <Job>PhD Student</Job>
-    <Email>pilar.jerez.22@ucl.ac.uk</Email>
-    <ResearchInterest>
-      Long-read sequencing, neurodegenerative disease, genomics
-    </ResearchInterest>
-    <Biography>
-      Pilar Alvarez Jerez is a PhD student within the long-read team at the Center for Alzheimer’s and Related Dementias (CARD), NIH and the Ryten Lab at UCL. Her current work focuses on using long read technologies to identify the role of structural variants on gene expression and methylation within neurodegenerative diseases, most notably Parkinson’s disease and Alzheimer’s disease. Before coming to NIH, Pilar got her BSc in Applied Physiology and Kinesiology from the University of Florida.
-    </Biography>
-    <ImagePath>pilar.png</ImagePath>
-    <GitHub>pilaralv</GitHub>
-    <GoogleScholar></GoogleScholar>
-    <ResearchGate></ResearchGate>
-    <CurrentMember>Y</CurrentMember>
-  </Person>
-  <Person>
-    <ID>29</ID>
-    <Name>Claire Anderson</Name>
-    <Title>Dr</Title>
-    <Job>Research Assistant</Job>
-    <Email>claire.anderson@ucl.ac.uk</Email>
-    <ResearchInterest>
-      Genomics, transcriptomics, gene expression, neurodegeneration, Parkinson’s Disease, developmental neurobiology
-    </ResearchInterest>
-    <Biography>
-      Claire is a research assistant in the Ryten lab funded by The Michael J. Fox Foundation for Parkinson’s Research and Aligning Science Across Parkinson’s (ASAP) Collaborative Research Network initiative. Claire uses long read sequencing technologies to understand the pathological mechanisms of Parkinson’s Disease.
-      <br/>
-      Claire did her undergraduate degree in biomedical science specialising in developmental biology in her postgraduate studies at The University of Sheffield. She then went on to work as a post-doctoral researcher at University College London.
-    </Biography>
-    <ImagePath>claire.png</ImagePath>
-    <GitHub></GitHub>
-    <GoogleScholar></GoogleScholar>
-    <ResearchGate>Claire-Anderson-10</ResearchGate>
-    <CurrentMember>N</CurrentMember>
-  </Person>
-  <Pet>
-    <ID>30</ID>
-    <Name>Nuptse and Nilo</Name>
-    <Nickname>NupNup, Nups and Nilo-baby</Nickname>
-    <HumanName>Claire (Nick, Iris and Otis)</HumanName>
-    <ImagePath>claire_cats.png</ImagePath>
-    <Bio>
-      Nilo and Nuptse are brother and sister and have fallen out with each other, very much like brothers and sisters do. Nuptse loves to be around people, except when she doesn’t. Nilo loves a warm lap, radiators and the fireplace, he also loves to eat Claire’s plants. Both are fair-weather cats and only really go outside when it’s baking hot.
-    </Bio>
-  </Pet>
-  <Person>
-    <ID>31</ID>
-    <Name>Hannah Macpherson</Name>
-    <Title>MSc</Title>
-    <Job>Phd Student</Job>
-    <Email>hannah.macpherson.14@ucl.ac.uk</Email>
-    <ResearchInterest>
-      Genomics, transcriptomics, gene expression, neurodegeneration, Parkinson’s Disease, developmental neurobiology
-    </ResearchInterest>
-    <Biography>
-      Hannah completed her MSci at UCL, where her Master’s project investigated proteostasis in aging C. elegans at the Institute of Healthy Aging. She has five years of experience in Long Read Sequencing, which she initially started at the Anthony Nolan Research Institute where she worked as a Research Assistant for two years. There, she did PacBio sequencing of HLA class I and class II genes with the aim to improve stem cell transplant outcomes and matching.
-      <br/>
-      In 2021 she moved back to UCL as a Senior Research Technician, where she lead the UCL Long Read Sequencing Service. She has worked on a wide range of projects, from de novo genomes to targeted transcriptomics, and utilising both Oxford Nanopore and PacBio technologies.
-      <br/>
-      In 2023 she joined the Ryten lab as a PhD student, where she will apply her knowledge of Long Read Sequencing to Parkinson’s Disease Transcriptomics.
-    </Biography>
-    <ImagePath>hannah.png</ImagePath>
-    <GitHub>MacphersonHannah</GitHub>
-    <GoogleScholar></GoogleScholar>
-    <ResearchGate>Hannah-Macpherson-3</ResearchGate>
-    <CurrentMember>Y</CurrentMember>
-  </Person>
-  <Pet>
-    <ID>32</ID>
-    <Name>Terry</Name>
-    <Nickname>Tesla, Tez</Nickname>
-    <HumanName>Hannah</HumanName>
-    <ImagePath>terry.png</ImagePath>
-    <Bio>
-      Terry is a cheeky orange cat, who is extremely curious about the world but sometimes lacks basic survival skills. He is a CIS (Cat In Stem) and has previously attended the 2021 online Nanopore conference, which he fondly refers to as ‘Nanopaw’. In his spare time, he enjoys staring menacingly at squirrels, stealing pieces of uncooked spaghetti, and hiding grapes under the sofa.
-    </Bio>
-  </Pet>
-  <Person>
-    <ID>33</ID>
-    <Name>Jonathan Brenton</Name>
-    <Title>PhD</Title>
-    <Job>Postdoctoral Research Fellow</Job>
-    <Email>jonathan.brenton.14@ucl.ac.uk</Email>
-    <ResearchInterest>
-      Neurodegeneration; Bioinformatics; Ageing; Transcriptomics
-    </ResearchInterest>
-    <Biography>
-      Jon is a a postdoctoral research fellow in the Ryten lab at University College London. He received a BSc in Psychology from the University of Birmingham and an MSc in Neuroscience from University College London. He also completed his PhD at University College London funded by the BBSRC LIDo PhD programme.
-      The project involved the electrophysiological and transcriptomic analysis of ageing in an obesity model. His current work involves the analysis of splicing and gene expression in Parkinson’s disease patients.
-    </Biography>
-    <ImagePath>jon.png</ImagePath>
-    <GitHub>Jbrenton191</GitHub>
-    <GoogleScholar></GoogleScholar>
-    <ResearchGate></ResearchGate>
-    <CurrentMember>N</CurrentMember>
-  </Person>
+	<Person>
+		<ID>27</ID>
+		<Name>Ramy Saad</Name>
+		<Title>Dr</Title>
+		<Job>Academic Clinical Fellow</Job>
+		<Email>ramy.saad.10@ucl.ac.uk</Email>
+		<ResearchInterest>
+		  Research Interests: Epigenomics, Nutrition, Rare Diseases
+		</ResearchInterest>
+		<Biography>
+		  Ramy is an Academic Clinical Fellow in Genetics at GOSH, with a clinical interest in rare diseases and nutrition. His research interest is the epigenetic interface between nutrients and genome-wide methylation. He is currently exploring nutrient-methylation interactions by EWAS to identify potential therapeutics or personalised diets for managing individual rare diseases.
+		</Biography>
+		<ImagePath>ramy.png</ImagePath>
+		<GitHub></GitHub>
+		<GoogleScholar>ramysaad</GoogleScholar>
+		<ResearchGate></ResearchGate>
+		<CurrentMember>N</CurrentMember>
+	</Person>
+	<Person>
+		<ID>28</ID>
+		<Name>Pilar Álvarez Jerez</Name>
+		<Title>BSc</Title>
+		<Job>PhD Student</Job>
+		<Email>pilar.jerez.22@ucl.ac.uk</Email>
+		<ResearchInterest>
+		  Long-read sequencing, neurodegenerative disease, genomics
+		</ResearchInterest>
+		<Biography>
+		  Pilar Alvarez Jerez is a PhD student within the long-read team at the Center for Alzheimer’s and Related Dementias (CARD), NIH and the Ryten Lab at UCL. Her current work focuses on using long read technologies to identify the role of structural variants on gene expression and methylation within neurodegenerative diseases, most notably Parkinson’s disease and Alzheimer’s disease. Before coming to NIH, Pilar got her BSc in Applied Physiology and Kinesiology from the University of Florida.
+		</Biography>
+		<ImagePath>pilar.png</ImagePath>
+		<GitHub>pilaralv</GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate></ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
+	<Person>
+		<ID>29</ID>
+		<Name>Claire Anderson</Name>
+		<Title>Dr</Title>
+		<Job>Research Assistant</Job>
+		<Email>claire.anderson@ucl.ac.uk</Email>
+		<ResearchInterest>
+		  Genomics, transcriptomics, gene expression, neurodegeneration, Parkinson’s Disease, developmental neurobiology
+		</ResearchInterest>
+		<Biography>
+		  Claire is a research assistant in the Ryten lab funded by The Michael J. Fox Foundation for Parkinson’s Research and Aligning Science Across Parkinson’s (ASAP) Collaborative Research Network initiative. Claire uses long read sequencing technologies to understand the pathological mechanisms of Parkinson’s Disease.
+		  <br/>
+		  Claire did her undergraduate degree in biomedical science specialising in developmental biology in her postgraduate studies at The University of Sheffield. She then went on to work as a post-doctoral researcher at University College London.
+		</Biography>
+		<ImagePath>claire.png</ImagePath>
+		<GitHub></GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate>Claire-Anderson-10</ResearchGate>
+		<CurrentMember>N</CurrentMember>
+	</Person>
+	<Pet>
+		<ID>30</ID>
+		<Name>Nuptse and Nilo</Name>
+		<Nickname>NupNup, Nups and Nilo-baby</Nickname>
+		<HumanName>Claire (Nick, Iris and Otis)</HumanName>
+		<ImagePath>claire_cats.png</ImagePath>
+		<Bio>
+		  Nilo and Nuptse are brother and sister and have fallen out with each other, very much like brothers and sisters do. Nuptse loves to be around people, except when she doesn’t. Nilo loves a warm lap, radiators and the fireplace, he also loves to eat Claire’s plants. Both are fair-weather cats and only really go outside when it’s baking hot.
+		</Bio>
+	</Pet>
+	<Person>
+		<ID>31</ID>
+		<Name>Hannah Macpherson</Name>
+		<Title>MSc</Title>
+		<Job>Phd Student</Job>
+		<Email>hannah.macpherson.14@ucl.ac.uk</Email>
+		<ResearchInterest>
+		  Genomics, transcriptomics, gene expression, neurodegeneration, Parkinson’s Disease, developmental neurobiology
+		</ResearchInterest>
+		<Biography>
+		  Hannah completed her MSci at UCL, where her Master’s project investigated proteostasis in aging C. elegans at the Institute of Healthy Aging. She has five years of experience in Long Read Sequencing, which she initially started at the Anthony Nolan Research Institute where she worked as a Research Assistant for two years. There, she did PacBio sequencing of HLA class I and class II genes with the aim to improve stem cell transplant outcomes and matching.
+		  <br/>
+		  In 2021 she moved back to UCL as a Senior Research Technician, where she lead the UCL Long Read Sequencing Service. She has worked on a wide range of projects, from de novo genomes to targeted transcriptomics, and utilising both Oxford Nanopore and PacBio technologies.
+		  <br/>
+		  In 2023 she joined the Ryten lab as a PhD student, where she will apply her knowledge of Long Read Sequencing to Parkinson’s Disease Transcriptomics.
+		</Biography>
+		<ImagePath>hannah.png</ImagePath>
+		<GitHub>MacphersonHannah</GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate>Hannah-Macpherson-3</ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
+	<Pet>
+		<ID>32</ID>
+		<Name>Terry</Name>
+		<Nickname>Tesla, Tez</Nickname>
+		<HumanName>Hannah</HumanName>
+		<ImagePath>terry.png</ImagePath>
+		<Bio>
+			Terry is a cheeky orange cat, who is extremely curious about the world but sometimes lacks basic survival skills. He is a CIS (Cat In Stem) and has previously attended the 2021 online Nanopore conference, which he fondly refers to as ‘Nanopaw’. In his spare time, he enjoys staring menacingly at squirrels, stealing pieces of uncooked spaghetti, and hiding grapes under the sofa.
+		</Bio>
+	</Pet>
+	<Person>
+		<ID>33</ID>
+		<Name>Jonathan Brenton</Name>
+		<Title>PhD</Title>
+		<Job>Postdoctoral Research Fellow</Job>
+		<Email>jonathan.brenton.14@ucl.ac.uk</Email>
+		<ResearchInterest>
+			Neurodegeneration; Bioinformatics; Ageing; Transcriptomics
+		</ResearchInterest>
+		<Biography>
+			Jon is a a postdoctoral research fellow in the Ryten lab at University College London. He received a BSc in Psychology from the University of Birmingham and an MSc in Neuroscience from University College London. He also completed his PhD at University College London funded by the BBSRC LIDo PhD programme.
+			The project involved the electrophysiological and transcriptomic analysis of ageing in an obesity model. His current work involves the analysis of splicing and gene expression in Parkinson’s disease patients.
+		</Biography>
+		<ImagePath>jon.png</ImagePath>
+		<GitHub>Jbrenton191</GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate></ResearchGate>
+		<CurrentMember>N</CurrentMember>
+	</Person>
+	
 	<Pet>
 		<ID>34</ID>
 		<Name>Elbereth (Elbie) and Bilbo</Name>
@@ -580,6 +581,70 @@
 			With a heart full of courage and whiskers so neat,
 			He's always in search of a high-up retreat.
 
+		</Bio>
+	</Pet>
+	<Person>
+		<ID>35</ID>
+		<Name>Niuzheng (NZ) Chai</Name>
+		<Title></Title>
+		<Job>PhD Student</Job>
+		<Email>nc625@cam.ac.uk</Email>
+		<ResearchInterest>transcriptomics, genetics, epigenetics, ageing, neurodegeneration, rare diseases, bioinformatics</ResearchInterest>
+		<Biography>
+			NZ completed her BSc in Biological Sciences at Imperial College London, during which she found the wide range of modules fascinating but also struggled to pinpoint a specific research interest because there were just so many interesting areas to choose from!
+
+			She eventually landed on neuroscience and followed that interest to do an MRes in Brain Sciences at UCL. During her MRes in the Davidson lab (Institute of Ophthalmology), she worked on a rare inherited eye disease, which really kickstarted her interest in transcriptomics and bioinformatics. After her MRes, she continued working on inherited eye diseases as a research assistant in the Hardcastle lab (Institute of Ophthalmology), picking up experience in transcriptomics, variant analysis, and DNA methylation.
+
+			She’s now doing her PhD in the Ryten lab, where she's applying her previous skills to tackle new diseases and mechanisms.
+		</Biography>
+		<ImagePath>nz.png</ImagePath>
+		<GitHub>niuums</GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate></ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
+	<Person>
+		<ID>36</ID>
+		<Name>Alex Martínez Ascensión</Name>
+		<Title>Dr</Title>
+		<Job>Postdoc - Visiting Researcher</Job>
+		<Email>am3596@cam.ac.uk</Email>
+		<ResearchInterest>Neurodegenerative disorders; single-cell methods; sex chromosome biology; sex as a biological variable</ResearchInterest>
+		<Biography>
+			Alex is a postdoctoral researcher at the neurodegenerative diseases area at Biogipuzkoa Health Research Institute (Donostia, Spain) and a visiting research at UK-DRI at Prof. Ryten’s lab. They completed their BSc in Biochemistry at University of the Basque Country (Spain) in 2014 and early on developed an interest in Bioinformatics, finishing their MSc at the Autonomous University of Barcelona (2018). They finished their PhD in 2023 at Biogipuzkoa, which focused on elucidating the heterogeneity of dermal fibroblasts by pooling dozens of single-cell RNA-seq studies.
+
+			Afterwards, they pivoted onto neurodegeneration, with a focus on ALS and MS, following their research at Biogipuzkoa. Due to the persisting gender biases in biomedical research, one of their active research points focuses on the integration of sex as a categorical variable in their studies, paying special focus onto how the biology of sex chromosomes and the effect of hormones affects gene transcription and splicing. To that end, they performed a short stay at Francisco Garcia’s group at Principe Felipe Research Centre (Valencia, Spain), continuing in active collaboration; and recently joined Prof. Ryten’s group thanks to a competitive fellowship from the Education Department of the Basque Government.
+		</Biography>
+		<ImagePath>alex.jpg</ImagePath>
+		<GitHub>alexmascension</GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate>Alex-Martinez-Ascension</ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
+	<Person>
+		<ID>37</ID>
+		<Name>Helen King</Name>
+		<Title>Dr</Title>
+		<Job>Postdoctoral Research Associate</Job>
+		<Email>hk627@cam.ac.uk</Email>
+		<ResearchInterest>single-cell transcriptomics, RNA regulation, alternative promoter usage.</ResearchInterest>
+		<Biography>
+			Helen King is a Postdoctoral Research Associate in the Ryten Lab at the UK Dementia Research Institute, University of Cambridge. She completed her PhD in Bioinformatics at the Garvan Institute, UNSW, and EMBL-Australia, where her research focused on using single-cell sequencing to investigate RNA regulation across immunological disease and breast cancer, encompassing VDJ, nascent, long-read, and CRISPRi single-cell approaches. Prior to her PhD, Helen completed an MRes in Biomedical Science with a specialism in Bioinformatics and Data Analysis and a BSc in Biochemistry, both at King's College London. In the Ryten Lab, Helen is developing novel computational approaches to understand how alternative promoter usage, transcription initiation, and transcript isoform diversity within neurodegenerative diseases.
+		</Biography>
+		<ImagePath>helen.jpg</ImagePath>
+		<GitHub>theheking</GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate>Helen-King-11</ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
+	<Pet>
+		<ID>38</ID>
+		<Name>Archie, Angus and Flora</Name>
+		<Nickname>Devil Dogs</Nickname>
+		<HumanName>Helen</HumanName>
+		<ImagePath>helendogs.jpg</ImagePath>
+		<Bio>
+			Archie (the slightly larger one), Angus (the slightly smaller one) and Flora (the wheaten one) are a pack of Scottish terriers. They have very selective hearing, but hearts of gold and love nothing more than to nap in the sun.
 		</Bio>
 	</Pet>
 </TeamMembers>
