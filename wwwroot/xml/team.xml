@@ -435,7 +435,10 @@
 			Research Interests: Clinical Genetics, Clinical Paediatrics, Bioinformatics, Rare Disease
 		</ResearchInterest>
 		<Biography>
-			Rhys is a clinical genetics registrar and an NIHR Academic Clinical Fellow (Clinical Genetics) at the Maurice Wohl Clinical Neuroscience Institute, King’s College London with the Ule lab (UK DRI). He completed his intercalated degree (major: neuroscience, 2015) and clinical training (2018) at the University of Oxford, and an MSc in Paediatrics and Child Health at UCL (2022). He undertook the Academic Foundation Programme in Brighton before completing junior paediatric training in London and an NIHR Academic Clinical Fellowship (Paediatrics) with the Ryten lab.
+			Rhys is a senior clinical genetics registrar and an NIHR Academic Clinical Fellow (Clinical Genetics) at the Maurice Wohl Clinical Neuroscience Institute, King’s College London with the Ule lab (UK DRI). He completed his intercalated degree (major: neuroscience, 2015) and clinical training (2018) at the University of Oxford, and an MSc in Paediatrics and Child Health at UCL (2022). He undertook the Academic Foundation Programme in Brighton before completing junior paediatric training in London and an NIHR Academic Clinical Fellowship (Paediatrics) with the Ryten lab.
+
+
+			From October 2026, Rhys will re-join the Ryten lab as a Wellcome Clinical PhD Fellow. He will use long-read sequencing and functional interrogation of iPSC-derived neurons to evaluate the brain-specific role of the PTEN/PTENP1/PTENP1-AS regulatory axis.
 		</Biography>
 		<ImagePath>rhys.png</ImagePath>
 		<GitHub>rhysdore</GitHub>
@@ -647,4 +650,20 @@
 			Archie (the slightly larger one), Angus (the slightly smaller one) and Flora (the wheaten one) are a pack of Scottish terriers. They have very selective hearing, but hearts of gold and love nothing more than to nap in the sun.
 		</Bio>
 	</Pet>
+	<Person>
+		<ID>39</ID>
+		<Name>Guillermo Rocamora Perez</Name>
+		<Title>MSc</Title>
+		<Job>Research Associate</Job>
+		<Email>guillermorocamora@gmail.com</Email>
+		<ResearchInterest>single-cell transcriptomics, RNA regulation, alternative promoter usage.</ResearchInterest>
+		<Biography>
+			Guillermo Rocamora Pérez is a bioinformatician and data scientist working as an independent contractor with Prof. Mina Ryten’s Lab at Cambridge University. He has completed master’s degrees in Particle Physics and Data Analysis, focusing on big data and computing clusters. During his master’s, he collaborated with Prof. Juan A. Botía at the University of Murcia, developing new methods for gene hub identification in targeted co-expression networks using a refinement of Lasso regression. At Ryten’s Lab, he provides computational and data analysis expertise across multiple projects, including alternative splicing, differential gene expression and proportion analyses. He has provided analytical support to research within the PPMI and the ASAP initiatives. Through ASAP, in 2025 he was awarded a Multi-Omics Meta-Analysis (MoMa) grant for the project “Computational Pipeline to Generate Cell Type Specific 5’ UTR Analyses”.
+		</Biography>
+		<ImagePath>guillermo.jpg</ImagePath>
+		<GitHub>guillermo1996</GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate>Guillermo-Rocamora-Perez</ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
 </TeamMembers>
