@@ -341,3 +341,11 @@ healthchecksdb
 
 # Certificate
 wwwroot/cert/
+
+bin/
+obj/
+.vs/
+team_cv/
+wwwroot/team_cv/
+wwwroot/images/originals/
+*.zip
