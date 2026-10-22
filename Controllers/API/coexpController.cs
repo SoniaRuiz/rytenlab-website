@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using RytenLab_Web.Models;
 using RytenLab_Web.Repositories;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace RytenLab_Web.Controllers
 {
 
+    [RequestSizeLimit(65536)]
+    [EnableRateLimiting("api")]
     [Route("rytenlab_api/[controller]")]
     [ApiController]
     public class CoexpController : ControllerBase
