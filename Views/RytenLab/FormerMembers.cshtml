@@ -1,4 +1,4 @@
-﻿@model Team
+@model Team
 @{
     ViewData["Title"] = "Former Members";
 }
@@ -13,46 +13,27 @@
 <div class="tabcontent">
     <div class="tab-content">
         <article>
-            @*<h2>Past members</h2>*@
             <h4>While our transcriptome and lab have changed, our companionship remains the same.</h4>
             <br />
             <div class="row">
                 @foreach (var person in Model.TeamMembers)
                 {
-                    @if (person.CurrentMember == "N")
+                    if (person.CurrentMember == "N")
                     {
-                        @using (Html.BeginForm("MemberInfo", "RytenLab", FormMethod.Post, new { @id = @person.ID }))
-                        {
-                            <div class="cardColumn">
-                                <div class="cardData">
-                                    <figure>
-                                        <a href="#" title="@person.Name" onclick="javascript:sendForm(@person.ID)">
-                                            <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
-                                        </a>
-                                    </figure>
-                                    <div class="cardMember">
-                                        <h3 class="cardName">@person.Name</h3>
-                                        <p class="cardTitle">@Html.Raw(@person.Job)</p>
-                                        <!--<p class="cardEmail"><a href="mailto:@person.Email">@person.Email</a></p>-->
-                                        <p>
-                                            <input type="submit" value="View" class="cardButton" onclick="javascript:sendForm(@person.ID)" />
-                                        </p>
-                                        @Html.HiddenFor(m => person.Name)
-                                        @Html.HiddenFor(m => person.ImagePath)
-                                        @Html.HiddenFor(m => person.Title)
-                                        @Html.HiddenFor(m => person.Job)
-                                        @Html.HiddenFor(m => person.Email)
-                                        @Html.HiddenFor(m => person.NCBIPublicationsID)
-                                        @Html.HiddenFor(m => person.ResearchInterest)
-                                        @Html.HiddenFor(m => person.GitHub)
-                                        @Html.HiddenFor(m => person.ResearchGate)
-
-                                        @Html.HiddenFor(m => person.Biography)
-                                        @Html.HiddenFor(m => person.CurrentMember)
-                                    </div>
+                        <div class="cardColumn">
+                            <div class="cardData">
+                                <figure>
+                                    <a asp-action="MemberInfo" asp-route-id="@person.ID" title="@person.Name">
+                                        <img src="/images/modified/filter/@person.ImagePath" alt="@person.Name" class="card-img">
+                                    </a>
+                                </figure>
+                                <div class="cardMember">
+                                    <h3 class="cardName">@person.Name</h3>
+                                    <p class="cardTitle">@person.Job</p>
+                                    <p><a asp-action="MemberInfo" asp-route-id="@person.ID" class="cardButton">View</a></p>
                                 </div>
                             </div>
-                        }
+                        </div>
                     }
                 }
             </div>
@@ -61,18 +42,8 @@
 </div>
 
 
-
-
-
 @section Scripts{
     <link rel="stylesheet" href="~/css/album.css" />
-
-    <script type="text/javascript">
-        function sendForm(memberID) {
-            $("#" + memberID).submit();
-            return false;
-        }
-    </script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -83,5 +54,3 @@
 
     </script>
 }
-
-

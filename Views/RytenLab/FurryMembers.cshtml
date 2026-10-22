@@ -1,11 +1,6 @@
-﻿
-@{
-    ViewData["Title"] = "FurryMembers";
-}
-
 @model Pets
 @{
-    //View for 'Team' page
+    //View for 'Furry members' page
     ViewData["Title"] = "Furry members";
 }
 
@@ -19,41 +14,27 @@
 <div class="tabcontent">
     <div class="tab-content">
         <article>
-            
+
             <h4>While our transcriptomes and DNA may differ, our loyalty to our less furry RNA-obsessed friends remains constant.</h4>
             <br />
             <div class="row">
 
-                @foreach (var pet in Model.FurryMembers) {
-                    
-                    @using (Html.BeginForm("FurryMember", "RytenLab", FormMethod.Post, new { @id = @pet.ID }))
-                    {
-                        <div class="cardColumn">
-                            <div class="cardData">
-                                <figure>
-                                    <a href="#" title="@pet.Name" onclick="javascript:sendForm(@pet.ID)">
-                                        <img src="/images/modified/filter/@pet.ImagePath" alt="@pet.Name" class="card-img">
-                                    </a>
-                                </figure>
-                                <div class="cardMember">
-                                    <h3 style="font-size: 21px !important;" class="cardName">@pet.Name</h3>
-                                    <p class="cardTitle">Member of @Html.Raw(pet.HumanName)'s family</p>
-                                    <p>
-                                        <input type="submit" value="View" class="cardButton" 
-                                               onclick="javascript:sendForm(@pet.ID)" />
-                                    </p>
-
-                                    @Html.HiddenFor(m => pet.Name)
-                                    @Html.HiddenFor(m => pet.HumanName)
-                                    @Html.HiddenFor(m => pet.Nickname)
-                                    @Html.HiddenFor(m => pet.Bio)
-                                    @Html.HiddenFor(m => pet.ImagePath)
-
-                                </div>
+                @foreach (var pet in Model.FurryMembers)
+                {
+                    <div class="cardColumn">
+                        <div class="cardData">
+                            <figure>
+                                <a asp-action="FurryMember" asp-route-id="@pet.ID" title="@pet.Name">
+                                    <img src="/images/modified/filter/@pet.ImagePath" alt="@pet.Name" class="card-img">
+                                </a>
+                            </figure>
+                            <div class="cardMember">
+                                <h3 style="font-size: 21px !important;" class="cardName">@pet.Name</h3>
+                                <p class="cardTitle">Member of @pet.HumanName's family</p>
+                                <p><a asp-action="FurryMember" asp-route-id="@pet.ID" class="cardButton">View</a></p>
                             </div>
                         </div>
-                    }
-                    
+                    </div>
                 }
             </div>
         </article>
@@ -61,18 +42,8 @@
 </div>
 
 
-
-
-
 @section Scripts{
     <link rel="stylesheet" href="~/css/album.css" />
-
-    <script type="text/javascript">
-        function sendForm(memberID) {
-            $("#" + memberID).submit();
-            return false;
-        }
-    </script>
 
     <script type="text/javascript">
         $(document).ready(function () {

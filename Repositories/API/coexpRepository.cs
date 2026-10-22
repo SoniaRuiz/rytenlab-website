@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace RytenLab_Web.Repositories
 {
@@ -11,6 +12,9 @@ namespace RytenLab_Web.Repositories
     /// </summary>
     public class CoexpRepository
     {
+        private static string ToJson(params (string Key, string Value)[] fields)
+            => JsonSerializer.Serialize(fields.ToDictionary(f => f.Key, f => f.Value ?? string.Empty));
+
         /// <summary>
         /// Property to manage the http connection
         /// </summary>
@@ -62,7 +66,7 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "getAvailableNetworks";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"category\":\"" + whichone + "\"}";
+            PostData = ToJson(("category", whichone));
 
             //Make the request
             var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
@@ -76,8 +80,7 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "getModulesFromTissue";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"tissue\":\"" + tissue +
-                "\",\"which.one\":\"" + whichone + "\"}";
+            PostData = ToJson(("tissue", tissue), ("which.one", whichone));
 
             //Make the request
             var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
@@ -94,9 +97,7 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "getMM";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"tissue\":\"" + tissue +
-                "\",\"which.one\":\"" + whichone +
-                "\",\"module\":\"" + module + "\"}";
+            PostData = ToJson(("tissue", tissue), ("which.one", whichone), ("module", module));
 
             //Make the request
             var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
@@ -113,8 +114,7 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "getGOFromTissue";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"tissue\":\"" + tissue +
-                "\",\"which.one\":\"" + whichone + "\"}";
+            PostData = ToJson(("tissue", tissue), ("which.one", whichone));
 
             //Make the request
             var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
@@ -129,8 +129,7 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "getCellTypeFromTissue";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"tissue\":\"" + tissue +
-                "\",\"which.one\":\"" + whichone + "\"}";
+            PostData = ToJson(("tissue", tissue), ("which.one", whichone));
 
             //Make the request
             var finalResponse = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
@@ -150,8 +149,8 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "reportOnGenesMultipleTissue";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"tissues\":\"" + tissues + "\",\"which.one\":\"" + whichone + "\",\"genes\":\"" + genes + "\"}";
-            
+            PostData = ToJson(("tissues", tissues), ("which.one", whichone), ("genes", genes));
+
             var response = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
             return response.Result;
         }
@@ -161,7 +160,7 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "globalReportOnGenes";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"categories\":\"" + categories + "\",\"tissues\":\"" + networks + "\",\"genes\":\"" + genes + "\"}";
+            PostData = ToJson(("categories", categories), ("tissues", networks), ("genes", genes));
 
             //Make the request
             var response = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
@@ -176,9 +175,7 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "getModuleTOMGraph";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"tissue\":\"" + tissue +
-                "\",\"which.one\":\"" + whichone +
-                "\",\"module\":\"" + module + "\",\"topgenes\":\"" + topgenes + "\"}";
+            PostData = ToJson(("tissue", tissue), ("which.one", whichone), ("module", module), ("topgenes", topgenes));
 
             //Make the request
             var response = _adapter.POSTHttpRequestJSONAsync(uri, PostData);
@@ -193,9 +190,7 @@ namespace RytenLab_Web.Repositories
             _coexpURL += "getModuleTOMGenes";
             Uri uri = new Uri(_coexpURL);
 
-            PostData = "{\"tissue\":\"" + tissue +
-                "\",\"which.one\":\"" + whichone +
-                "\",\"module\":\"" + module + "\"}";
+            PostData = ToJson(("tissue", tissue), ("which.one", whichone), ("module", module));
 
             //Make the request
             var response = _adapter.POSTHttpRequestJSONAsync(uri, PostData);

@@ -11,20 +11,95 @@ using System.Web;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 
 namespace RytenLab_Web.Controllers
 {
+
     /// <summary>
     /// This controller sets the main operations of RytenLab web
     /// </summary>
     public class RytenLabController : Controller
     {
         private IHostEnvironment _hostingEnvironment;
+        private readonly ILogger<RytenLabController> _logger;
 
-        public RytenLabController(IHostEnvironment environment)
+
+        public RytenLabController(IHostEnvironment environment, ILogger<RytenLabController> logger)
         {
             _hostingEnvironment = environment;
+            _logger = logger;
+        }
+
+        /// <summary>
+        /// Loads team.xml from App_Data (not publicly downloadable, unlike wwwroot).
+        /// </summary>
+        private XmlDocument LoadTeamXml()
+        {
+            var doc = new XmlDocument();
+            doc.Load(Path.Combine(_hostingEnvironment.ContentRootPath, "App_Data", "team.xml"));
+            return doc;
+        }
+
+        private static string Text(XmlNode node, string name) => node[name]?.InnerText ?? string.Empty;
+
+        /// <summary>
+        /// Reads all team members from team.xml, ordered by name.
+        /// </summary>
+        private List<Person> ReadPeople()
+        {
+            var people = new List<Person>();
+            foreach (XmlNode node in LoadTeamXml().SelectNodes("/TeamMembers/Person"))
+            {
+                people.Add(new Person
+                {
+                    ID = int.TryParse(Text(node, "ID"), out var id) ? id : -1,
+                    Name = Text(node, "Name"),
+                    Title = Text(node, "Title"),
+                    Job = Text(node, "Job"),
+                    Email = Text(node, "Email"),
+                    ResearchInterest = Text(node, "ResearchInterest"),
+                    Biography = Text(node, "Biography"),
+                    ImagePath = Text(node, "ImagePath"),
+                    GitHub = Text(node, "GitHub"),
+                    GoogleScholar = Text(node, "GoogleScholar"),
+                    ResearchGate = Text(node, "ResearchGate"),
+                    CurrentMember = Text(node, "CurrentMember")
+                });
+            }
+            return people.OrderBy(p => p.Name).ToList();
+        }
+
+        /// <summary>
+        /// Reads all furry members from team.xml, ordered by name.
+        /// </summary>
+        private List<Pet> ReadPets()
+        {
+            var pets = new List<Pet>();
+            foreach (XmlNode node in LoadTeamXml().SelectNodes("/TeamMembers/Pet"))
+            {
+                pets.Add(new Pet
+                {
+                    ID = int.TryParse(Text(node, "ID"), out var id) ? id : -1,
+                    Name = Text(node, "Name"),
+                    Nickname = Text(node, "Nickname"),
+                    HumanName = Text(node, "HumanName"),
+                    ImagePath = Text(node, "ImagePath"),
+                    Bio = Text(node, "Bio")
+                });
+            }
+            return pets.OrderBy(p => p.Name).ToList();
+        }
+
+        /// <summary>
+        /// Logs the exception and shows the generic error page with the request ID only
+        /// (no exception text is exposed to the visitor).
+        /// </summary>
+        private IActionResult ErrorView(Exception e)
+        {
+            _logger.LogError(e, "Error in RytenLab controller");
+            return View("Error", new ErrorViewModel { Message = HttpContext.TraceIdentifier });
         }
 
 
@@ -54,46 +129,11 @@ namespace RytenLab_Web.Controllers
         {
             try
             {
-                Team teamMembers = new Team();
-                List<Person> personList = new List<Person>();
-
-                var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
-                //Load the XML file in XmlDocument.
-                XmlDocument doc = new XmlDocument();
-                doc.Load(path);
-
-                //Loop through the selected Nodes.
-                foreach (XmlNode node in doc.SelectNodes("/TeamMembers/Person"))
-                {
-                    //Fetch the Node values and assign it to Model.
-                    personList.Add(new Person
-                    {
-                        ID = int.Parse(node["ID"].InnerText),
-                        Name = node["Name"].InnerText,
-                        Title = node["Title"].InnerText,
-                        Job = node["Job"].InnerText,
-                        Email = node["Email"].InnerText,
-                        ResearchInterest = node["ResearchInterest"].InnerText,
-                        Biography = node["Biography"].InnerText,
-                        ImagePath = node["ImagePath"].InnerText,
-                        GitHub = node["GitHub"].InnerText,
-                        GoogleScholar = node["GoogleScholar"].InnerText,
-                        ResearchGate = node["ResearchGate"].InnerText,
-                        CurrentMember = node["CurrentMember"].InnerText
-                    });
-                }
-                
-                teamMembers.TeamMembers = personList.OrderBy(o => o.Name).ToList();
-
-                return View(teamMembers);
+                return View(new Team { TeamMembers = ReadPeople() });
             }
             catch (Exception e)
             {
-                ErrorViewModel errorModel = new ErrorViewModel
-                {
-                    Message = e.Message
-                };
-                return View("Error", errorModel);
+                return ErrorView(e);
             }
         }
 
@@ -101,43 +141,11 @@ namespace RytenLab_Web.Controllers
         {
             try
             {
-                Team alumni = new Team();
-
-                var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
-                //Load the XML file in XmlDocument.
-                XmlDocument doc = new XmlDocument();
-                doc.Load(path);
-
-                //Loop through the selected Nodes.
-                foreach (XmlNode node in doc.SelectNodes("/TeamMembers/Person"))
-                {
-                    //Fetch the Node values and assign it to Model.
-                    alumni.TeamMembers.Add(new Person
-                    {
-                        ID = int.Parse(node["ID"].InnerText),
-                        Name = node["Name"].InnerText,
-                        Title = node["Title"].InnerText,
-                        Job = node["Job"].InnerText,
-                        Email = node["Email"].InnerText,
-                        ResearchInterest = node["ResearchInterest"].InnerText,
-                        Biography = node["Biography"].InnerText,
-                        ImagePath = node["ImagePath"].InnerText,
-                        GitHub = node["GitHub"].InnerText,
-                        GoogleScholar = node["GoogleScholar"].InnerText,
-                        ResearchGate = node["ResearchGate"].InnerText,
-                        CurrentMember = node["CurrentMember"].InnerText
-                    });
-                }
-                alumni.TeamMembers = alumni.TeamMembers.OrderBy(o => o.Name).ToList();
-                return View(alumni);
+                return View(new Team { TeamMembers = ReadPeople() });
             }
             catch (Exception e)
             {
-                ErrorViewModel errorModel = new ErrorViewModel
-                {
-                    Message = e.Message
-                };
-                return View("Error", errorModel);
+                return ErrorView(e);
             }
         }
 
@@ -145,38 +153,11 @@ namespace RytenLab_Web.Controllers
         {
             try
             {
-                Pets petMembers = new Pets();
-
-                var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
-                //Load the XML file in XmlDocument.
-                XmlDocument doc = new XmlDocument();
-                doc.Load(path);
-
-                //Loop through the selected Nodes.
-                foreach (XmlNode node in doc.SelectNodes("/TeamMembers/Pet"))
-                {
-                    //Fetch the Node values and assign it to Model.
-                    petMembers.FurryMembers.Add(new Pet
-                    {
-                        ID = int.Parse(node["ID"].InnerText),
-                        Name = node["Name"].InnerText,
-                        Nickname = node["Nickname"].InnerText,
-                        HumanName = node["HumanName"].InnerText,
-                        ImagePath = node["ImagePath"].InnerText,
-                        Bio = node["Bio"].InnerText
-                    });
-                }
-
-                petMembers.FurryMembers = petMembers.FurryMembers.OrderBy(o => o.Name).ToList();
-                return View(petMembers);
+                return View(new Pets { FurryMembers = ReadPets() });
             }
             catch (Exception e)
             {
-                ErrorViewModel errorModel = new ErrorViewModel
-                {
-                    Message = e.Message
-                };
-                return View("Error", errorModel);
+                return ErrorView(e);
             }
         }
 
@@ -235,9 +216,9 @@ namespace RytenLab_Web.Controllers
                 });
             }
 
-            papers.Manuscripts =  papers.Manuscripts.OrderByDescending(o => o.Year).ToList();
+            papers.Manuscripts = papers.Manuscripts.OrderByDescending(o => o.Year).ToList();
 
-        
+
 
             return View(papers);
         }
@@ -255,150 +236,46 @@ namespace RytenLab_Web.Controllers
 
 
         /// <summary>
-        /// Controller method for 'MemberInfo' page
+        /// Controller method for 'MemberInfo' page.
+        /// The member is looked up on the server by the numeric ID from team.xml,
+        /// so nothing posted or supplied by the client is rendered.
         /// </summary>
-        /// <param name="person">Team member info</param>
-        /// <returns>'MemberInfo' view</returns>
-        [HttpPost]
-        public IActionResult MemberInfo(Person person)
-        {
-            try
-            {
-                //PublicationRepository publications = new PublicationRepository();
-                //person = publications.GetPublicationsDataNCBI(person);
-                //person = publications.GetPublicationsDataCrossRef(person);
-
-                return View(person);
-            }
-            catch(Exception e)
-            {
-                ErrorViewModel errorModel = new ErrorViewModel
-                {
-                    Message = e.Message
-                };
-                return View("Error", errorModel);
-            }
-        }
-        /// <summary>
-        /// Controller method for returning 'MemberInfo' page
-        /// Is requesting using GET protocol.
-        /// </summary>
-        /// <param name="person">Team member info</param>
-        /// <returns>'MemberInfo' view</returns>
+        /// <param name="id">Team member ID (from team.xml)</param>
+        /// <returns>'MemberInfo' view, or 404 if the ID does not exist</returns>
         [HttpGet]
-        [ActionName("MemberInfo")]
-        public ActionResult MemberInfoGet(Person person)
+        public IActionResult MemberInfo(int id)
         {
             try
             {
-                string memberName = string.Empty;
-
-                switch (person.Id)
-                {
-                    case "8774A_!52101":
-                        memberName = "Mina Ryten";
-                        break;  // Always break each case
-                    case "BP98-F74160":
-                        memberName = "Juan A. Botía";
-                        break;
-                    case "1A_P04986":
-                        memberName = "Juan A. Sanchez";
-                        break;
-                    case "2548LOP641":
-                        memberName = "Karishma D'Sa";
-                        break;
-                    case "91AA_B35843":
-                        memberName = "Sebastian Guelfi";
-                        break;
-                    case "103698KFT714":
-                        memberName = "Regina H. Reynolds";
-                        break;
-                    case "103PO8741457":
-                        memberName = "David Zhang";
-                        break;
-                    case "LO96_F34158":
-                        memberName = "Sonia García Ruiz";
-                        break;
-                    case "189635LLDP42":
-                        memberName = "Zhongbo Chen";
-                        break;
-                    case "3DD_P9652844":
-                        memberName = "Siddharth Sethi";
-                        break;
-                    case "1_FON05125800":
-                        memberName = "Aine Fairbrother-Browne";
-                        break;
-                    //case "85_RR4347H20":
-                    //    memberName = "Fran Kiernan";
-                    //    break;
-                };
-
-                var path = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot/xml/team.xml");
-                //Load the XML file in XmlDocument.
-                XmlDocument doc = new XmlDocument();
-                doc.Load(path);
-                //Loop through the selected Nodes.
-                foreach (XmlNode node in doc.SelectNodes("/TeamMembers/Person"))
-                {
-                    if(node["Name"].InnerText == memberName)
-                    {
-                        person.ID = int.Parse(node["ID"].InnerText);
-                        person.Name = node["Name"].InnerText;
-                        person.Title = node["Title"].InnerText;
-                        person.Job = node["Job"].InnerText;
-                        person.Email = node["Email"].InnerText;
-                        person.ResearchInterest = node["ResearchInterest"].InnerText;
-                        person.Biography = node["Biography"].InnerText;
-                        person.ImagePath = node["ImagePath"].InnerText;
-                        person.GitHub = node["GitHub"].InnerText;
-                        person.ResearchGate = node["ResearchGate"].InnerText;
-                        person.CurrentMember = node["CurrentMember"].InnerText;
-                        break;
-                    }
-                }
-                return View(person);
+                var person = ReadPeople().FirstOrDefault(p => p.ID == id);
+                return person == null ? NotFound() : View(person);
             }
             catch (Exception e)
             {
-                ErrorViewModel errorModel = new ErrorViewModel
-                {
-                    Message = e.Message
-                };
-                return View("Error", errorModel);
+                return ErrorView(e);
             }
         }
-
 
 
         /// <summary>
-        /// Controller method for 'FurryMember' page
+        /// Controller method for 'FurryMember' page.
+        /// The pet is looked up on the server by the numeric ID from team.xml.
         /// </summary>
-        /// <param name="pet">Pet Furry Member info</param>
-        /// <returns>'FurryMember' view</returns>
-        [HttpPost]
-        public IActionResult FurryMember(Pet pet)
+        /// <param name="id">Pet ID (from team.xml)</param>
+        /// <returns>'FurryMember' view, or 404 if the ID does not exist</returns>
+        [HttpGet]
+        public IActionResult FurryMember(int id)
         {
             try
             {
-                return View(pet);
+                var pet = ReadPets().FirstOrDefault(p => p.ID == id);
+                return pet == null ? NotFound() : View(pet);
             }
             catch (Exception e)
             {
-                ErrorViewModel errorModel = new ErrorViewModel
-                {
-                    Message = e.Message
-                };
-                return View("Error", errorModel);
+                return ErrorView(e);
             }
         }
-
-
-        //public IActionResult Publications()
-        //{
-        //    ViewData["Message"] = "Your application description page.";
-        //
-        //    return View();
-        //}
 
         /// <summary>
         /// Controller method for 'Privacy' page

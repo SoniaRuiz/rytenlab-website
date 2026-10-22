@@ -1,4 +1,4 @@
-﻿@model Publications
+@model Publications
 @{
     //View for 'Publications' page. The code appears duplicated in order to show the data ordered by year.
     ViewData["Title"] = "Publications";
@@ -14,19 +14,25 @@
     <br />
     @foreach (var publication in Model.Manuscripts)
     {
+        // Only render the link if it is a real web address (blocks javascript: and similar schemes)
+        bool linkOk = Uri.TryCreate(publication.DOI, UriKind.Absolute, out var linkUri)
+                      && (linkUri.Scheme == Uri.UriSchemeHttps || linkUri.Scheme == Uri.UriSchemeHttp);
 
-    <div class="well">
+        <div class="well">
 
-        <h3>@publication.Title</h3>
-        <hr />
+            <h3>@publication.Title</h3>
+            <hr />
             <p><em>@publication.Authors</em></p>
             <p class="small"> @publication.Abstract </p>
             <p><em> @publication.JournalInfo </em></p>
-        
-        <hr />
-        <a class="btn btn-primary button" href="@publication.DOI" role="button" target="_blank"><i class="fab fa-readme" style="font-size:24px"></i> Read</a> 
 
-    </div>
+            <hr />
+            @if (linkOk)
+            {
+                <a class="btn btn-primary button" href="@publication.DOI" role="button" target="_blank"><i class="fab fa-readme" style="font-size:24px"></i> Read</a>
+            }
+
+        </div>
 
     }
 
