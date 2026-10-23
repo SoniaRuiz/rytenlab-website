@@ -666,4 +666,20 @@
 		<ResearchGate>Guillermo-Rocamora-Perez</ResearchGate>
 		<CurrentMember>Y</CurrentMember>
 	</Person>
+	<Person>
+		<ID>40</ID>
+		<Name>Ginna Al-Zubaidi</Name>
+		<Title></Title>
+		<Job>Research Assistant</Job>
+		<Email>ga528@cam.ac.uk</Email>
+		<ResearchInterest>Bioinformatic tool development, alternative splicing, co- and post-transcriptional modifications, neurodegeneration, functional andmitochondrial genomics.</ResearchInterest>
+		<Biography>
+            Ginna is a BSc Biomedical Science graduate of King's College London, specialising in genomics. Her placement year was spent at DNA Analysis @ King's, gaining experience in probabilistic genotyping methods for forensic mixture analysis. During her final year she completed placements at the Fratta Lab and the Hodgkinson Lab working on RNA-seq and genomic analyses in the context of neurodegeneration, which led her to pursue it as a research focus. At the Ryten Lab, she is currently working on pipeline and tool development for protein localisation in neurodegeneration, in hopes of starting her PhD later this year.		
+		</Biography>
+		<ImagePath>ginna.png</ImagePath>
+		<GitHub>gialz</GitHub>
+		<GoogleScholar></GoogleScholar>
+		<ResearchGate></ResearchGate>
+		<CurrentMember>Y</CurrentMember>
+	</Person>
 </TeamMembers>
